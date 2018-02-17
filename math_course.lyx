@@ -1,0 +1,2650 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\use_default_options true
+\begin_modules
+theorems-bytype
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sloppy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Заметки по высшей математике
+\end_layout
+
+\begin_layout Author
+Галушин П.В.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Введение
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Введение}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+За основу взята книга 
+\begin_inset Quotes fld
+\end_inset
+
+Теорема Абеля в задачах и решениях
+\begin_inset Quotes frd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+.
+ Задачи перекомпонованы таким образом, чтобы ввести алгебраические структуры
+ с меньшим числом аксиом, чем у групп: полугруппы и моноиды.
+ Некоторые определения заменены задачами, в которых ставится цель ввести
+ определение таким образом, чтобы выполнялось определённое условие (как
+ правило, сохранение свойств элементов и операций на более широком множестве).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи из 
+\begin_inset Quotes fld
+\end_inset
+
+От математики к обобщённому программированию
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Приложение: методы доказательства? Математическая индукция, от противного
+ и т.д.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Начинаем с задачи 18
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Группы
+\end_layout
+
+\begin_layout Section
+Алгебраические системы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение операции
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение алгебраической системы
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть дано некоторое множество
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ и каждой упорядоченной паре элементов из 
+\begin_inset Formula $M$
+\end_inset
+
+ поставлен в соответствие элемент из 
+\begin_inset Formula $M$
+\end_inset
+
+, то говорят, что на множестве 
+\begin_inset Formula $M$
+\end_inset
+
+ задана 
+\emph on
+бинарная операция
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Примеры
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:left-neutral-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+ называется 
+\emph on
+левым нейтральным элементом 
+\emph default
+бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $e_{L}\circ x=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:right-neutral-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $e_{R}$
+\end_inset
+
+ называется 
+\emph on
+правым нейтральным элементом 
+\emph default
+бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $x\circ e_{R}=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Вообще говоря, у бинарной операции может быть любое количество левых или
+ любое количество правых нейтральных элементов.
+ Но если у операции есть одновременно левая и правая единицы, то ситуация
+ меняется.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что если у бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+ есть левый нейтральный элемент 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+ и правый нейтральный элемент 
+\begin_inset Formula $e_{R}$
+\end_inset
+
+, то эти они равны.
+\end_layout
+
+\begin_layout Solution
+В определении левого нейтрального элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-neutral-element"
+
+\end_inset
+
+ подставим вместо 
+\begin_inset Formula $x$
+\end_inset
+
+ элемент 
+\begin_inset Formula $e_{R}$
+\end_inset
+
+, а в определение правого нейтрального элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:right-neutral-element"
+
+\end_inset
+
+ — 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{L}\circ e_{R}=e_{R},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{L}\circ e_{R}=e_{L}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Левые части данных равенств совпадают, значит совпадают и правые, то есть
+ 
+\begin_inset Formula $e_{R}=e_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:neutral-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $e$
+\end_inset
+
+ называется 
+\emph on
+нейтральным элементом 
+\emph default
+бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если он является одновременно правым и левым нейтральным элементом этой
+ операции, иными словами, если для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеют место равенство 
+\begin_inset Formula $x\circ e=e\circ x=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:neutral-element-uniqueness"
+
+\end_inset
+
+Доказать, что нейтральный элемент бинарной операции является единственным.
+\end_layout
+
+\begin_layout Solution
+Пусть имеется два единичных элемента 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+.
+ По определению нейтрального элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:neutral-element"
+
+\end_inset
+
+, для любого элемента должно выполняться:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{1}\circ x=x\circ e_{1}=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{2}\circ x=x\circ e_{2}=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Положим в первом из этих равенств 
+\begin_inset Formula $x=e_{2}$
+\end_inset
+
+, а во втором 
+\begin_inset Formula $x=e_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{1}\circ e_{2}=e_{2}\circ e_{1}=e_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{2}\circ e_{1}=e_{1}\circ e_{2}=e_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Отсюда следует:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{1}\circ e_{2}=e_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{1}\circ e_{2}=e_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как левые части равны, то равны и правые:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{1}=e_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:magma"
+
+\end_inset
+
+Множество с заданной на ней бинарной операцией называется 
+\emph on
+магмой
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Так как никакие свойства бинарной операции магмы неизвестны, то о магме
+ можно сказать мало что содержательное.
+ Чтобы доказывать какие-либо содержательные утверждения, нужно, чтобы были
+ известные какие-либо дополнительные свойства бинарной операции.
+ В следующих разделах мы будем постепенно увеличивать количество требований,
+ предъявляемых к бинарной операции.
+\end_layout
+
+\begin_layout Section
+Полугруппы
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:associativity"
+
+\end_inset
+
+Операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ над множеством 
+\begin_inset Formula $G$
+\end_inset
+
+ называется ассоциативной, если для любых 
+\begin_inset Formula $a,b,c\in G$
+\end_inset
+
+ выполняется равенство
+\begin_inset Formula 
+\[
+\left(a\circ b\right)\circ c=a\circ\left(b\circ c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойство ассоциативности является обобщением сочетательного закона сложения
+ для целых чисел.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:semigroup"
+
+\end_inset
+
+Магма
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:magma"
+
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ называется 
+\emph on
+полугруппой
+\emph default
+, если её операция является 
+\emph on
+ассоциативной
+\emph default
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:associativity"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть бинарная операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ является ассоциативной.
+ Доказать, что любое правильно построенное выражение
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+дать определение
+\end_layout
+
+\end_inset
+
+, в котором слева на право идут элементы 
+\begin_inset Formula $a_{1},a_{2},...,a_{n}$
+\end_inset
+
+, задаёт тот же элемент, что и произведение 
+\begin_inset Formula 
+\[
+\left(...\left(\left(a_{1}\circ a_{2}\right)\circ a_{3}\right)\circ...\circ a_{n-1}\right)\circ a_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Сначала рассмотрим тривиальные случаи.
+ При 
+\begin_inset Formula $n=1$
+\end_inset
+
+ и 
+\begin_inset Formula $n=2$
+\end_inset
+
+ есть только один способ записи выражения.
+\end_layout
+
+\begin_layout Solution
+Для дальнейших случаев будем доказывать утверждение методом математической
+ индукции.
+ Базой индукции служит случай 
+\begin_inset Formula $n=3.$
+\end_inset
+
+ Здесь возможны два способа расстановки скобок, для доказательства их равенства
+ достаточно сослаться на ассоциативность 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:associativity"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выполним теперь шаг индукции.
+ Предположим, что утверждение доказано для всех положительных целых чисел,
+ меньших 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Обозначим исследуемой выражение как 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Введём обозначение
+\begin_inset Formula 
+\[
+A_{n}^{m}=\left(...\left(\left(a_{m}\circ a_{m+1}\right)\circ a_{m+2}\right)\circ...\circ a_{n-1}\right)\circ a_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Легко заметить, что 
+\begin_inset Formula $A_{n}^{m}=A_{n-1}^{m}\circ a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, нам необходимо доказать, что 
+\begin_inset Formula $E=A_{n}^{m}$
+\end_inset
+
+.
+ По условию задачи выражение 
+\begin_inset Formula $E$
+\end_inset
+
+ является правильно построенным, а значит оно имеет вид 
+\begin_inset Formula $E=E_{1}\circ E_{2}$
+\end_inset
+
+, где 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ выражения того же вида, но с меньшим числом элементов.
+ К этим подвыражениям можно применить предположение индукции.
+ Обозначим количество элементов в 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ как 
+\begin_inset Formula $k$
+\end_inset
+
+, тогда в 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ будет 
+\begin_inset Formula $n-k$
+\end_inset
+
+ элементов.
+ Мы можем написать
+\begin_inset Formula 
+\[
+E=A_{k}^{1}\circ A_{n}^{k+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $k=n-1$
+\end_inset
+
+, то 
+\begin_inset Formula $A_{n}^{k+1}=a_{n}$
+\end_inset
+
+ и мы получаем 
+\begin_inset Formula 
+\[
+E=A_{n-1}^{1}\circ a_{n}=A_{n}^{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $k>1$
+\end_inset
+
+.
+ В 
+\begin_inset Formula $A_{n}^{k+1}$
+\end_inset
+
+ скобки можно расставить произвольным образом в силу предположения индукции.
+ Запишем это выражение в виде 
+\begin_inset Formula 
+\[
+A_{n}^{k+1}=a_{k+1}\circ\left(a_{k+2}\circ...\circ\left(a_{n-2}\circ\left(a_{n-1}\circ a_{n}\right)\right)...\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда, в силу ассоциативности:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+E=A_{k}^{1}\circ\left(a_{k+1}\circ\left(a_{k+2}\circ...\circ\left(a_{n-2}\circ\left(a_{n-1}\circ a_{n}\right)\right)...\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Отвлечёмся от структуры скобок в 
+\begin_inset Formula $A_{k}^{1}$
+\end_inset
+
+ и будем рассматривать его просто как элемент, который это выражение определяет,
+ тогда в последнем выражении для 
+\begin_inset Formula $E$
+\end_inset
+
+ будет 
+\begin_inset Formula $n-k+1$
+\end_inset
+
+ элементов.
+ Так как мы рассматриваем только случаи 
+\begin_inset Formula $k>1$
+\end_inset
+
+, 
+\begin_inset Formula $n-k+1<n$
+\end_inset
+
+ и мы можем использовать предположение индукции.
+ А именно, что в последнем выражении для 
+\begin_inset Formula $E$
+\end_inset
+
+ можно расставить скобки следующим образом:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+E=\left(\left(...\left(\left(A_{k}^{1}\circ a_{k+1}\right)\circ a_{k+2}\right)\circ...\circ a_{n-1}\right)\circ a_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Подставляя в эту формулу выражение для 
+\begin_inset Formula $A_{k}^{1}$
+\end_inset
+
+, получим доказываемое утверждение.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:exponent-in-group"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный элемент полугруппы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ — произвольное положительное число, под 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ будем понимать выражение 
+\begin_inset Formula $a\circ a\circ...\circ a$
+\end_inset
+
+, в которое 
+\begin_inset Formula $a$
+\end_inset
+
+ входит 
+\begin_inset Formula $m$
+\end_inset
+
+ раз.
+ Другими словами, степень можно рекурсивно определить следующим образом:
+ 
+\begin_inset Formula 
+\[
+a^{m}=\begin{cases}
+a & m=1,\\
+a^{m-1}\circ a & m>1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:exponent-of-sum-positive"
+
+\end_inset
+
+Доказать, что для любых положительных целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+, имеет место равенство 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m+n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем это утверждение методом математической индукции по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+База индукции — случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ По самому определению степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:exponent-in-group"
+
+\end_inset
+
+: 
+\begin_inset Formula $a^{m}\circ a^{1}=a^{m+1}$
+\end_inset
+
+.
+ База индукции доказана.
+\end_layout
+
+\begin_layout Solution
+Выполним теперь шаг индукции.
+ Предположим, что утверждение доказано для всех целых чисел 
+\begin_inset Formula $0<k<n$
+\end_inset
+
+.
+ Докажем, что 
+\begin_inset Formula $a^{m}\circ a^{n}$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset Formula $a^{n}=a^{n-1}\circ a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m}\circ a^{n-1}\circ a$
+\end_inset
+
+.
+ По предположению индукции 
+\begin_inset Formula $a^{m}\circ a^{n-1}=a^{m+n-1}$
+\end_inset
+
+, поэтому
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=a^{m+n-1}\circ a=a^{m+n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:exponent-of-product-positive"
+
+\end_inset
+
+Доказать, что для любых положительных целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+, имеет место равенство 
+\begin_inset Formula $\left(a^{m}\right)^{n}=a^{mn}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Доказывать будем методом математической индукции по 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+База индукции — случай 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:exponent-in-group"
+
+\end_inset
+
+: 
+\begin_inset Formula $\left(a^{m}\right)^{1}=a^{m}=a^{m\cdot1}$
+\end_inset
+
+.
+ База индукции доказана.
+\end_layout
+
+\begin_layout Solution
+Выполним теперь шаг индукции.
+ Предположим, что утверждение доказано для всех целых чисел 
+\begin_inset Formula $0<k<n$
+\end_inset
+
+.
+ По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-sum-positive"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(a^{m}\right)^{\left(n-1\right)+1}=\left(a^{m}\right)^{n-1}\circ\left(a^{m}\right)^{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Используя предположение шага индукции, получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(a^{m}\right)^{n-1}\circ\left(a^{m}\right)^{1}=a^{m\left(n-1\right)}\circ a^{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Снова воспользуемся результатами упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-sum-positive"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=a^{m\left(n-1\right)}\circ a^{m}=a^{m\left(n-1\right)+m}=a^{mn}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Моноиды
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:monoid"
+
+\end_inset
+
+Полугруппа 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:semigroup"
+
+\end_inset
+
+ с нейтральным элементом 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:neutral-element"
+
+\end_inset
+
+ называется 
+\emph on
+моноидом
+\emph default
+.
+\end_layout
+
+\begin_layout Definition
+В моноиде понятие степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:exponent-in-group"
+
+\end_inset
+
+ можно расширить на случай нулевого показателя.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:exponent-of-zero"
+
+\end_inset
+
+Определить 
+\begin_inset Formula $a^{0}$
+\end_inset
+
+ таким образом, чтобы для любых неотрицательных целых числе 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ выполнялось равенство 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m+n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Положим в первом равенстве 
+\begin_inset Formula $n=0$
+\end_inset
+
+: 
+\begin_inset Formula $a^{m}\circ a^{0}=a^{m+0}=a^{m}$
+\end_inset
+
+.
+ Так как элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ может быть выбран произвольно, нужно положить 
+\begin_inset Formula $a^{0}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:exponent-of-product-non-negative"
+
+\end_inset
+
+Доказать, что при выбранном в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-zero"
+
+\end_inset
+
+ определении 
+\begin_inset Formula $a^{0}$
+\end_inset
+
+ равенство 
+\begin_inset Formula $\left(a^{m}\right)^{n}=a^{mn}$
+\end_inset
+
+ выполняется для всех неотрицательных целых 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для положительных 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ утверждение доказано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-product-positive"
+
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $n=0$
+\end_inset
+
+, тогда: 
+\begin_inset Formula $\left(a^{m}\right)^{0}=a^{m\cdot0}=a^{0}=e$
+\end_inset
+
+.
+ Для случая 
+\begin_inset Formula $m=0$
+\end_inset
+
+ доказательство аналогично.
+\end_layout
+
+\begin_layout Section
+Группы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача про то, что в группе можно ввести обратную операцию - обобщённое
+ деление.
+ Деления должно быть два: левое и правое.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Группой 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\emph default
+называется моноид
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monoid"
+
+\end_inset
+
+, для каждого элемента 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ которого определён элемент 
+\begin_inset Formula $a^{-1}\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $a^{-1}\circ a=a\circ a^{-1}=e$
+\end_inset
+
+, такой элемент называется 
+\emph on
+обратным элементом 
+\emph default
+для 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inverse-element-uniqueness"
+
+\end_inset
+
+Доказать, что для любого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы существует единственный обратный элемент .
+\end_layout
+
+\begin_layout Solution
+Пусть у элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ существует два обратных элемента 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{2}$
+\end_inset
+
+.
+ Рассмотрим выражение 
+\begin_inset Formula $b_{1}\circ a\circ b_{2}$
+\end_inset
+
+.
+ В силу ассоциативности, его можно вычислить двумя способами.
+ Первый способ даёт, учитывая определение обратного элемента:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b_{1}\circ a\circ b_{2}=b_{1}\circ\left(a\circ b_{2}\right)=b_{1}\circ e=b_{1}.
+\]
+
+\end_inset
+
+Аналогично, второй способ даёт:
+\begin_inset Formula 
+\[
+b_{1}\circ a\circ b_{2}=\left(b_{1}\circ a\right)\circ b_{2}=e\circ b_{2}=b_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Левые части этих уравнений совпадают, значит совпадают и правые, то есть
+ 
+\begin_inset Formula $b_{1}=b_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inverse-of-neutral-element"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $e^{-1}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению нейтрального элемента 
+\begin_inset Formula $e\circ e=e$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e$
+\end_inset
+
+ удовлетворяет определению обратного элемента для 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Так как обратный элемент является единственным, как было показано в упражнении
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:neutral-element-uniqueness"
+
+\end_inset
+
+, то 
+\begin_inset Formula $e^{-1}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:double-inverse"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\left(a^{-1}\right)^{-1}=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Аналогично, по определению обратного элемента: 
+\begin_inset Formula $a^{-1}\circ a=a\circ a^{-1}=e$
+\end_inset
+
+, переставляя местами первое и второе равенство, получим, что 
+\begin_inset Formula $a$
+\end_inset
+
+ удовлетворяет определению обратного элемента для 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+.
+ Так как обратный элемент является единственным, как было показано в упражнении
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-uniqueness"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\left(a^{-1}\right)^{-1}=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inverse-of-product"
+
+\end_inset
+
+Доказать, что в произвольной группе имеют место равенства 
+\begin_inset Formula $\left(a\circ b\right)^{-1}=b^{-1}\circ a^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a_{1}\circ...\circ a_{n}\right)^{-1}=a_{n}^{-1}\circ...\circ a_{1}^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $c=b^{-1}\circ a^{-1}$
+\end_inset
+
+ и докажем, что 
+\begin_inset Formula $c$
+\end_inset
+
+ удовлетворяет требованиям к обратному элементу для 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+.
+ Действительно: 
+\begin_inset Formula 
+\[
+c\circ\left(a\circ b\right)=b^{-1}\circ a^{-1}\circ\left(a\circ b\right)=b^{-1}\circ\left(a^{-1}\circ a\right)\circ b=b^{-1}\circ e\circ b=b^{-1}\circ b=e,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a\circ b\right)\circ c=\left(a\circ b\right)\circ b^{-1}\circ a^{-1}=a\circ b\circ b^{-1}\circ a^{-1}=a\circ e\circ a^{-1}=a\circ a^{-1}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как обратный элемент является единственным, то 
+\begin_inset Formula $\left(a\circ b\right)^{-1}=b^{-1}\circ a^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Утверждение для произвольного числа элементов докажем по индукции.
+ Базу индукции составляет случай двух элементов (одна операция), который
+ мы доказали выше.
+ Пусть мы доказали утверждение для всех 
+\begin_inset Formula $k<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a_{1}\circ...\circ a_{n-1}\circ a_{n}\right)^{-1}=\left(\left(a_{1}\circ...\circ a_{n-1}\right)\circ a_{n}\right)^{-1}=a_{n}^{-1}\circ\left(a_{1}\circ...\circ a_{n-1}\right)^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Используя предположение индукции:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a_{1}\circ...\circ a_{n-1}\circ a_{n}\right)^{-1}=a_{n}^{-1}\circ...\circ a_{1}^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Пиджак надевают после рубашки, а снимают — раньше.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — произвольные элементы некоторой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что каждое из уравнений 
+\begin_inset Formula $a\circ x=b$
+\end_inset
+
+ и 
+\begin_inset Formula $y\circ a=b$
+\end_inset
+
+ имеет единственное решение в данной группе.
+\end_layout
+
+\begin_layout Solution
+Умножая первое из рассматриваемых уравнений слева на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+x=a^{-1}\circ b.
+\]
+
+\end_inset
+
+Непосредственной подстановкой убедимся, что определённый по этой формуле
+ элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ является решением уравнения 
+\begin_inset Formula $ax=b$
+\end_inset
+
+.
+ Так как обратный элемент является единственным (см.
+ упражнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-uniqueness"
+
+\end_inset
+
+), элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ также определяется единственным образом.
+\end_layout
+
+\begin_layout Solution
+Аналогично, умножая второе данное уравнение справа на 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula 
+\[
+y=b\circ a^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Целочисленные степени
+\end_layout
+
+\begin_layout Standard
+Наличие обратных элементов в группе (по сравнению с моноидом) позволяет
+ расширить определение степени на случай произвольных целочисленных показателей.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inverse-of-positive-exponent"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\left(a^{m}\right)^{-1}=\left(a^{-1}\right)^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — положительное целое число.
+\end_layout
+
+\begin_layout Solution
+Для доказательства достаточно показать, что 
+\begin_inset Formula $\left(a^{-1}\right)^{m}\circ a^{m}=e$
+\end_inset
+
+.
+ Докажем это методом математической индукции.
+\end_layout
+
+\begin_layout Solution
+База индукции — случай 
+\begin_inset Formula $m=1$
+\end_inset
+
+, в этом случае доказательство тривиально: 
+\begin_inset Formula $\left(a^{-1}\right)^{m}\circ a^{m}=a^{-1}\circ a=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выполним теперь шаг индукции.
+ Предположим, что 
+\begin_inset Formula $\left(a^{-1}\right)^{k}\circ a^{k}=e$
+\end_inset
+
+ для всех 
+\begin_inset Formula $0<k<m-1$
+\end_inset
+
+, и докажем, что 
+\begin_inset Formula $\left(a^{-1}\right)^{m}\circ a^{m}=e$
+\end_inset
+
+.
+ По определению степени 
+\begin_inset Formula 
+\[
+\left(a^{-1}\right)^{m}\circ a^{m}=\left(a^{-1}\right)^{m-1}\circ\left(a^{-1}\circ a\right)\circ a^{m-1}=\left(a^{-1}\right)^{m-1}\circ a^{m-1}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:negative-exponent"
+
+\end_inset
+
+Определить 
+\begin_inset Formula $a^{-k}$
+\end_inset
+
+, где 
+\begin_inset Formula $k$
+\end_inset
+
+ — натуральное число, таким образом, чтобы для любых целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ выполнялось правило сложения показателей степеней 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m+n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим случай, когда 
+\begin_inset Formula $m>0$
+\end_inset
+
+ и 
+\begin_inset Formula $n=-m$
+\end_inset
+
+, тогда правило сложения показателей принимает вид: 
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=a^{m}\circ a^{-m}=a^{m-m}=a^{0}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Можно заметить, что 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-m}$
+\end_inset
+
+ в этих равенствах удовлетворяют условиям к обратному элементу друг друга.
+ Поэтому мы должны положить 
+\begin_inset Formula 
+\[
+a^{-m}=\left(a^{m}\right)^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь нужно проверить, что при таком определении равенство 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m+n}$
+\end_inset
+
+ действительно выполняется для любых целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для случая 
+\begin_inset Formula $m\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ это утверждение доказано выше в упражнениях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-sum-positive"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-zero"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $m\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $n<0$
+\end_inset
+
+, тогда, переходя к положительным степеням, получим :
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=a^{m}\circ a^{-\left(-n\right)}=a^{m}\circ\left(a^{-1}\right)^{\left(-n\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Докажем по индукции.
+ База индукции: 
+\begin_inset Formula 
+\[
+a^{0}\circ a^{n}=e\circ a^{n}=a^{n}=a^{0+n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Предположим, что утверждение выполняется для всех неотрицательных целых
+ чисел, меньших 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ По ассоциативности:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=\left(a\circ a^{m-1}\right)\circ a^{n}=a\circ\left(a^{m-1}\circ a^{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По предположению индукции:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=a\circ a^{m-1+n}=a^{1+m-1+n}=a^{m+n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично равенство проверяется при 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+ и 
+\begin_inset Formula $m<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся рассмотреть случай 
+\begin_inset Formula $n<0$
+\end_inset
+
+ и 
+\begin_inset Formula $m<0$
+\end_inset
+
+.
+ По нашему определению отрицательной степени:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=a^{-\left(-m\right)}\circ a^{-\left(-n\right)}=\left(a^{-1}\right)^{-m}\circ\left(a^{-1}\right)^{-n},
+\]
+
+\end_inset
+
+степени 
+\begin_inset Formula $-m$
+\end_inset
+
+ и 
+\begin_inset Formula $-n$
+\end_inset
+
+ являются положительными, поэтому мы можем воспользоваться выражением для
+ обратного элемента степени из упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-positive-exponent"
+
+\end_inset
+
+ и правилом сложения степеней, установленном в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-sum-positive"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=\left(a^{-1}\right)^{-m}\circ\left(a^{-1}\right)^{-n}=\left(a^{-1}\right)^{\left(-m\right)+\left(-n\right)}=\left(a^{-1}\right)^{-\left(m+n\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m+n}=a^{-\left(-\left(m+n\right)\right)}=\left(a^{-1}\right)^{-\left(m+n\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части последних двух равенств равны, значит равны и левые.
+\end_layout
+
+\begin_layout Remark
+Данный результат показывает, что обозначение 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ для обратного элемента является последовательным и оправданным, действительно:
+ 
+\begin_inset Formula $a\circ a^{-1}=a^{1}\circ a^{-1}=a^{1+\left(-1\right)}=a^{0}$
+\end_inset
+
+.
+ То есть трактовки элемента 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ как обратного к элементу 
+\begin_inset Formula $a$
+\end_inset
+
+ и как равному 
+\begin_inset Formula $a$
+\end_inset
+
+ в степени 
+\begin_inset Formula $\left(-1\right)$
+\end_inset
+
+ эквивалентны.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inverse-of-exponent"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $\left(a^{m}\right)^{-1}=\left(a^{-1}\right)^{m}$
+\end_inset
+
+ для любого целого 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для положительных 
+\begin_inset Formula $m$
+\end_inset
+
+ это утверждение доказано выше в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-positive-exponent"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+При 
+\begin_inset Formula $m=0$
+\end_inset
+
+, по определению нулевой степени из упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-zero"
+
+\end_inset
+
+, получаем:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{-1}\right)^{m}=\left(a^{-1}\right)^{0}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны, с учётом того, что нейтральный элемент является обратным
+ к самому себе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-neutral-element"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{-1}=\left(a^{0}\right)^{-1}=e^{-1}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как в этих равенствах правые части равны, то равны и левые.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $m<0$
+\end_inset
+
+.
+ По определению отрицательной степени из упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:negative-exponent"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{-1}=\left(\left(a^{-1}\right)^{\left(-m\right)}\right)^{-1}=\left(\left(a^{-1}\right)^{-1}\right)^{\left(-m\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{-1}\right)^{m}=\left(a^{-1}\right)^{-\left(-m\right)}=\left(\left(a^{-1}\right)^{-1}\right)^{\left(-m\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как правые части этих равенств равны, то равны и левые.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что для любых целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $\left(a^{m}\right)^{n}=a^{mn}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для неотрицательных 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ это утверждение доказано выше, в упражнениях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-product-positive"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-product-non-negative"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $m<0$
+\end_inset
+
+ и 
+\begin_inset Formula $n\ge0$
+\end_inset
+
+, то можно, написать:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(a^{-\left(-m\right)}\right)^{n}=\left(\left(a^{-1}\right)^{\left(-m\right)}\right)^{n}=\left(a^{-1}\right)^{\left(-m\right)n}=\left(a^{-1}\right)^{\left(-mn\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{mn}=a^{-\left(-mn\right)}=\left(a^{-1}\right)^{\left(-mn\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части последних двух равенств равны, значит равны и левые.
+\end_layout
+
+\begin_layout Solution
+Для 
+\begin_inset Formula $m\ge0$
+\end_inset
+
+ и 
+\begin_inset Formula $n<0$
+\end_inset
+
+ утверждение доказывается аналогично.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим, наконец, случай 
+\begin_inset Formula $m<0$
+\end_inset
+
+ и 
+\begin_inset Formula $n<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(a^{-\left(-m\right)}\right)^{n}=\left(\left(a^{-1}\right)^{\left(-m\right)}\right)^{n},
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left(-m\right)>0$
+\end_inset
+
+ и 
+\begin_inset Formula $n<0$
+\end_inset
+
+, но этот для этого случай мы утверждение уже доказали, поэтому:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(a^{-1}\right)^{\left(-m\right)n}=\left(a^{-1}\right)^{-mn}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $mn>0$
+\end_inset
+
+ мы можем воспользоваться результатом упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-exponent"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(a^{-1}\right)^{-mn}=\left(\left(a^{-1}\right)^{-1}\right)^{mn}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:double-inverse"
+
+\end_inset
+
+, двукратное взятие обратного элемента даёт исходный элемент, поэтому:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{n}=\left(\left(a^{-1}\right)^{-1}\right)^{mn}=a^{mn}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Циклические группы
+\end_layout
+
+\begin_layout Section
+Коммутативные (абелевы) группы
+\end_layout
+
+\begin_layout Definition
+Два элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ группы называются 
+\emph on
+коммутирующими 
+\emph default
+или 
+\emph on
+перестановочными
+\emph default
+, если 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+.
+ Если все элементы группы коммутируют между собой, то такая группа называется
+ 
+\emph on
+коммутативной 
+\emph default
+или 
+\emph on
+абелевой
+\emph default
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть рассказать отдельно о коммутативной операции?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить задачу 22
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача: Степени являются коммутирующими даже в некоммутативной группе
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть для любого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $a\circ a=e$
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ является коммутативной.
+\end_layout
+
+\begin_layout Solution
+Для доказательства коммутативности группы нужно доказать, что для любых
+ 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a\circ a=e$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+ для любого 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, поэтому, с учётом правила обращения произведения, установленного в упражнении
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-product"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a\circ b=\left(a\circ b\right)^{-1}=b^{-1}\circ a^{-1}=b\circ a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+Алексеев,
+\begin_inset space \thinspace{}
+\end_inset
+
+В.
+\begin_inset space \thinspace{}
+\end_inset
+
+Б.
+ Теорема Абеля в задачах и решениях / В.
+\begin_inset space \thinspace{}
+\end_inset
+
+Б.
+\begin_inset space \thinspace{}
+\end_inset
+
+Алексеев.
+ — М.
+ : Главная редакция физико-математической литературы издательства 
+\begin_inset Quotes fld
+\end_inset
+
+Наука
+\begin_inset Quotes frd
+\end_inset
+
+, 1976.
+ — 208 с.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sloppy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
