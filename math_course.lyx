@@ -186,6 +186,20 @@ status open
 status open
 
 \begin_layout Plain Layout
+Предварительные требования в настоящий момент: понятие о множествах, элементы
+ теории чисел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Приложение: методы доказательства? Математическая индукция, от противного
  и т.д.
 \end_layout
@@ -1203,6 +1217,19 @@ reference "exer:exponent-of-sum-positive"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Степени коммутируют даже тогда, когда сама полугруппа не коммутативна
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Моноиды
 \end_layout
@@ -1357,6 +1384,19 @@ reference "exer:exponent-of-product-positive"
 \end_inset
 
  доказательство аналогично.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Степени коммутируют даже тогда, когда моноид не является коммутативным
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1827,7 +1867,7 @@ name "exer:inverse-of-positive-exponent"
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
-name "exer:negative-exponent"
+name "exer:exponent-of-sum"
 
 \end_inset
 
@@ -2223,7 +2263,7 @@ reference "exer:inverse-of-neutral-element"
  По определению отрицательной степени из упражнения 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "exer:negative-exponent"
+reference "exer:exponent-of-sum"
 
 \end_inset
 
@@ -2261,6 +2301,12 @@ reference "exer:negative-exponent"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:exponent-of-product"
+
+\end_inset
+
 Доказать, что для любых целых чисел 
 \begin_inset Formula $m$
 \end_inset
@@ -2446,12 +2492,34 @@ reference "exer:double-inverse"
 
 \end_layout
 
-\begin_layout Section
-Циклические группы
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Степени коммутируют даже тогда, когда группа не является коммутативным
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Коммутативные (абелевы) группы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Передвинуть этот раздел выше
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -2486,16 +2554,6 @@ reference "exer:double-inverse"
 абелевой
 \emph default
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Может быть рассказать отдельно о коммутативной операции?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2504,19 +2562,6 @@ status open
 
 \begin_layout Plain Layout
 Добавить задачу 22
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Задача: Степени являются коммутирующими даже в некоммутативной группе
 \end_layout
 
 \end_inset
@@ -2590,7 +2635,920 @@ a\circ b=\left(a\circ b\right)^{-1}=b^{-1}\circ a^{-1}=b\circ a.
 
 \end_layout
 
-\begin_deeper
+\begin_layout Section
+Циклические группы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача 29, Пример 8, задачи 31, 32, 36, 38-40
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:order-of-element"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент некоторой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Наименьшее целое положительное число 
+\begin_inset Formula $n$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+ называется 
+\emph on
+порядокм элемента
+\emph default
+.
+ Если такого 
+\begin_inset Formula $n$
+\end_inset
+
+ не существует, то говорят, что 
+\begin_inset Formula $a$
+\end_inset
+
+ — 
+\emph on
+элемент бесконечного порядка.
+\end_layout
+
+\begin_layout Exercise
+Пусть элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что элементы 
+\begin_inset Formula $e=a^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+,...,
+\begin_inset Formula $a^{n-1}$
+\end_inset
+
+ все различны.
+\end_layout
+
+\begin_layout Solution
+Сначала заметим, что при 
+\begin_inset Formula $0<k<n$
+\end_inset
+
+ (по определению порядка элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:order-of-element"
+
+\end_inset
+
+) равенство 
+\begin_inset Formula $a^{k}=e$
+\end_inset
+
+ не выполняется.
+ Докажем утверждение от противного.
+ Пусть имеются такие целые 
+\begin_inset Formula $0\le i<j<n$
+\end_inset
+
+, что 
+\begin_inset Formula $a^{j}=a^{i}$
+\end_inset
+
+.
+ Домножив это равенство на 
+\begin_inset Formula $a^{-i}$
+\end_inset
+
+, получим 
+\begin_inset Formula $a^{j-i}=a^{0}=e$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $0<j-i<n$
+\end_inset
+
+, то мы получили противоречие, утверждение доказано.
+\end_layout
+
+\begin_layout Exercise
+Пусть элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что для любого целого 
+\begin_inset Formula $m$
+\end_inset
+
+ элемент 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ совпадает с одним из элементов 
+\begin_inset Formula $e=a^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+,...,
+\begin_inset Formula $a^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Любое целое число 
+\begin_inset Formula $m$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $m=n\cdot d+r$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужна ссылка
+\end_layout
+
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<n$
+\end_inset
+
+.
+ Воспользуемя правилами сложения
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-sum"
+
+\end_inset
+
+ и умножения
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-product"
+
+\end_inset
+
+ показателя степени:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}=a^{nd+r}=\left(a^{n}\right)^{d}\circ a^{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению порядка элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:order-of-element"
+
+\end_inset
+
+ 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+, поэтому:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}=e^{d}\circ a^{r}=e\circ a^{r}=a^{r},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $0\le r<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент бесконечного порядка.
+ Доказать, что элементы 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — произвольное целое число, все различны.
+\end_layout
+
+\begin_layout Solution
+Пусть существуют целые числа 
+\begin_inset Formula $i<j$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $a^{j}=a^{i}$
+\end_inset
+
+.
+ Умножим это равенство слева на 
+\begin_inset Formula $a^{-i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a^{j-i}=e,
+\]
+
+\end_inset
+
+то есть мы нашли такое целое число 
+\begin_inset Formula $n=j-i>0$
+\end_inset
+
+, что 
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+, а это противоречит определению элемента бесконечного порядка.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:when-exponent-is-equal-to-neutral"
+
+\end_inset
+
+Пусть элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $m=nd$
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — произвольное целое число.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $m=nd$
+\end_inset
+
+, тогда:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}=a^{nd}=\left(a^{n}\right)^{d}=e^{d}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+, но 
+\begin_inset Formula $m$
+\end_inset
+
+ не делится нацело на 
+\begin_inset Formula $n$
+\end_inset
+
+, тогда 
+\begin_inset Formula $m=nd+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0<r<n$
+\end_inset
+
+, поэтому
+\begin_inset Formula 
+\[
+a^{m}=a^{nd+r}=\left(a^{n}\right)^{d}\circ a^{r}=e^{d}\circ a^{r}=e\circ a^{r}=a^{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению порядка элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:order-of-element"
+
+\end_inset
+
+ при 
+\begin_inset Formula $0<r<n$
+\end_inset
+
+ равенство 
+\begin_inset Formula $a^{r}=e$
+\end_inset
+
+ не выполняется.
+ Полученное противоречение означает, что исходное утверждение доказано.
+\end_layout
+
+\begin_layout Exercise
+Пусть элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет простой порядок 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ — произвольное целое число.
+ Доказать, что либо 
+\begin_inset Formula $a^{m}=e$
+\end_inset
+
+, либо элемент 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Число 
+\begin_inset Formula $m$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $m=pd+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<p$
+\end_inset
+
+.
+ С учётом этого мы можем написать:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}=a^{pd+r}=\left(a^{p}\right)^{d}\circ a^{r}=e^{d}\circ a^{r}=e\circ a^{r}=a^{r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $0\le r<p$
+\end_inset
+
+, то равенство 
+\begin_inset Formula $a^{m}=a^{r}=e$
+\end_inset
+
+ возможно только при 
+\begin_inset Formula $r=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $0<r<p$
+\end_inset
+
+, значит 
+\begin_inset Formula $a^{m}=a^{r}\neq e$
+\end_inset
+
+.
+ Найдём порядок элемента 
+\begin_inset Formula $a^{m}=a^{r}$
+\end_inset
+
+, для этого нужно найти наименьшее целое положительное 
+\begin_inset Formula $k$
+\end_inset
+
+ такое, что 
+\begin_inset Formula 
+\[
+\left(a^{m}\right)^{k}=\left(a^{r}\right)^{k}=a^{rk}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Из результатов упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:when-exponent-is-equal-to-neutral"
+
+\end_inset
+
+ следует, что это условие выполняется только если 
+\begin_inset Formula $rk=ps$
+\end_inset
+
+, где 
+\begin_inset Formula $s$
+\end_inset
+
+ — некоторое целое число, тогда
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+k=\frac{p\cdot s}{r},
+\]
+
+\end_inset
+
+где мы должны выбрать 
+\begin_inset Formula $s$
+\end_inset
+
+ так, чтобы 
+\begin_inset Formula $k$
+\end_inset
+
+ было целым положительным и наименьшим возможным.
+ Так как 
+\begin_inset Formula $p$
+\end_inset
+
+ — простое, а 
+\begin_inset Formula $0<r<p$
+\end_inset
+
+, то у 
+\begin_inset Formula $p$
+\end_inset
+
+ и 
+\begin_inset Formula $r$
+\end_inset
+
+ нет общих множителей, поэтому 
+\begin_inset Formula $s$
+\end_inset
+
+ должно быть кратным 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Наименьшее положительное 
+\begin_inset Formula $s$
+\end_inset
+
+, удовлетворяющее этому условию, равно 
+\begin_inset Formula $r$
+\end_inset
+
+, поэтому порядок элемента 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ равен 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть наибольший общий делитель положительных целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ равен 
+\begin_inset Formula $d$
+\end_inset
+
+ и элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Найти порядок элемента 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть порядок элемента равен 
+\begin_inset Formula $k$
+\end_inset
+
+, по определению, это наименьшее положительное целое число такое, что 
+\begin_inset Formula $\left(a^{m}\right)^{k}=a^{mk}=e$
+\end_inset
+
+.
+ Так как порядок элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+, то по доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:when-exponent-is-equal-to-neutral"
+
+\end_inset
+
+: 
+\begin_inset Formula $mk=ns$
+\end_inset
+
+, где 
+\begin_inset Formula $s$
+\end_inset
+
+ — целое число, поэтому
+\begin_inset Formula 
+\[
+k=\frac{n\cdot s}{m},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $s$
+\end_inset
+
+ — целое число, которое должно быть выбрано так, чтобы 
+\begin_inset Formula $k$
+\end_inset
+
+ было целым положительным и наименьшим возможным.
+ Так как наибольший общий делитель 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ равен 
+\begin_inset Formula $d$
+\end_inset
+
+, то в выражении для 
+\begin_inset Formula $k$
+\end_inset
+
+ их можно сократить на 
+\begin_inset Formula $d$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+k=\frac{n}{d}\cdot\left(\frac{d}{m}\cdot s\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Наименьшее возможное целое положительное значение 
+\begin_inset Formula $k$
+\end_inset
+
+ достигается, когда 
+\begin_inset Formula 
+\[
+\frac{d}{m}\cdot s=1,
+\]
+
+\end_inset
+
+то есть при 
+\begin_inset Formula 
+\[
+s=\frac{m}{d},
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $m$
+\end_inset
+
+, то 
+\begin_inset Formula $s$
+\end_inset
+
+ будет целым положительым числом, как и требуется.
+\end_layout
+
+\begin_layout Definition
+Если элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ имеет порядок 
+\begin_inset Formula $n$
+\end_inset
+
+ и кроме элементов 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le k<n$
+\end_inset
+
+ в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ больше нет элементов, то группа 
+\begin_inset Formula $G$
+\end_inset
+
+ называется циклической группой порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, порождённой элементом 
+\begin_inset Formula $a$
+\end_inset
+
+, а элемент 
+\begin_inset Formula $a$
+\end_inset
+
+ называется образующим этой группы.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — произвольная циклическая группа порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, порождённая элементом 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $a^{m}\circ a^{r}=a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le m<n$
+\end_inset
+
+, 
+\begin_inset Formula $0\le r<n$
+\end_inset
+
+ и 
+\begin_inset Formula $0\le k<n$
+\end_inset
+
+, тогда и только тогда, когда по модулю 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $m+r=k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $m+r=k\mod n$
+\end_inset
+
+, тогда, 
+\begin_inset Formula $m+r=ns+k$
+\end_inset
+
+.
+ Учитывая правило сложения степеней
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a^{m}\circ a^{r}=a^{m+r}=a^{ns+k}=\left(a^{n}\right)^{s}\circ a^{k}=e^{s}\circ a^{k}=a^{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $a^{k}=a^{m}\circ a^{r}=a^{m+r}$
+\end_inset
+
+, умножая это равенство на 
+\begin_inset Formula $a^{-k}$
+\end_inset
+
+ слева, получим:
+\begin_inset Formula 
+\[
+a^{m+r-k}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Выше мы показали 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+, что это равенство выполняется тогда и только тогда, когда 
+\begin_inset Formula $m+r-k=n\cdot s$
+\end_inset
+
+, где 
+\begin_inset Formula $s$
+\end_inset
+
+ — некоторое целое число, поэтому:
+\begin_inset Formula 
+\[
+m+r=n\cdot s+k,
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $0\le k<n$
+\end_inset
+
+, то это равенство эквивалентно следующему равенству (по модулю): 
+\begin_inset Formula 
+\[
+m+r=k\mod n.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
@@ -2629,7 +3587,6 @@ key "abel-theorem-in-exercises"
  — 208 с.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
