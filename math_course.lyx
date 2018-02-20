@@ -104,7 +104,15 @@ begin{sloppy}
 \end_layout
 
 \begin_layout Author
-Галушин П.В.
+Галушин
+\begin_inset space \thinspace{}
+\end_inset
+
+П.
+\begin_inset space \thinspace{}
+\end_inset
+
+В.
 \end_layout
 
 \begin_layout Standard
@@ -201,7 +209,7 @@ status open
 
 \begin_layout Plain Layout
 Приложение: методы доказательства? Математическая индукция, от противного
- и т.д.
+ и так далее
 \end_layout
 
 \end_inset
@@ -390,7 +398,7 @@ name "def:right-neutral-element"
 \begin_inset Formula $e_{R}$
 \end_inset
 
-, то эти они равны.
+, то они равны.
 \end_layout
 
 \begin_layout Solution
@@ -478,7 +486,7 @@ name "def:neutral-element"
 \begin_inset Formula $x\in M$
 \end_inset
 
- имеют место равенство 
+ имеют место равенства 
 \begin_inset Formula $x\circ e=e\circ x=x$
 \end_inset
 
@@ -496,7 +504,7 @@ name "exer:neutral-element-uniqueness"
 \end_layout
 
 \begin_layout Solution
-Пусть имеется два единичных элемента 
+Пусть имеется два нейтральных элемента 
 \begin_inset Formula $e_{1}$
 \end_inset
 
@@ -512,7 +520,11 @@ reference "def:neutral-element"
 
 \end_inset
 
-, для любого элемента должно выполняться:
+, для любого элемента 
+\begin_inset Formula $x$
+\end_inset
+
+ должно выполняться:
 \end_layout
 
 \begin_layout Solution
@@ -628,7 +640,7 @@ name "def:magma"
 
 \begin_layout Standard
 Так как никакие свойства бинарной операции магмы неизвестны, то о магме
- можно сказать мало что содержательное.
+ мало что можно сказать.
  Чтобы доказывать какие-либо содержательные утверждения, нужно, чтобы были
  известные какие-либо дополнительные свойства бинарной операции.
  В следующих разделах мы будем постепенно увеличивать количество требований,
@@ -1086,7 +1098,11 @@ reference "def:exponent-in-group"
 \end_inset
 
 .
- По предположению индукции 
+ По предположению индукции, так как 
+\begin_inset Formula $n-1<n$
+\end_inset
+
+: 
 \begin_inset Formula $a^{m}\circ a^{n-1}=a^{m+n-1}$
 \end_inset
 
@@ -1169,7 +1185,7 @@ reference "exer:exponent-of-sum-positive"
 
 \end_inset
 
-:
+ правилу сложения степеней:
 \begin_inset Formula 
 \[
 \left(a^{m}\right)^{n}=\left(a^{m}\right)^{\left(n-1\right)+1}=\left(a^{m}\right)^{n-1}\circ\left(a^{m}\right)^{1}.
@@ -1196,7 +1212,7 @@ reference "exer:exponent-of-sum-positive"
 \end_layout
 
 \begin_layout Solution
-Снова воспользуемся результатами упражнения 
+Снова воспользуемся правилом сложения степеней 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "exer:exponent-of-sum-positive"
@@ -1211,19 +1227,6 @@ reference "exer:exponent-of-sum-positive"
 \[
 \left(a^{m}\right)^{n}=a^{m\left(n-1\right)}\circ a^{m}=a^{m\left(n-1\right)+m}=a^{mn}.
 \]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Степени коммутируют даже тогда, когда сама полугруппа не коммутативна
-\end_layout
 
 \end_inset
 
@@ -1386,19 +1389,6 @@ reference "exer:exponent-of-product-positive"
  доказательство аналогично.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Степени коммутируют даже тогда, когда моноид не является коммутативным
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Группы
 \end_layout
@@ -1421,6 +1411,12 @@ status open
 \begin_layout Definition
 
 \emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:group-and-inverse-element"
+
+\end_inset
+
 Группой 
 \begin_inset Formula $G$
 \end_inset
@@ -2506,7 +2502,7 @@ status open
 \end_layout
 
 \begin_layout Section
-Коммутативные (абелевы) группы
+Коммутативность
 \end_layout
 
 \begin_layout Standard
@@ -2514,7 +2510,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Передвинуть этот раздел выше
+Передвинуть этот раздел выше?
 \end_layout
 
 \end_inset
@@ -2531,7 +2527,7 @@ status open
 \begin_inset Formula $b$
 \end_inset
 
- группы называются 
+ называются 
 \emph on
 коммутирующими 
 \emph default
@@ -2539,11 +2535,37 @@ status open
 \emph on
 перестановочными
 \emph default
-, если 
+ (относительно операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+), если 
 \begin_inset Formula $a\circ b=b\circ a$
 \end_inset
 
 .
+ Бинарная операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ называется коммутативной, если 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+ для любых элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ (то есть если все элементы являются коммутирующими относительно операции
+ 
+\begin_inset Formula $\circ$
+\end_inset
+
+).
  Если все элементы группы коммутируют между собой, то такая группа называется
  
 \emph on
@@ -2678,7 +2700,7 @@ name "def:order-of-element"
 
  называется 
 \emph on
-порядокм элемента
+порядком элемента
 \emph default
 .
  Если такого 
@@ -2827,7 +2849,7 @@ status open
 \end_inset
 
 .
- Воспользуемя правилами сложения
+ Воспользуемся правилами сложения
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "exer:exponent-of-sum"
@@ -3034,7 +3056,7 @@ reference "def:order-of-element"
 \end_inset
 
  не выполняется.
- Полученное противоречение означает, что исходное утверждение доказано.
+ Полученное противоречие означает, что исходное утверждение доказано.
 \end_layout
 
 \begin_layout Exercise
@@ -3365,7 +3387,7 @@ s=\frac{m}{d},
 \begin_inset Formula $s$
 \end_inset
 
- будет целым положительым числом, как и требуется.
+ будет целым положительным числом, как и требуется.
 \end_layout
 
 \begin_layout Definition
@@ -3543,6 +3565,1396 @@ m+r=n\cdot s+k,
 \[
 m+r=k\mod n.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать, как данная задача приводит нас к понятию изоморфизма
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Изоморфизм
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть разные обозначения для операций в разных группах? Имеет ли смысл
+ изоморфизм для более слабых структур, чем группа? (похоже, что имеет, так
+ как в определении группы используется только умножение, так что формально
+ подойдёт даже для магм).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть даны две полугруппы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, и пусть имеется взаимно-однозначное отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+написать про это выше и добавить ссылку
+\end_layout
+
+\end_inset
+
+ причём такое, что умножению в 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ соответствует умножение в 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, то есть если 
+\begin_inset Formula $a^{\prime}=\varphi\left(a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b^{\prime}=\varphi\left(b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c^{\prime}=\varphi\left(c\right)$
+\end_inset
+
+ и в группе 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $c=a\circ b$
+\end_inset
+
+, то 
+\begin_inset Formula $c^{\prime}=a^{\prime}\circ b^{\prime}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ называется 
+\emph on
+изоморфизмом
+\emph default
+ группы 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на группу 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, а группы, между которыми можно установить изоморфизм, называют изоморфными.
+ Более краткое условие изоморфизма можно записать следующим образом:
+\begin_inset Formula 
+\[
+\varphi\left(a\circ b\right)=\varphi\left(a\right)\circ\varphi\left(b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Если полугруппа 
+\begin_inset Formula $F$
+\end_inset
+
+ изоморфна полугруппе 
+\begin_inset Formula $G$
+\end_inset
+
+, то для краткости будем писать 
+\begin_inset Formula $F\cong G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача 42
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G_{1}\to G_{2}$
+\end_inset
+
+ — изоморфизм.
+ Доказать, что обратное отображение
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно про это написать выше
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi^{-1}:G_{2}\to G_{1}$
+\end_inset
+
+ также является изоморфизмом.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, то 
+\begin_inset Formula $\varphi\left(a\circ b\right)=\varphi\left(a\right)\circ\varphi\left(b\right)$
+\end_inset
+
+.
+ Применим обратное отображение к левой и правой части этого равенства:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi^{-1}\left(\varphi\left(a\circ b\right)\right)=\varphi^{-1}\left(\varphi\left(a\right)\circ\varphi\left(b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a\circ b=\varphi^{-1}\left(\varphi\left(a\right)\circ\varphi\left(b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a^{\prime}=\varphi\left(a\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b^{\prime}=\varphi\left(b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $c^{\prime}=\varphi\left(c\right)$
+\end_inset
+
+, тогда, по определению обратного отображения: 
+\begin_inset Formula $a=\varphi^{-1}\left(a^{\prime}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $b=\varphi^{-1}\left(b^{\prime}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $c=\varphi^{-1}\left(c^{\prime}\right)$
+\end_inset
+
+.
+ С учётом этих обозначений мы можем переписать равенство 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ следующим образом:
+\begin_inset Formula 
+\[
+\varphi^{-1}\left(a^{\prime}\right)\circ\varphi^{-1}\left(b^{\prime}\right)=\varphi^{-1}\left(a^{\prime}\circ b^{\prime}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Это равенство совпадает с условием изоморфности для 
+\begin_inset Formula $\varphi^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi_{1}:G_{1}\to G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}:G_{2}\to G_{3}$
+\end_inset
+
+ — изоморфизмы.
+ Доказать, что 
+\begin_inset Formula $\varphi=\varphi_{1}\circ\varphi_{2}$
+\end_inset
+
+ — также изоморфизм.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+По определению изоморфизма для любых 
+\begin_inset Formula $a,b\in G_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)=\varphi_{1}\left(a\circ b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Применим 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ к обоим частям этого равенства:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{2}\left(\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\circ b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В левой части этого равенства воспользуемся тем, что 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ является изоморфизмом, поэтому:
+\begin_inset Formula 
+\[
+\varphi_{2}\left(\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\circ\varphi_{2}\left(\varphi_{1}\left(b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Следовательно:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\circ\varphi_{2}\left(\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\circ b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Воспользовавшись определением произведения преобразований 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+нужна ссылка
+\end_layout
+
+\end_inset
+
+, получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{1}\circ\varphi_{2}\right)\left(a\right)\circ\left(\varphi_{1}\circ\varphi_{2}\right)\left(b\right)=\left(\varphi_{1}\circ\varphi_{2}\right)\left(a\circ b\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(a\right)\circ\varphi\left(b\right)=\varphi\left(a\circ b\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Это равенство совпадает с определением изоморфизма.
+\end_layout
+
+\begin_layout Remark
+Отсюда следует, что две группы, изоморфные третьей, изоморфны между собой.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 45, 46
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Понятие изоморфизма можно применять к более богатым алгебраическим структурам,
+ чем полугруппа.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм между моноидами 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, где 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ — нейтральный элемент 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $e_{F}$
+\end_inset
+
+ — нейтральный элемент 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольный элемент 
+\begin_inset Formula $y\in F$
+\end_inset
+
+ и проверим, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)$
+\end_inset
+
+ обладает свойствами нейтрального элемента
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-neutral-element"
+
+\end_inset
+
+ в 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, а значит — взаимно-однозначное отображение, то существует
+ 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $y=\varphi\left(x\right)$
+\end_inset
+
+, поэтому:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+y\circ\varphi\left(e_{G}\right)=\varphi\left(x\right)\circ\varphi\left(e_{G}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению изоморфизма:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+y\circ\varphi\left(e_{G}\right)=\varphi\left(x\right)\circ\varphi\left(e_{G}\right)=\varphi\left(x\circ e_{G}\right)=\varphi\left(x\right)=y.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогично можно доказать, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)\circ y=y$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\varphi\left(e_{G}\right)$
+\end_inset
+
+ удовлетворяет требованиям к нейтральному элементу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Но так как нейтральный элемент является единственным
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:neutral-element-uniqueness"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм между группами 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+ для всех элементов группы 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Обратный элемент берётся соответственно в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим выражение 
+\begin_inset Formula 
+\[
+\varphi\left(g^{-1}\right)\circ\varphi\left(g\right),
+\]
+
+\end_inset
+
+так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — изоморфизм, а изоморфизм преобразует нейтральный элемент в нейтральный
+ элемент:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g^{-1}\right)\circ\varphi\left(g\right)=\varphi\left(g^{-1}\circ g\right)=\varphi\left(e_{G}\right)=e_{F}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Аналогичный результат получается, если переставить множители местами:
+\begin_inset Formula 
+\[
+\varphi\left(g\right)\circ\varphi\left(g^{-1}\right)=\varphi\left(g\circ g^{-1}\right)=\varphi\left(e_{G}\right)=e_{F}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g\right)\circ\varphi\left(g^{-1}\right)=\varphi\left(g^{-1}\right)\circ\varphi\left(g\right)=e_{F},
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $\varphi\left(g^{-1}\right)$
+\end_inset
+
+ удовлетворяет требованиям к обратному элементу для 
+\begin_inset Formula $\varphi\left(g\right)$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-and-inverse-element"
+
+\end_inset
+
+.
+ А так как обратный элемент для данного элемента является единственным
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-uniqueness"
+
+\end_inset
+
+, то 
+\begin_inset Formula 
+\[
+\left[\varphi\left(g\right)\right]^{-1}=\varphi\left(g^{-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм и 
+\begin_inset Formula $\varphi\left(g\right)=h$
+\end_inset
+
+.
+ Доказать, что элементы 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ имеют одинаковые порядки.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Аналогичная задача для моноида и полугрупп?
+\end_layout
+
+\end_inset
+
+Найти все (с точностью до изоморфизма) группы, содержащие два элемента.
+\end_layout
+
+\begin_layout Solution
+Группа должна содержать нейтральный элемент
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-and-inverse-element"
+
+\end_inset
+
+, поэтому мы можем сказать, что состоит из двух элементов: 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $a\ne e$
+\end_inset
+
+.
+ Теперь нужно определить 
+\begin_inset Quotes fld
+\end_inset
+
+таблицу умножения
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Значения произведений, в которые входит 
+\begin_inset Formula $e$
+\end_inset
+
+, определяются требованиями к операции группы, поэтому:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e\circ e=e,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a\circ e=e\circ a=a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Остаётся определить результат выражения 
+\begin_inset Formula $a\circ a$
+\end_inset
+
+.
+ Он определяется тем, что для 
+\begin_inset Formula $a$
+\end_inset
+
+ должен существовать обратный элемент.
+ На 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ есть только две возможности: 
+\begin_inset Formula $e$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Но если положить, что 
+\begin_inset Formula $a^{-1}=e$
+\end_inset
+
+, то умножив это равенство на 
+\begin_inset Formula $a$
+\end_inset
+
+, то мы получим 
+\begin_inset Formula $e=a$
+\end_inset
+
+, что противоречит предположению о том, что в группе есть два различных
+ элемента, поэтому 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, откуда следует, что 
+\begin_inset Formula $a\circ a=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, все группы порядка 2 изоморфны друг другу.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Аналогичная задача для моноида и полугрупп?
+\end_layout
+
+\end_inset
+
+Найти все (с точностью до изоморфизма) группы, содержащие три элемента.
+\end_layout
+
+\begin_layout Solution
+Группа должна содержать нейтральный элемент 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-and-inverse-element"
+
+\end_inset
+
+, поэтому будет считать, что группа состоит из трёх различных элементов:
+ 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно определить результаты операции для всех возможных значений аргументов.
+ Если в выражении встречается нейтральный элемент 
+\begin_inset Formula $e$
+\end_inset
+
+, то результат определяется аксиомами группы:
+\begin_inset Formula 
+\[
+e\circ e=e,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a\circ e=e\circ a=a,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+b\circ e=e\circ b=b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Значит нужно определить значения выражений 
+\begin_inset Formula $a\circ a$
+\end_inset
+
+, 
+\begin_inset Formula $b\circ b$
+\end_inset
+
+, 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+ и 
+\begin_inset Formula $b\circ a$
+\end_inset
+
+.
+ Для каждого из них есть три возможных значения: 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Из равенства 
+\begin_inset Formula $a\circ b=a$
+\end_inset
+
+ можно вывести, умножив его на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ слева, равенство 
+\begin_inset Formula $b=e$
+\end_inset
+
+, что противоречит предположению, что 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ различны.
+ Равенство 
+\begin_inset Formula $a\circ b=b$
+\end_inset
+
+ так же невозможно, так как из него следует 
+\begin_inset Formula $a=e$
+\end_inset
+
+.
+ Таким образом, возможен только один вариант: 
+\begin_inset Formula $a\circ b=e$
+\end_inset
+
+.
+ Аналогично можно доказать, что 
+\begin_inset Formula $b\circ a=e$
+\end_inset
+
+.
+ Из последних двух равенств следует, что 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются обратным элементами друг для друга: 
+\begin_inset Formula $a^{-1}=b$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся определить значения 
+\begin_inset Formula $a\circ a$
+\end_inset
+
+ и 
+\begin_inset Formula $b\circ b$
+\end_inset
+
+.
+ Равенство 
+\begin_inset Formula $a\circ a=a$
+\end_inset
+
+ невозможно, так как из него следует 
+\begin_inset Formula $a=e$
+\end_inset
+
+.
+ Равенство 
+\begin_inset Formula $a\circ a=e$
+\end_inset
+
+ также невозможно, так как из него можно вывести 
+\begin_inset Formula $a^{-1}=a$
+\end_inset
+
+, но вместе с 
+\begin_inset Formula $a^{-1}=b$
+\end_inset
+
+ это приводит к 
+\begin_inset Formula $a=b$
+\end_inset
+
+, что противоречит предположению о том, что все элементы различны.
+ Остаётся только одна возможность: 
+\begin_inset Formula $a\circ a=b$
+\end_inset
+
+.
+ Аналогично можно показать, что 
+\begin_inset Formula $b\circ b=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, возможна только одна (с точностью до изоморфизма) группа
+ порядка 3:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
