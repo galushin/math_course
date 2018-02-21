@@ -231,6 +231,826 @@ status open
 \end_layout
 
 \begin_layout Chapter
+Элементы теории множеств
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать эту главу
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Отображения
+\end_layout
+
+\begin_layout Section
+Отображения
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:mapping-image-preimage"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ и 
+\begin_inset Formula $Y$
+\end_inset
+
+ — два множества элементов произвольной природы, и пусть каждому элементы
+ 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ поставлен в соответствие однозначно определённый элемент 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.
+ Тогда говорят, что задано 
+\emph on
+отображение
+\emph default
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ множества 
+\begin_inset Formula $X$
+\end_inset
+
+ в множество 
+\begin_inset Formula $Y$
+\end_inset
+
+ (кратко это обозначают 
+\begin_inset Formula $\varphi:X\to Y$
+\end_inset
+
+).
+ При этом элемент 
+\begin_inset Formula $y$
+\end_inset
+
+ называется 
+\emph on
+образом
+\emph default
+ элемента 
+\begin_inset Formula $x$
+\end_inset
+
+, а элемент 
+\begin_inset Formula $x$
+\end_inset
+
+ называется 
+\emph on
+прообразом
+\emph default
+ элемента 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Нужно написать, что одно и то же отображение может быть задано по разному,
+ поэтому нужно такое определение равенства (естественно - с конкретными
+ примерами).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:mappings-equality"
+
+\end_inset
+
+Два отображения
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mapping-image-preimage"
+
+\end_inset
+
+ 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ из множества 
+\begin_inset Formula $X$
+\end_inset
+
+ в множество 
+\begin_inset Formula $Y$
+\end_inset
+
+ считаются равными, если для любого 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $g_{1}\left(x\right)=g_{2}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "def:mappings-product"
+
+\end_inset
+
+Произведение отображений 
+\emph default
+
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ определяется следующим образом: 
+\begin_inset Formula $\left(g_{1}g_{2}\right)\left(x\right)=g_{1}\left(g_{2}\left(x\right)\right)$
+\end_inset
+
+ (преобразование 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+выполняется после 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+).
+ Если 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ — преобразования множества 
+\begin_inset Formula $X$
+\end_inset
+
+, то 
+\begin_inset Formula $g_{1}g_{2}$
+\end_inset
+
+ — также преобразование множества 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что для любых трёх отображений
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mapping-image-preimage"
+
+\end_inset
+
+ 
+\begin_inset Formula $g_{1}:X_{2}\to X_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}:X_{3}\to X_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{3}:X_{4}\to X_{3}$
+\end_inset
+
+ имеет место равенство
+\begin_inset Formula 
+\[
+\left(g_{1}g_{2}\right)g_{3}=g_{1}\left(g_{2}g_{3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению произведения отображений
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mappings-product"
+
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ имеют место равенства:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\left(g_{1}g_{2}\right)g_{3}\right)\left(x\right)=\left(g_{1}g_{2}\right)\left(g_{3}\left(x\right)\right)=g_{1}\left(g_{2}\left(g_{3}\left(x\right)\right)\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{1}\left(g_{2}g_{3}\right)\right)\left(x\right)=g_{1}\left(\left(g_{2}g_{3}\right)\left(x\right)\right)=g_{1}\left(g_{2}\left(g_{3}\left(x\right)\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части этих равенств совпадают, значит левые части тоже равны: 
+\begin_inset Formula 
+\[
+\left(\left(g_{1}g_{2}\right)g_{3}\right)\left(x\right)=\left(g_{1}\left(g_{2}g_{3}\right)\right)\left(x\right),
+\]
+
+\end_inset
+
+ а значит по определению равенства отображений
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mappings-equality"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left(g_{1}g_{2}\right)g_{3}=g_{1}\left(g_{2}g_{3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Взаимно однозначные отображения и преобразования
+\end_layout
+
+\begin_layout Definition
+Отображение
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mapping-image-preimage"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi:X\to Y$
+\end_inset
+
+ называется отображением множества 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\series bold
+на 
+\series default
+множество 
+\begin_inset Formula $Y$
+\end_inset
+
+, если для каждого элемента 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ существует элемент 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(x\right)=y$
+\end_inset
+
+, то есть у каждого 
+\begin_inset Formula $y\in X$
+\end_inset
+
+ есть прообраз в 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:bijective-mapping"
+
+\end_inset
+
+Отображение
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mapping-image-preimage"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi:X\to Y$
+\end_inset
+
+ называют 
+\emph on
+взаимно однозначным отображением
+\emph default
+ множества 
+\begin_inset Formula $X$
+\end_inset
+
+ на множество 
+\begin_inset Formula $Y$
+\end_inset
+
+, если для каждого 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ существует, и притом единственный, прообраз в 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $X$
+\end_inset
+
+ — произвольное множество.
+ Произвольное взаимно однозначное отображение
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:bijective-mapping"
+
+\end_inset
+
+ множества 
+\begin_inset Formula $X$
+\end_inset
+
+ на себя, 
+\begin_inset Formula $g:X\to X$
+\end_inset
+
+, мы будем для краткости называть 
+\emph on
+преобразованием 
+\emph default
+множества 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Так как преобразование
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:bijective-mapping"
+
+\end_inset
+
+ — это взаимно однозначное соответствие, то для каждого преобразования 
+\begin_inset Formula $g$
+\end_inset
+
+ существует 
+\emph on
+обратное преобразование
+\emph default
+ 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+, которое определяется следующим образом: если 
+\begin_inset Formula $g\left(x\right)=y$
+\end_inset
+
+, то 
+\begin_inset Formula $g^{-1}\left(x\right)=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:group-of-bijective-mappings"
+
+\end_inset
+
+Пусть некоторое множество преобразований
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:bijective-mapping"
+
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ обладает следующими свойствами: 1) если преобразования 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ содержатся в 
+\begin_inset Formula $G$
+\end_inset
+
+, то их произведение 
+\begin_inset Formula $g_{3}=g_{1}\circ g_{2}$
+\end_inset
+
+ также содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+; 2) если преобразование 
+\begin_inset Formula $g$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+, то и обратное к нему преобразование 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда такое множество преобразований называется 
+\emph on
+группой преобразований
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:identity-mapping"
+
+\end_inset
+
+Преобразование 
+\begin_inset Formula $e:X\to X$
+\end_inset
+
+ называется тождественным преобразованием, если для любого 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $e\left(x\right)=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что любая группа преобразований
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-bijective-mappings"
+
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ содержит тождественное преобразование 
+\begin_inset Formula $e$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:identity-mapping"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Возьмём произвольное преобразование 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ рассматриваемой группы.
+ Группа преобразований
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:group-of-bijective-mappings"
+
+\end_inset
+
+ также содержит и обратное преобразование 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+.
+ Рассмотрим преобразование 
+\begin_inset Formula $g^{-1}g$
+\end_inset
+
+, так как 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ принадлежат группе 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $g^{-1}g$
+\end_inset
+
+ также принадлежит 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Пусть дан некоторый 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $y=g\left(x\right)$
+\end_inset
+
+, тогда по определению обратного преобразования 
+\begin_inset Formula $\left(g^{-1}g\right)\left(x\right)=g^{-1}\left(g\left(x\right)\right)=g^{-1}\left(y\right)=x$
+\end_inset
+
+.
+ Таким образом, для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $\left(g^{-1}g\right)\left(x\right)=e\left(x\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g^{-1}g$
+\end_inset
+
+ и 
+\begin_inset Formula $e$
+\end_inset
+
+ равны
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mappings-equality"
+
+\end_inset
+
+, а выше мы доказали, что 
+\begin_inset Formula $e=g^{-1}g$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, для любого преобразования
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:bijective-mapping"
+
+\end_inset
+
+ 
+\begin_inset Formula $g:\thinspace X\to X$
+\end_inset
+
+ имеют место равенства 
+\begin_inset Formula $eg=ge=g$
+\end_inset
+
+, где 
+\begin_inset Formula $e$
+\end_inset
+
+ — тождественное преобразование
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:identity-mapping"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению произведения преобразований
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mappings-product"
+
+\end_inset
+
+ и определению тождественного преобразования
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:identity-mapping"
+
+\end_inset
+
+ 
+\begin_inset Formula $e$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(eg\right)\left(x\right)=e\left(g\left(x\right)\right)=g\left(x\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(ge\right)\left(x\right)=g\left(e\left(x\right)\right)=g\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, для любого 
+\begin_inset Formula $x\in X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(eg\right)\left(x\right)=\left(ge\right)\left(x\right)=g\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению равенства преобразований
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mappings-equality"
+
+\end_inset
+
+, это означает, что 
+\begin_inset Formula $eg=ge=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
 Группы
 \end_layout
 
@@ -1708,6 +2528,12 @@ c\circ\left(a\circ b\right)=b^{-1}\circ a^{-1}\circ\left(a\circ b\right)=b^{-1}\
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:equation-has-unique-solution"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $a$
 \end_inset
@@ -1863,7 +2689,7 @@ name "exer:inverse-of-positive-exponent"
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
-name "exer:exponent-of-sum"
+name "exer:inverse-of-exponent-and-exponent-of-sum"
 
 \end_inset
 
@@ -2259,7 +3085,7 @@ reference "exer:inverse-of-neutral-element"
  По определению отрицательной степени из упражнения 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "exer:exponent-of-sum"
+reference "exer:inverse-of-exponent-and-exponent-of-sum"
 
 \end_inset
 
@@ -2852,7 +3678,7 @@ status open
  Воспользуемся правилами сложения
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "exer:exponent-of-sum"
+reference "exer:inverse-of-exponent-and-exponent-of-sum"
 
 \end_inset
 
@@ -3605,6 +4431,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:isomorphism"
+
+\end_inset
+
 Пусть даны две полугруппы 
 \begin_inset Formula $G_{1}$
 \end_inset
@@ -3856,15 +4688,6 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
 По определению изоморфизма для любых 
 \begin_inset Formula $a,b\in G_{1}$
 \end_inset
@@ -3875,7 +4698,7 @@ status open
 \begin_layout Solution
 \begin_inset Formula 
 \[
-\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)=\varphi_{1}\left(a\circ b\right).
+\varphi_{2}\left(a\right)\circ\varphi_{2}\left(b\right)=\varphi_{2}\left(a\circ b\right).
 \]
 
 \end_inset
@@ -3885,7 +4708,7 @@ status open
 
 \begin_layout Solution
 Применим 
-\begin_inset Formula $\varphi_{2}$
+\begin_inset Formula $\varphi_{1}$
 \end_inset
 
  к обоим частям этого равенства:
@@ -3894,7 +4717,7 @@ status open
 \begin_layout Solution
 \begin_inset Formula 
 \[
-\varphi_{2}\left(\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\circ b\right)\right).
+\varphi_{1}\left(\varphi_{2}\left(a\right)\circ\varphi_{2}\left(b\right)\right)=\varphi_{1}\left(\varphi_{2}\left(a\circ b\right)\right).
 \]
 
 \end_inset
@@ -3904,13 +4727,13 @@ status open
 
 \begin_layout Solution
 В левой части этого равенства воспользуемся тем, что 
-\begin_inset Formula $\varphi_{2}$
+\begin_inset Formula $\varphi_{1}$
 \end_inset
 
  является изоморфизмом, поэтому:
 \begin_inset Formula 
 \[
-\varphi_{2}\left(\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\circ\varphi_{2}\left(\varphi_{1}\left(b\right)\right).
+\varphi_{1}\left(\varphi_{2}\left(a\right)\circ\varphi_{2}\left(b\right)\right)=\varphi_{1}\left(\varphi_{2}\left(a\right)\right)\circ\varphi_{1}\left(\varphi_{2}\left(b\right)\right).
 \]
 
 \end_inset
@@ -3925,7 +4748,7 @@ status open
 \begin_layout Solution
 \begin_inset Formula 
 \[
-\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\circ\varphi_{2}\left(\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\circ b\right)\right).
+\varphi_{1}\left(\varphi_{2}\left(a\right)\right)\circ\varphi_{1}\left(\varphi_{2}\left(b\right)\right)=\varphi_{1}\left(\varphi_{2}\left(a\circ b\right)\right).
 \]
 
 \end_inset
@@ -3996,6 +4819,12 @@ status open
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:isomorphism-preserves-neutral-element"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -4125,6 +4954,12 @@ reference "exer:neutral-element-uniqueness"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:isomorphism-preserves-inverse-element"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -4245,6 +5080,183 @@ reference "exer:inverse-element-uniqueness"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:isomorphism-preserves-exponent"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Аналогичная задача для моноида и полугрупп?
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — изоморфизм между группами 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(g^{m}\right)=\left[\varphi\left(g\right)\right]^{m}$
+\end_inset
+
+ для всех элементов группы 
+\begin_inset Formula $g$
+\end_inset
+
+ и произвольного целого 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для 
+\begin_inset Formula $m=1$
+\end_inset
+
+ это утверждение тривиально.
+\end_layout
+
+\begin_layout Solution
+Для 
+\begin_inset Formula $m=0$
+\end_inset
+
+ доказываемое утверждение следует из того, что любой элемент в нулевой степени
+ равен нейтральному элементу
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-zero"
+
+\end_inset
+
+ и изоморфизм переводит нейтральный элемент в нейтральный
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-neutral-element"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем утверждение для 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ по индукции.
+ При 
+\begin_inset Formula $m=2$
+\end_inset
+
+ (база индукции) утверждение следует из определения изоморфизма, если в
+ нём положить 
+\begin_inset Formula $a=b=g$
+\end_inset
+
+, и определения степени.
+\end_layout
+
+\begin_layout Solution
+Выполним шаг индукции.
+ Пусть утверждение доказано для всех положительных целых чисел, меньших
+ 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ По определению степени и изоморфизма:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g^{m}\right)=\varphi\left(g^{m-1}\circ g\right)=\varphi\left(g^{m-1}\right)\circ\varphi\left(g\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По предположению индукции:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g^{m-1}\right)=\left[\varphi\left(g\right)\right]^{m-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем:
+\begin_inset Formula 
+\[
+\varphi\left(g^{m}\right)=\varphi\left(g^{m-1}\right)\circ\varphi\left(g\right)=\left[\varphi\left(g\right)\right]^{m-1}\circ\varphi\left(g\right)=\left[\varphi\left(g\right)\right]^{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для отрицательных 
+\begin_inset Formula $m$
+\end_inset
+
+ утверждение следует из того, что изоморфизм переводит обратный элемент
+ в обратный
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-inverse-element"
+
+\end_inset
+
+ и определения отрицательной степени
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-exponent-and-exponent-of-sum"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g^{m}\right)=\varphi\left(\left(g^{-1}\right)^{\left(-m\right)}\right)=\left[\varphi\left(g^{-1}\right)\right]^{\left(-m\right)}=\left[\varphi\left(g\right)\right]^{\left(-1\right)\left(-m\right)}=\left[\varphi\left(g\right)\right]^{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -4266,16 +5278,150 @@ reference "exer:inverse-element-uniqueness"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+\begin_inset Formula $g$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+ может иметь либо конечный порядок 
+\begin_inset Formula $n$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — положительное целое число, либо быть элементом бесконечного порядка
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:order-of-element"
+
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Если при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $g^{n}=e_{G}$
+\end_inset
+
+, то применив отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ к левой и правой части, получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g^{n}\right)=\varphi\left(e_{G}\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Но изоморфизм сохраняет нейтральный элемент
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-neutral-element"
+
+\end_inset
+
+ и степень 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-exponent"
+
+\end_inset
+
+, поэтому последнее неравенство принимает вид:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left[\varphi\left(g\right)\right]^{n}=e_{F}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как
+\begin_inset Formula $\varphi\left(g\right)=h$
+\end_inset
+
+, мы получаем, что равенства 
+\begin_inset Formula $g^{n}=e_{G}$
+\end_inset
+
+ и 
+\begin_inset Formula $h^{n}=e_{F}$
+\end_inset
+
+ выполняются или не выполняются одновременно.
+\end_layout
+
+\begin_layout Solution
+Если 
+\begin_inset Formula $g$
+\end_inset
+
+ является элементом бесконечного порядка, то при любом 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $h^{n}\neq e_{F}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $h$
+\end_inset
+
+ — также элемент бесконечного порядка.
+ Если 
+\begin_inset Formula $g^{n}=e_{G}$
+\end_inset
+
+, но при всех 
+\begin_inset Formula $1\le m<n$
+\end_inset
+
+ 
+\begin_inset Formula $g^{m}\neq e_{G}$
+\end_inset
+
+, то аналогично 
+\begin_inset Formula $h^{n}=e_{G}$
+\end_inset
+
+, но 
+\begin_inset Formula $h^{m}\neq e_{G}$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le m<n$
+\end_inset
+
+, то есть порядок 
+\begin_inset Formula $h$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Exercise
@@ -4959,6 +6105,209 @@ b\circ e=e\circ b=b.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Exercise
+Привести пример двух групп с одинаковым числом элементов, но не изоморфных.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что группа всех действительных чисел по сложению изоморфна группе
+ положительных действительных чисел по умножению.
+\end_layout
+
+\begin_layout Solution
+Искомый изоморфизм задаётся, например, формулой 
+\begin_inset Formula $y=e^{x}$
+\end_inset
+
+, так как 
+\begin_inset Formula $e^{x}>0$
+\end_inset
+
+ для любого вещественного 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $e^{x+y}=e^{x}\cdot e^{y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — произвольный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Рассмотрим отображение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в себя, определённое как 
+\begin_inset Formula $\varphi_{a}\left(x\right)=a\circ x$
+\end_inset
+
+ для любого 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ является преобразованием множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ (то есть взаимно однозначным отображением множества элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на себя).
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $x,a\in G$
+\end_inset
+
+, а 
+\begin_inset Formula $\circ$
+\end_inset
+
+ — операция группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $a\circ x$
+\end_inset
+
+ также принадлежит 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Остаётся доказать, что отображение является взаимно-однозначным.
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $y\in G$
+\end_inset
+
+ и найдём 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $a\circ x=y$
+\end_inset
+
+.
+ По доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:equation-has-unique-solution"
+
+\end_inset
+
+ данное уравнение имеет единственное решение относительно 
+\begin_inset Formula $x$
+\end_inset
+
+, а именно 
+\begin_inset Formula $x=a^{-1}\circ y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:group-of-multiplications-by-fixed-element"
+
+\end_inset
+
+Пусть для каждого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ построено преобразование 
+\begin_inset Formula $\varphi_{a}\left(x\right)=a\circ x$
+\end_inset
+
+.
+ Доказать, что множество всех таких преобразований образует группу с обычной
+ операцией произведения для преобразований.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ изоморфна группе, построенной в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:group-of-multiplications-by-fixed-element"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Подгруппы
 \end_layout
 
 \begin_layout Bibliography
