@@ -235,7 +235,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-В конце каждого раздела написать, что можно считать дальше
+В конце каждого раздела написать, что можно читать дальше
 \end_layout
 
 \end_inset
@@ -6495,6 +6495,120 @@ status open
 
 \begin_layout Section
 Подгруппы
+\end_layout
+
+\begin_layout Section
+Прямое произведение
+\end_layout
+
+\begin_layout Section
+Смежные классы.
+ Теорема Лагранжа
+\end_layout
+
+\begin_layout Section
+Внутренние автоморфизмы
+\end_layout
+
+\begin_layout Section
+Нормальные подгруппы
+\end_layout
+
+\begin_layout Section
+Факторгруппы
+\end_layout
+
+\begin_layout Section
+Коммутант
+\end_layout
+
+\begin_layout Section
+Гомоморфизм
+\end_layout
+
+\begin_layout Section
+Разрешимые группы
+\end_layout
+
+\begin_layout Section
+Подстановки
+\end_layout
+
+\begin_layout Chapter
+Кольца и поля
+\end_layout
+
+\begin_layout Chapter
+Многочлены
+\end_layout
+
+\begin_layout Chapter
+Комплексные числа
+\end_layout
+
+\begin_layout Section
+Комплексные числа как поле
+\end_layout
+
+\begin_layout Section
+Единственность поля комплексных чисел
+\end_layout
+
+\begin_layout Section
+Геометрические представления комплексных чисел
+\end_layout
+
+\begin_layout Section
+Тригонометрическая форма комплексных чисел
+\end_layout
+
+\begin_layout Chapter
+Функции комплексной переменной
+\end_layout
+
+\begin_layout Section
+Непрерывность
+\end_layout
+
+\begin_layout Section
+Непрерывные кривые
+\end_layout
+
+\begin_layout Section
+Отображение кривых.
+ Основная теорема алгебры комплексных чисел
+\end_layout
+
+\begin_layout Chapter
+Римановы поверхности и теорема Абеля
+\end_layout
+
+\begin_layout Section
+Риманова поверхность функции 
+\begin_inset Formula $w=\sqrt{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Римановы поверхности более сложных функций
+\end_layout
+
+\begin_layout Section
+Функции, выражающиеся в радикалах
+\end_layout
+
+\begin_layout Section
+Группы Галуа многозначных функций
+\end_layout
+
+\begin_layout Section
+Группы Галуа функций, выражающихся в радикалах
+\end_layout
+
+\begin_layout Section
+Теорема Абеля
 \end_layout
 
 \begin_layout Bibliography
