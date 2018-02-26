@@ -6330,7 +6330,7 @@ reference "exer:equation-has-unique-solution"
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
-name "exer:group-of-multiplications-by-fixed-element"
+name "exer:group-of-multiplications-by-element"
 
 \end_inset
 
@@ -6473,7 +6473,7 @@ reference "exer:mapping-composition-associative"
  изоморфна группе, построенной в упражнении 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "exer:group-of-multiplications-by-fixed-element"
+reference "exer:group-of-multiplications-by-element"
 
 \end_inset
 
@@ -6481,16 +6481,66 @@ reference "exer:group-of-multiplications-by-fixed-element"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим отображение, которое ставит в соответствие элементу 
+\begin_inset Formula $a\in G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ отображение 
+\begin_inset Formula $\varphi_{a}\left(x\right)=a\circ x$
+\end_inset
+
+ как 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Нужно доказать, что отображение 
+\begin_inset Formula $f\left(a\right)=\varphi_{a}$
+\end_inset
+
+ задаёт изоморфизм
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+Для любого 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+, очевидно, существует прообраз — 
+\begin_inset Formula $a$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $f$
+\end_inset
+
+ является взаимно однозначным отображением.
+\end_layout
+
+\begin_layout Solution
+В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:group-of-multiplications-by-element"
+
+\end_inset
+
+ мы показали, что 
+\begin_inset Formula $\varphi_{a}\varphi_{b}=\varphi_{a\circ b}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $f\left(a\circ b\right)=f\left(a\right)f\left(b\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
