@@ -222,7 +222,34 @@ status open
 status open
 
 \begin_layout Plain Layout
-Начинаем с задачи 18
+Начинаем с задачи 12
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+В конце каждого раздела написать, что можно считать дальше
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Описать возможные маршруты, для каждой главы указывать, в какие маршруты
+ он входит
 \end_layout
 
 \end_inset
@@ -247,8 +274,21 @@ status open
 
 \end_layout
 
-\begin_layout Chapter
-Отображения
+\begin_layout Section
+Понятие множества
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать этот раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -454,6 +494,12 @@ name "def:mappings-product"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:mapping-composition-associative"
+
+\end_inset
+
 Доказать, что для любых трёх отображений
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1050,6 +1096,40 @@ reference "def:mappings-equality"
 .
 \end_layout
 
+\begin_layout Section
+Операции над множествами
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Прямое произведение множеств
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать этот раздел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Группы
 \end_layout
@@ -1085,6 +1165,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:binary-operation"
+
+\end_inset
+
 Пусть дано некоторое множество
 \begin_inset Note Note
 status open
@@ -6262,16 +6348,117 @@ name "exer:group-of-multiplications-by-fixed-element"
 
 .
  Доказать, что множество всех таких преобразований образует группу с обычной
- операцией произведения для преобразований.
+ операцией произведения для преобразований
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:mappings-product"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Обозначим множество рассматриваемых преобразований как 
+\begin_inset Formula $\Phi$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+.
+ Докажем, что произведение преобразований является бинарной операцией
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:binary-operation"
+
+\end_inset
+
+ на 
+\begin_inset Formula $\Phi$
+\end_inset
+
+:
 \end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{a}\varphi_{b}\right)\left(x\right)=\varphi_{a}\left(\varphi_{b}\left(x\right)\right)=a\circ\left(b\circ x\right)=\left(a\circ b\right)\circ x=\varphi_{a\circ b}\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Данная операция является ассоциативной, как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:mapping-composition-associative"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Преобразование 
+\begin_inset Formula $\varphi_{e}$
+\end_inset
+
+ является нейтральным элементом в рассматриваемой группе:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{a}\varphi_{e}\right)\left(x\right)=\varphi_{a}\left(\varphi_{e}\left(x\right)\right)=a\circ\left(e\circ x\right)=a\circ x=\varphi_{a}\left(x\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{e}\varphi_{a}\right)\left(x\right)=\varphi_{e}\left(\varphi_{a}\left(x\right)\right)=e\circ\left(a\circ x\right)=a\circ x=\varphi_{a}\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Для любого 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ существует обратный элемент 
+\begin_inset Formula $\varphi_{a^{-1}}$
+\end_inset
+
+.
+ Действительно:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{a}\varphi_{a^{-1}}\right)\left(x\right)=\varphi_{a}\left(\varphi_{a^{-1}}\left(x\right)\right)=a\circ\left(a^{-1}\circ x\right)=\left(a\circ a^{-1}\right)\circ x=e\circ x=\varphi_{e}\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\varphi_{a^{-1}}\varphi_{a}\right)\left(x\right)=\varphi_{a^{-1}}\left(\varphi_{a}\left(x\right)\right)=a^{-1}\circ\left(a\circ x\right)=\left(a^{-1}\circ a\right)\circ x=e\circ x=\varphi_{e}\left(x\right).
+\]
 
 \end_inset
 
