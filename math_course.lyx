@@ -257,6 +257,19 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача: в группе конечного порядка все элементы имеют конечный порядок
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Элементы теории множеств
 \end_layout
@@ -6545,6 +6558,221 @@ reference "exer:group-of-multiplications-by-element"
 
 \begin_layout Section
 Подгруппы
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:subgroup"
+
+\end_inset
+
+Рассмотрим подмножество
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить выше определение и сослаться на него
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Если это подмножество само является группой относительно бинарной операции
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то группу 
+\begin_inset Formula $H$
+\end_inset
+
+ называют подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что множество всех элементов вида 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — целое число, является подгруппой группы
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:subgroup"
+
+\end_inset
+
+ 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:subgroup"
+
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+, то элементы, обратные к 
+\begin_inset Formula $a$
+\end_inset
+
+ в группах 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ совпадают.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+Обозначим обратные элементы к 
+\begin_inset Formula $a$
+\end_inset
+
+ в группах 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ как 
+\begin_inset Formula $a_{G}^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{H}^{-1}$
+\end_inset
+
+ соответственно.
+ Так как 
+\begin_inset Formula $a_{H}^{-1}$
+\end_inset
+
+ принадлежит группе 
+\begin_inset Formula $H$
+\end_inset
+
+, которая является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $a_{H}^{-1}$
+\end_inset
+
+ входит и в группу 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:subgroup"
+
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что нейтральные элементы этих групп совпадают.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
