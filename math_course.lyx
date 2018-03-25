@@ -1897,7 +1897,7 @@ E=\left(\left(...\left(\left(A_{k}^{1}\circ a_{k+1}\right)\circ a_{k+2}\right)\c
 \begin_layout Definition
 \begin_inset CommandInset label
 LatexCommand label
-name "def:exponent-in-group"
+name "def:exponent-in-semigroup"
 
 \end_inset
 
@@ -1984,7 +1984,7 @@ name "exer:exponent-of-sum-positive"
  По самому определению степени 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "def:exponent-in-group"
+reference "def:exponent-in-semigroup"
 
 \end_inset
 
@@ -2078,7 +2078,7 @@ name "exer:exponent-of-product-positive"
  По определению степени 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "def:exponent-in-group"
+reference "def:exponent-in-semigroup"
 
 \end_inset
 
@@ -2188,7 +2188,7 @@ reference "def:neutral-element"
 В моноиде понятие степени 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "def:exponent-in-group"
+reference "def:exponent-in-semigroup"
 
 \end_inset
 
@@ -3221,6 +3221,57 @@ reference "exer:inverse-of-exponent-and-exponent-of-sum"
 Так как правые части этих равенств равны, то равны и левые.
 \end_layout
 
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:exponent_in_group"
+
+\end_inset
+
+Таким образом, мы обобщили определение степени
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:exponent-in-semigroup"
+
+\end_inset
+
+ на случай нулевого
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-zero"
+
+\end_inset
+
+ и отрицательного
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-positive-exponent"
+
+\end_inset
+
+ показателя.
+ Произвольная целочисленная степень элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ определяется следующим образом:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+a^{n}=\begin{cases}
+e, & n=0,\\
+a^{n-1}\circ a, & n>0,\\
+\left(a^{\left|n\right|}\right)^{-1}, & n<0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
@@ -3413,19 +3464,6 @@ reference "exer:double-inverse"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Степени коммутируют даже тогда, когда группа не является коммутативным
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Коммутативность
 \end_layout
@@ -3582,6 +3620,58 @@ a\circ b=\left(a\circ b\right)^{-1}=b^{-1}\circ a^{-1}=b\circ a.
 
 \end_layout
 
+\begin_layout Exercise
+Степени некоторого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ коммутируют, даже если группа 
+\begin_inset Formula $G$
+\end_inset
+
+ не является коммутативной.
+\end_layout
+
+\begin_layout Solution
+Мы определили целочисленные степени так, чтобы 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m+n}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-exponent-and-exponent-of-sum"
+
+\end_inset
+
+.
+ Сложение целых чисел является коммутативным, поэтому 
+\begin_inset Formula $a^{m+n}=a^{n+m}$
+\end_inset
+
+.
+ Снова применяя свойство 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-exponent-and-exponent-of-sum"
+
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+a^{m}\circ a^{n}=a^{m+n}=a^{n+m}=a^{n}\circ a^{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Циклические группы
 \end_layout
@@ -3591,7 +3681,7 @@ a\circ b=\left(a\circ b\right)^{-1}=b^{-1}\circ a^{-1}=b\circ a.
 status open
 
 \begin_layout Plain Layout
-Задача 29, Пример 8, задачи 31, 32, 36, 38-40
+Задача 29, Пример 8, задачи 31, 32, 36, 39-40
 \end_layout
 
 \end_inset
@@ -4316,6 +4406,81 @@ s=\frac{m}{d},
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:cyclic-group-infinite"
+
+\end_inset
+
+Если 
+\begin_inset Formula $a$
+\end_inset
+
+ — элемент бесконечного порядка
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:order-of-element"
+
+\end_inset
+
+ и кроме элементов вида 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — произвольное целое число, в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ больше нет элементов, то 
+\begin_inset Formula $G$
+\end_inset
+
+ называется бесконечной циклической группой, а 
+\begin_inset Formula $a$
+\end_inset
+
+ — её образующим.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что группа целых чисел по сложению 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+нужна ссылка
+\end_layout
+
+\end_inset
+
+ является бесконечной циклической группой.
+ Найти все её образующие.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:cyclic-group-finite"
+
+\end_inset
+
 Если элемент 
 \begin_inset Formula $a$
 \end_inset
@@ -6595,7 +6760,11 @@ status open
 \begin_inset Formula $H$
 \end_inset
 
- называют подгруппой группы 
+ называют 
+\emph on
+подгруппой
+\emph default
+ группы 
 \begin_inset Formula $G$
 \end_inset
 
@@ -6631,16 +6800,267 @@ reference "def:subgroup"
 \begin_inset Formula $G$
 \end_inset
 
+, причём эта группа является циклической
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-finite"
+
+\end_inset
+
 .
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Если 
+\begin_inset Formula $a\in G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+, то по определению степени 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:exponent_in_group"
+
+\end_inset
+
+ 
+\begin_inset Formula $a^{m}\in G$
+\end_inset
+
+, поэтому множество 
+\begin_inset Formula $A$
+\end_inset
+
+ степеней некоторого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ является подмножеством 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Докажем, что множество 
+\begin_inset Formula $A$
+\end_inset
+
+ является группой.
 \end_layout
+
+\begin_layout Solution
+Для любых целых чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $a^{m}\circ a^{n}=a^{m+n}$
+\end_inset
+
+, то есть произведение степеней снова является степенью, а значит на множестве
+ степеней элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ функция
+\begin_inset Formula $\circ$
+\end_inset
+
+ является бинарной операцией.
+ Множество степеней содержит нейтральный элемент, так как мы определили
+ 
+\begin_inset Formula $a^{0}=e$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:exponent-of-zero"
+
+\end_inset
+
+.
+ Мы определили
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-exponent-and-exponent-of-sum"
+
+\end_inset
+
+ таким образом, что 
+\begin_inset Formula $a^{-m}\circ a^{m}=e$
+\end_inset
+
+, то есть для любого элемента 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+есть обратный — 
+\begin_inset Formula $a^{-m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что эта группа циклическая.
+ Если все 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+ различны, то данная группа есть циклическая группа бесконечного порядка
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-infinite"
+
+\end_inset
+
+.
+ Если же среди степеней элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ имеются одинаковые, то есть 
+\begin_inset Formula $a^{m}=a^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $m<n$
+\end_inset
+
+, то 
+\begin_inset Formula $a$
+\end_inset
+
+ имеет некоторый конечный порядок
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:order-of-element"
+
+\end_inset
+
+.
+ Так как в 
+\begin_inset Formula $A$
+\end_inset
+
+ нет других элементов, кроме степеней 
+\begin_inset Formula $a$
+\end_inset
+
+, то она является циклической
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-finite"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:neutral-element-of-subgroup"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:subgroup"
+
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что нейтральные элементы этих групп совпадают.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+ — нейтральный элемент группы 
+\begin_inset Formula $H$
+\end_inset
+
+, а 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ — нейтральный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда в группе 
+\begin_inset Formula $H$
+\end_inset
+
+ должно выполняться равенство 
+\begin_inset Formula $e_{H}\circ e_{H}=e_{H}$
+\end_inset
+
+, но так как 
+\begin_inset Formula $H\subset G$
+\end_inset
+
+, то это же равенство будет выполняться и в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ С другой стороны, в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ должно иметь место равенство 
+\begin_inset Formula $e_{H}\circ e_{G}=e_{H}$
+\end_inset
+
+.
+ Таким образом, мы получили 
+\begin_inset Formula 
+\[
+e_{H}\circ e_{H}=e_{H}=e_{H}\circ e_{G}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа, то для 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+ в ней существует обратный элемент.
+ Умножая на него слева левую и правую части последнего равенства, получим
+ 
+\begin_inset Formula 
+\[
+e_{H}=e_{G}.
+\]
 
 \end_inset
 
@@ -6688,78 +7108,71 @@ reference "def:subgroup"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+Пусть 
+\begin_inset Formula $a_{H}^{-1}$
 \end_inset
 
-Обозначим обратные элементы к 
+ — обратный элемент для 
 \begin_inset Formula $a$
 \end_inset
 
- в группах 
-\begin_inset Formula $G$
-\end_inset
-
- и 
+ в группе 
 \begin_inset Formula $H$
 \end_inset
 
- как 
+, а 
 \begin_inset Formula $a_{G}^{-1}$
 \end_inset
 
- и 
-\begin_inset Formula $a_{H}^{-1}$
+ — обратный элемент для 
+\begin_inset Formula $a$
 \end_inset
 
- соответственно.
- Так как 
-\begin_inset Formula $a_{H}^{-1}$
-\end_inset
-
- принадлежит группе 
-\begin_inset Formula $H$
-\end_inset
-
-, которая является подгруппой группы 
-\begin_inset Formula $G$
-\end_inset
-
-, поэтому 
-\begin_inset Formula $a_{H}^{-1}$
-\end_inset
-
- входит и в группу 
+ в группе 
 \begin_inset Formula $G$
 \end_inset
 
 .
- 
-\end_layout
+ Так как нейтральные элементы 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Exercise
-Пусть 
+ и 
 \begin_inset Formula $H$
 \end_inset
 
- — подгруппа
+ совпадают, как было показано в упражнении 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "def:subgroup"
+reference "exer:neutral-element-of-subgroup"
 
 \end_inset
 
- группы 
+, то имеет место равенство 
+\begin_inset Formula $a\circ a_{H}^{-1}=a_{H}^{-1}\circ a=e$
+\end_inset
+
+, причём оно выполняется как в 
+\begin_inset Formula $H$
+\end_inset
+
+, так и в 
 \begin_inset Formula $G$
 \end_inset
 
 .
- Доказать, что нейтральные элементы этих групп совпадают.
+ В силу единственности обратного элемента
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-uniqueness"
+
+\end_inset
+
+, 
+\begin_inset Formula $a_{G}^{-1}=a_{H}^{-1}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
@@ -6767,7 +7180,7 @@ reference "def:subgroup"
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Добавить задачи 57-68
 \end_layout
 
 \end_inset
