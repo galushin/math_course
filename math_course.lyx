@@ -3732,6 +3732,12 @@ name "def:order-of-element"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:different-exponents-of-finite-order-element"
+
+\end_inset
+
 Пусть элемент 
 \begin_inset Formula $a$
 \end_inset
@@ -7068,6 +7074,12 @@ e_{H}=e_{G}.
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inverse-element-of-subgroup"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $H$
 \end_inset
@@ -7175,12 +7187,792 @@ reference "exer:inverse-element-uniqueness"
 .
 \end_layout
 
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:subgroup-criterion"
+
+\end_inset
+
+Доказать, что для того, чтобы подмножество 
+\begin_inset Formula $H\subseteq G$
+\end_inset
+
+ было подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ (относительно той же бинарной операции), необходимо и достаточно, чтобы
+ выполнялись следующие условия: 1) если 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $a\circ b\in H$
+\end_inset
+
+; 2) единичный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $H$
+\end_inset
+
+; 3) Если 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ содержится в 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Начнём с 
+\emph on
+необходимости
+\emph default
+.
+ Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ является подгруппой 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Тогда условие 1) выполняется, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ является группой.
+ По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:neutral-element-of-subgroup"
+
+\end_inset
+
+, единичные элементы 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+ совпадают, а значит условие 2) также выполняется.
+ Аналогично, по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-of-subgroup"
+
+\end_inset
+
+, обратные элементы к любому 
+\begin_inset Formula $a\in H$
+\end_inset
+
+ совпадают, поэтому выполняется и условие 3).
+\end_layout
+
+\begin_layout Solution
+Докажем теперь 
+\emph on
+достаточность
+\emph default
+.
+ Если выполняются условия 1), 2) и 3), то 
+\begin_inset Formula $H$
+\end_inset
+
+ является группой, так как 
+\begin_inset Formula $H$
+\end_inset
+
+ является группой и подмножеством 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $H$
+\end_inset
+
+ — подмножество 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что все подгруппы бесконечной циклической группы
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-infinite"
+
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $\left\{ ...,a^{-2r},a^{-r},e,a^{r},a^{2r},...\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий группы, а 
+\begin_inset Formula $r$
+\end_inset
+
+ — произвольное натуральное число.
+\end_layout
+
+\begin_layout Solution
+Множества указанного вида являются подгруппами, что можно проверить непосредстве
+нно.
+ По определению, элементы бесконечной циклической группы имеют вид 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий и 
+\begin_inset Formula $k$
+\end_inset
+
+ — произвольное целое число.
+ Рассмотрим подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ бесконечной циклической группы, её элементы также являются степенями 
+\begin_inset Formula $a$
+\end_inset
+
+, выберем в 
+\begin_inset Formula $H$
+\end_inset
+
+ элемент с наименьшим положительным показателем и обозначим этот показатель
+ как 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Рассмотрим теперь любой другой элемент группы 
+\begin_inset Formula $H$
+\end_inset
+
+, он имеет вид 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — произвольное целое число.
+ Число 
+\begin_inset Formula $m$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $m=qd+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<d$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a^{qd}=\left(a^{d}\right)^{q}\in H$
+\end_inset
+
+ как произведение 
+\begin_inset Formula $q$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $H$
+\end_inset
+
+, 
+\begin_inset Formula $a^{-qd}=\left(a^{qd}\right)^{-1}\in H$
+\end_inset
+
+, так как любая группа содержит обратные элементы к своим элементам.
+ Таким образом, если 
+\begin_inset Formula $a^{qd+r}\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{d}\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{qd+r}\circ a^{-qd}=a^{r}\in H$
+\end_inset
+
+, но 
+\begin_inset Formula $r<d$
+\end_inset
+
+, а 
+\begin_inset Formula $d$
+\end_inset
+
+ — наименьший положительный показатель степени в 
+\begin_inset Formula $H$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $r=0$
+\end_inset
+
+, иначе мы придём к противоречию.
+ Таким образом, все элементы 
+\begin_inset Formula $H$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $a^{qd}=\left(a^{d}\right)^{q}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что все подгруппы в 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cyclic-group-finite"
+
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $\left\{ e,a^{d},a^{2d},...,a^{\left(\frac{n}{d}-1\right)d}\right\} $
+\end_inset
+
+, где 
+\begin_inset Formula $d$
+\end_inset
+
+ — делитель 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий группы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Множества указанного вида являются подгруппами, что можно проверить непосредстве
+нно.
+ Докажем, что других подгрупп у 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ нет.
+ По определению, элементы 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий и 
+\begin_inset Formula $0\le k<n$
+\end_inset
+
+.
+ Рассмотрим подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+, её элементы также являются степенями 
+\begin_inset Formula $a$
+\end_inset
+
+, выберем в 
+\begin_inset Formula $H$
+\end_inset
+
+ элемент с наименьшим положительным показателем и обозначим этот показатель
+ как 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Рассмотрим теперь любой другой элемент группы 
+\begin_inset Formula $H$
+\end_inset
+
+, он имеет вид 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+, где 
+\begin_inset Formula $m$
+\end_inset
+
+ — целое число 
+\begin_inset Formula $0\le m<n$
+\end_inset
+
+.
+ Число 
+\begin_inset Formula $m$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $m=qd+r$
+\end_inset
+
+, где 
+\begin_inset Formula $0\le r<d$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a^{qd}=\left(a^{d}\right)^{q}\in H$
+\end_inset
+
+ как произведение 
+\begin_inset Formula $q$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $H$
+\end_inset
+
+, 
+\begin_inset Formula $a^{-qd}=\left(a^{qd}\right)^{-1}\in H$
+\end_inset
+
+, так как любая группа содержит обратные элементы к своим элементам.
+ Таким образом, если 
+\begin_inset Formula $a^{qd+r}\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{d}\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $a^{qd+r}\circ a^{-qd}=a^{r}\in H$
+\end_inset
+
+, но 
+\begin_inset Formula $r<d$
+\end_inset
+
+, а 
+\begin_inset Formula $d$
+\end_inset
+
+ — наименьший положительный показатель степени в 
+\begin_inset Formula $H$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $r=0$
+\end_inset
+
+, иначе мы придём к противоречию.
+ Таким образом, все элементы 
+\begin_inset Formula $H$
+\end_inset
+
+ имеют вид 
+\begin_inset Formula $a^{qd}=\left(a^{d}\right)^{q}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что 
+\begin_inset Formula $d$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Поделим 
+\begin_inset Formula $n$
+\end_inset
+
+ на 
+\begin_inset Formula $d$
+\end_inset
+
+ с остатком: пусть 
+\begin_inset Formula $n=q_{0}d+r_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $e=a^{n}=\left(a^{d}\right)^{q_{0}}\circ a^{r_{0}}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{r_{0}}=\left(\left(a^{d}\right)^{q_{0}}\right)^{-1}.$
+\end_inset
+
+ Элемент 
+\begin_inset Formula $\left(a^{d}\right)^{q_{0}}\in H$
+\end_inset
+
+ при любом 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+, а так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа, то обратный элемент к нему также должен принадлежать 
+\begin_inset Formula $H$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{r_{0}}\in H$
+\end_inset
+
+.
+ Но выше мы предположили, что 
+\begin_inset Formula $d$
+\end_inset
+
+ является наименьшим положительным показателем элементов в 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Противоречия можно избежать только если 
+\begin_inset Formula $r_{0}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что 
+\begin_inset Formula $0\le q<\frac{n}{d}$
+\end_inset
+
+.
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:different-exponents-of-finite-order-element"
+
+\end_inset
+
+ элементы 
+\begin_inset Formula $e,a^{1},a^{2},...,a^{n-1}$
+\end_inset
+
+ все являются различными.
+ Поэтому элементы вида 
+\begin_inset Formula $\left(a^{d}\right)^{q}$
+\end_inset
+
+ являются различными при 
+\begin_inset Formula $0\le q<n$
+\end_inset
+
+, а при 
+\begin_inset Formula $q=\frac{n}{d}$
+\end_inset
+
+, получаем 
+\begin_inset Formula $\left(a^{d}\right)^{q}=a^{d\frac{n}{d}}=a^{n}=e$
+\end_inset
+
+.
+ Обратными элементами для 
+\begin_inset Formula $\left(a^{d}\right)^{q}$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le q<\frac{n}{d}$
+\end_inset
+
+ являются 
+\begin_inset Formula $\left(a^{d}\right)^{\frac{n}{d}-q}$
+\end_inset
+
+, так как 
+\begin_inset Formula $\left(a^{d}\right)^{q}\circ\left(a^{d}\right)^{\frac{n}{d}-q}=a^{n}=e.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что в любой бесконечной группе бесконечно много подгрупп.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим бесконечную группу 
+\begin_inset Formula $G$
+\end_inset
+
+, для любого элемента 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ можно рассмотреть подгруппу 
+\begin_inset Formula $H_{a}$
+\end_inset
+
+, содержащую элементы 
+\begin_inset Formula $e$
+\end_inset
+
+, 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ (некоторые из этих элементов могут совпадать).
+ Каждая из групп 
+\begin_inset Formula $H_{a}$
+\end_inset
+
+ содержит не более 3 элементов.
+ Значит никакое конечное число подобных групп не может быть взято, чтобы
+ исчерпать бесконечное количество элементов исходной группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, уже подмножеств вида 
+\begin_inset Formula $H_{a}$
+\end_inset
+
+ бесконечное количество.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что пересечение
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку на пересечение множеств
+\end_layout
+
+\end_inset
+
+ любого числа подгрупп некоторой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ также является подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим подгруппы 
+\begin_inset Formula $H_{1},...,H_{m}$
+\end_inset
+
+ и их пересечение 
+\begin_inset Formula $H=\bigcap_{k=1}^{m}H_{k}$
+\end_inset
+
+.
+ По доказанному в упражнениях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:neutral-element-of-subgroup"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-of-subgroup"
+
+\end_inset
+
+, результат применения бинарной операции, нейтральный элемент и обратные
+ элементы совпадают.
+ Воспользуемся результатами упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:subgroup-criterion"
+
+\end_inset
+
+ и докажем три свойства:
+\end_layout
+
+\begin_layout Solution
+1) По определению пересечения, если 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $a\in H_{k}$
+\end_inset
+
+ для любого 
+\begin_inset Formula $k\in[1;m]$
+\end_inset
+
+.
+ Рассмотрим два элемента 
+\begin_inset Formula $a,b\in H$
+\end_inset
+
+, так как 
+\begin_inset Formula $a,b\in H_{k}$
+\end_inset
+
+, то, так как 
+\begin_inset Formula $H_{k}$
+\end_inset
+
+ является группой, то 
+\begin_inset Formula $a\circ b\in H_{k}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+ принадлежит каждому из множеств 
+\begin_inset Formula $H_{k}$
+\end_inset
+
+, то оно принадлежит и их пересечению, то есть 
+\begin_inset Formula $a\circ b\in H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+2) Так как 
+\begin_inset Formula $H_{k}$
+\end_inset
+
+ является подгруппой, то 
+\begin_inset Formula $e\in H_{k}$
+\end_inset
+
+, а так как 
+\begin_inset Formula $e$
+\end_inset
+
+ принадлежит каждому из 
+\begin_inset Formula $H_{k}$
+\end_inset
+
+, то он принадлежит и их пересечению, то есть 
+\begin_inset Formula $e\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+3) Если 
+\begin_inset Formula $a\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $a\in H_{k}$
+\end_inset
+
+ для любого 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H_{k}$
+\end_inset
+
+ — группа, то 
+\begin_inset Formula $a^{-1}\in H_{k}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ принадлежит каждому из 
+\begin_inset Formula $H_{k}$
+\end_inset
+
+, то он принадлежит и их пересечению, то есть 
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Выполнение этих трёх свойств означает, что 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Добавить задачи 57-68
+Добавить задачи 58, 59, 64-68, пример 10
 \end_layout
 
 \end_inset
