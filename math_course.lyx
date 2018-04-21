@@ -1603,6 +1603,17 @@ name "def:associativity"
 \begin_layout Standard
 Свойство ассоциативности является обобщением сочетательного закона сложения
  для целых чисел.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать, почему ассоциативность важна на практике.
+ Упомянуть распараллеливание вычислений.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -2322,6 +2333,214 @@ status open
  Деления должно быть два: левое и правое.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:left-inverse-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $b$
+\end_inset
+
+ называется 
+\emph on
+левым обратным элементом 
+\emph default
+для
+\emph on
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+относительно операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если 
+\begin_inset Formula $b\circ a=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:right-inverse-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $b$
+\end_inset
+
+ называется 
+\emph on
+правым обратным элементом 
+\emph default
+для
+\emph on
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+относительно операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если 
+\begin_inset Formula $a\circ b=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что если у некоторого элемента 
+\begin_inset Formula $a$
+\end_inset
+
+ моноида
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:monoid"
+
+\end_inset
+
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ есть левый и правый обратные элементы 
+\begin_inset Formula $b_{L}$
+\end_inset
+
+ и 
+\begin_inset Formula $b_{R}$
+\end_inset
+
+, то они совпадают.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим выражение 
+\begin_inset Formula $b_{L}\circ\left(a\circ b_{R}\right)$
+\end_inset
+
+.
+ По определению правого обратного элемента
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:right-inverse-element"
+
+\end_inset
+
+ 
+\begin_inset Formula $a\circ b_{R}=e$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $b_{L}\circ\left(a\circ b_{R}\right)=b_{L}\circ e=b_{L}$
+\end_inset
+
+.
+ С другой стороны, так как операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ является ассоциативной (так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — моноид), то 
+\begin_inset Formula $b_{L}\circ\left(a\circ b_{R}\right)=\left(b_{L}\circ a\right)\circ b_{R}$
+\end_inset
+
+, воспользуемся теперь тем, что 
+\begin_inset Formula $b_{L}$
+\end_inset
+
+ — левый обратный элемент
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-inverse-element"
+
+\end_inset
+
+ для 
+\begin_inset Formula $a$
+\end_inset
+
+: 
+\begin_inset Formula $b_{L}\circ\left(a\circ b_{R}\right)=e\circ b_{R}=b_{R}.$
+\end_inset
+
+ Таким образом, мы получили 
+\begin_inset Formula $b_{L}=b_{R}\circ\left(a\circ b_{L}\right)=b_{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $b$
+\end_inset
+
+ называется 
+\emph on
+обратным элементом 
+\emph default
+для
+\emph on
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\emph default
+относительно операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если 
+\begin_inset Formula $b\circ a=a\circ b=e$
+\end_inset
+
+.
+ Иными словами, обратный элемент для 
+\begin_inset Formula $a$
+\end_inset
+
+ является одновременно левым и правым обратным элементом для 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Separator plain
 \end_inset
 
 
