@@ -4747,6 +4747,20 @@ name "def:cyclic-group-finite"
 \end_inset
 
  называется образующим этой группы.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Обозначение циклической группы порядка 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Пр 
 \end_layout
 
 \begin_layout Exercise
@@ -5746,6 +5760,12 @@ reference "exer:inverse-of-exponent-and-exponent-of-sum"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:isomorphism-preserves-order-of-elements"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -6948,6 +6968,19 @@ reference "exer:group-of-multiplications-by-element"
 
 \begin_layout Section
 Подгруппы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть рассмотреть: подмагмы, подполугруппы, подмоноиды?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Definition
@@ -8201,6 +8234,1218 @@ status open
 
 \begin_layout Section
 Прямое произведение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рассмотреть прямое произведение более бедных алгебраических структур: магм,
+ полугрупп и моноидов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Синоним прямого произведения - Декартово.
+ Обобщение прямого произведения на произвольное число 
+\begin_inset Quotes fld
+\end_inset
+
+множителей
+\begin_inset Quotes frd
+\end_inset
+
+.
+ можно указать, что прямое произведение является ассоциативным с точность
+ до изоморфизма.
+ Так что можно рассмотреть полугруппу и даже моноид, в которых элементами
+ являются множества, а операцией - прямое произведение.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Прямым произведением двух групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ называется множество (обозначаемое как 
+\begin_inset Formula $G\times H$
+\end_inset
+
+) упорядоченных пар 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g$
+\end_inset
+
+ — произвольный элемент 
+\begin_inset Formula $g$
+\end_inset
+
+, а 
+\begin_inset Formula $h$
+\end_inset
+
+ — произвольный элемент 
+\begin_inset Formula $H$
+\end_inset
+
+, со следующей бинарной операцией: 
+\begin_inset Formula $\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)=\left(g_{1}\circ g_{2},h_{1}\circ h_{2}\right)$
+\end_inset
+
+.
+ В каждой из групп операция может быть своя.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:cartesian-product-of-groups-is-groups"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ — группа.
+\end_layout
+
+\begin_layout Solution
+Последовательно докажем, что 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ является полугруппой, моноидом и, наконец, группой.
+\end_layout
+
+\begin_layout Solution
+Для того, чтобы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ было полугруппой, её бинарная операция должна быть ассоциативной.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)\right)\circ\left(g_{3},h_{3}\right)=\left(g_{1}\circ g_{2},h_{1}\circ h_{2}\right)\circ\left(g_{3},h_{3}\right)=\left(\left(g_{1}\circ g_{2}\right)\circ g_{3},\left(h_{1}\circ h_{2}\right)\circ h_{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)\circ\left(\left(g_{2},h_{2}\right)\circ\left(g_{3},h_{3}\right)\right)=\left(g_{1},h_{1}\right)\circ\left(g_{2}\circ g_{3},h_{2}\circ h_{3}\right)=\left(g_{1}\circ\left(g_{2}\circ g_{3}\right),h_{1}\circ\left(h_{2}\circ h_{3}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как операция является ассоциативной в каждой из групп, то 
+\begin_inset Formula $\left(g_{1}\circ g_{2}\right)\circ g_{3}=g_{1}\circ\left(g_{2}\circ g_{3}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(h_{1}\circ h_{2}\right)\circ h_{3}=h_{1}\circ\left(h_{2}\circ h_{3}\right)$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\left(\left(g_{1}\circ g_{2}\right)\circ g_{3},\left(h_{1}\circ h_{2}\right)\circ h_{3}\right)=\left(g_{1}\circ\left(g_{2}\circ g_{3}\right),h_{1}\circ\left(h_{2}\circ h_{3}\right)\right),
+\]
+
+\end_inset
+
+ таким образом:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)\right)\circ\left(g_{3},h_{3}\right)=\left(g_{1},h_{1}\right)\circ\left(\left(g_{2},h_{2}\right)\circ\left(g_{3},h_{3}\right)\right),
+\]
+
+\end_inset
+
+ то есть введённая для прямого произведения операция является ассоциативной.
+\end_layout
+
+\begin_layout Solution
+Определим теперь нейтральный элемент, то есть такую пару 
+\begin_inset Formula $\left(g_{0},h_{0}\right)$
+\end_inset
+
+, чтобы для любой пары 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+ выполнялись равенства 
+\begin_inset Formula $\left(g_{0},h_{0}\right)\circ\left(g,h\right)=\left(g,h\right)\circ\left(g_{0},h_{0}\right)=\left(g,h\right)$
+\end_inset
+
+.
+ По определению 
+\begin_inset Formula $\left(g_{0},h_{0}\right)\circ\left(g,h\right)=\left(g_{0}\circ g,h_{0}\circ h\right)$
+\end_inset
+
+, поэтому должно быть 
+\begin_inset Formula $g_{0}\circ g=g$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{0}\circ h=h$
+\end_inset
+
+.
+ Аналогично можно показать, что должны иметь место равенства 
+\begin_inset Formula $g\circ g_{0}=g$
+\end_inset
+
+ и 
+\begin_inset Formula $h\circ h_{0}=h$
+\end_inset
+
+.
+ Эти равенства выполняются только если положить 
+\begin_inset Formula $g_{0}=e_{G}$
+\end_inset
+
+ и 
+\begin_inset Formula $h_{0}=e_{H}$
+\end_inset
+
+ в силу единственности нейтрального элемента в моноиде
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:neutral-element-uniqueness"
+
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $e_{G\times H}=\left(e_{G},e_{H}\right)$
+\end_inset
+
+.
+ Нейтральный элемент существует, поэтому 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ является моноидом.
+\end_layout
+
+\begin_layout Solution
+Наконец, докажем, что для любого 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+ в 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ существует обратный элемент.
+ По аналогии с предыдущим пунктом, можно предположить, что таким элементом
+ будет 
+\begin_inset Formula $\left(g^{-1},h^{-1}\right)$
+\end_inset
+
+.
+ Действительно: 
+\begin_inset Formula 
+\[
+\left(g,h\right)\circ\left(g^{-1},h^{-1}\right)=\left(g\circ g^{-1},h\circ h^{-1}\right)=\left(e_{G},e_{H}\right)=e_{G\times H},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g^{-1},h^{-1}\right)\circ\left(g,h\right)=\left(g^{-1}\circ g,h^{-1}\circ h\right)=\left(e_{G},e_{H}\right)=e_{G\times H}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:cartesian-product-cardinality"
+
+\end_inset
+
+Пусть в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ элементов, а в группе 
+\begin_inset Formula $H$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ элементов.
+ Сколько элементов в группе 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Для каждого элемента 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ существует 
+\begin_inset Formula $m$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $g_{1}\ne g_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $\left(g_{1},h_{1}\right)\neq\left(g_{2},h_{2}\right)$
+\end_inset
+
+.
+ Таким образом, всего имеется 
+\begin_inset Formula $n\cdot m$
+\end_inset
+
+ различных пар, в которых первый элемент взят из 
+\begin_inset Formula $G$
+\end_inset
+
+, а второй — из 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ и 
+\begin_inset Formula $H\times G$
+\end_inset
+
+ изоморфны
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:isomorphism"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Действительно, рассмотрим отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ из 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ в 
+\begin_inset Formula $H\times G$
+\end_inset
+
+, задаваемое формулой
+\begin_inset Formula $\varphi\left(\left(g,h\right)\right)=\left(h,g\right)$
+\end_inset
+
+, и докажем, что оно задаёт изоморфизм, то есть 
+\begin_inset Formula $\varphi\left(\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)\right)=\varphi\left(\left(g_{1},h_{1}\right)\right)\circ\varphi\left(\left(g_{2},h_{2}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению прямого произведения:
+\begin_inset Formula 
+\[
+\varphi\left(\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)\right)=\varphi\left(\left(g_{1}\circ g_{2},h_{1}\circ h_{2}\right)\right)=\left(h_{1}\circ h_{2},g_{1}\circ g_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(\left(g_{1},h_{1}\right)\right)\circ\varphi\left(\left(g_{2},h_{2}\right)\right)=\left(h_{1},g_{1}\right)\circ\left(h_{2},g_{2}\right)=\left(h_{1}\circ h_{2},g_{1}\circ g_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так левые части данных равенств равны, то равны и левые, то есть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ действительно является искомым изоморфизмом.
+\end_layout
+
+\begin_layout Exercise
+Найти подгруппы группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+, изоморфные группам 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим множество элементов вида 
+\begin_inset Formula $\left(e_{G},h\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+ Оно является группой, так как множество, состоящее только из нейтрального
+ элемента является подгруппой
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ссылка
+\end_layout
+
+\end_inset
+
+.
+ Искомый изоморфизм устанавливается отображением 
+\begin_inset Formula $\varphi\left(\left(g,h\right)\right)=h$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(\left(e_{G},h_{1}\right)\circ\left(e_{G},h_{2}\right)\right)=\varphi\left(\left(e_{G}\circ e_{G},h_{1}\circ h_{2}\right)\right)=\varphi\left(\left(e_{G},h_{1}\circ h_{2}\right)\right)=h_{1}\circ h_{2},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(\left(e_{G},h_{1}\right)\right)\circ\varphi\left(\left(e_{G},h_{2}\right)\right)=h_{1}\circ h_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как правые части данных равенств равны, то равны и левые, то есть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ задаёт изоморфизм между подгруппой группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать, что вместо 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ нельзя взять другой элемент из 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Solution
+Аналогично, множество пар вида 
+\begin_inset Formula $\left(g,e_{H}\right)$
+\end_inset
+
+ изоморфно множеству 
+\begin_inset Formula $G$
+\end_inset
+
+, изоморфизм задаётся отображением 
+\begin_inset Formula $\varphi\left(\left(g,h\right)\right)=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — коммутативные.
+ Доказать, что группа 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ также коммутативна.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ коммутативны, то для любых 
+\begin_inset Formula $g_{1},g_{2}\in G$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $g_{1}\circ g_{2}=g_{2}\circ g_{1}$
+\end_inset
+
+, а для любых 
+\begin_inset Formula $h_{1},h_{2}\in H$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $h_{1}\circ h_{2}=h_{2}\circ h_{1}$
+\end_inset
+
+.
+ Рассмотрим два элемента 
+\begin_inset Formula $G\times H$
+\end_inset
+
+: 
+\begin_inset Formula $\left(g_{1},h_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(g_{2},h_{2}\right)$
+\end_inset
+
+ и докажем, что они коммутируют.
+ По определению операции для прямого произведения
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)=\left(g_{1}\circ g_{2},h_{1}\circ h_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ являются коммутативными, то
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)=\left(g_{1}\circ g_{2},h_{1}\circ h_{2}\right)=\left(g_{2}\circ g_{1},h_{2}\circ h_{1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению операции для прямого произведения, пару в правой части можно
+ записать в виде
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(g_{2}\circ g_{1},h_{2}\circ h_{1}\right)=\left(g_{2},h_{2}\right)\circ\left(g_{1},h_{1}\right).
+\]
+
+\end_inset
+
+ Таким образом, имеет место равенство 
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)\circ\left(g_{2},h_{2}\right)=\left(g_{2},h_{2}\right)\circ\left(g_{1},h_{1}\right),
+\]
+
+\end_inset
+
+ то есть группа 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ является коммутативной.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $\left(g,h\right)\in G_{1}\times H_{1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g\in G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $h\in H_{1}$
+\end_inset
+
+, но так как 
+\begin_inset Formula $G_{1}\subseteq G$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{1}\subseteq H$
+\end_inset
+
+, то 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $h\in H$
+\end_inset
+
+, отсюда следует, что 
+\begin_inset Formula $\left(g,h\right)\in G\times H$
+\end_inset
+
+, то есть любой элемент 
+\begin_inset Formula $G_{1}\times H_{1}\subseteq G\times H$
+\end_inset
+
+.
+ Остаётся доказать, что 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+ является группой.
+ Это следует из упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-of-groups-is-groups"
+
+\end_inset
+
+, так как 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ являются группами по определению подгруппы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:subgroup"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — произвольные группы.
+ Верно ли, что любую подгруппу в группе 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $G_{1}\times H_{1}$
+\end_inset
+
+, где 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+, а 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Вопрос можно переформулировать следующим образом.
+ Пусть 
+\begin_inset Formula $A\subset G\times H$
+\end_inset
+
+, оно состоит из пар вида 
+\begin_inset Formula $\left(g,h\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $G_{A}$
+\end_inset
+
+ — множество всех 
+\begin_inset Formula $g$
+\end_inset
+
+ встречающихся у элементов 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $H_{A}$
+\end_inset
+
+ — множество всех 
+\begin_inset Formula $h$
+\end_inset
+
+, встречающихся у элементов 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Всегда ли 
+\begin_inset Formula $G_{A}\times H_{A}=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Приведём простейший контрпример.
+ Рассмотрим две циклические группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ второго порядка с образующими 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Рассмотрим подмножество прямого произведения, состоящую из двух пар:
+\begin_inset Formula $\left(e,e\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ Все требования к группам выполняются: это подмножество замкнуто относительно
+ ассоциативной операции, содержит нейтральный элемент и обратные элементы
+ (каждый элемент является обратным к самому себе).
+ 
+\begin_inset Formula $G_{A}=G$
+\end_inset
+
+, 
+\begin_inset Formula $H_{A}=H$
+\end_inset
+
+, но при этом 
+\begin_inset Formula $A\neq G_{A}\times H_{A}$
+\end_inset
+
+, так как содержит меньше элементов.
+\end_layout
+
+\begin_layout Exercise
+Верны ли равенства: 
+\begin_inset Formula $Z_{2}\times Z_{3}\cong Z_{6}$
+\end_inset
+
+ и 
+\begin_inset Formula $Z_{2}\times Z_{4}\cong Z_{8}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+Покажем, что в 
+\begin_inset Formula $Z_{2}\times Z_{3}$
+\end_inset
+
+ есть элемент порядка 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ Действительно, пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — образующий 
+\begin_inset Formula $Z_{3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a,b\right)^{k}=\left(a^{k},b^{k}\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+может быть вынести доказательство этого в отдельную задачу?
+\end_layout
+
+\end_inset
+
+.
+ Рассмотрим последовательные степени элемента 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+: 
+\begin_inset Formula $\left(a,b\right)^{2}=\left(a^{2},b^{2}\right)=\left(e,b^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)^{3}=\left(a,e\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)^{4}=\left(e,b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)^{5}=\left(a,b^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)^{6}=\left(e,e\right)=e$
+\end_inset
+
+.
+ Таким образом, в 
+\begin_inset Formula $Z_{2}\times Z_{3}$
+\end_inset
+
+ есть элемент порядка 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ При этом, как показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-cardinality"
+
+\end_inset
+
+, в 
+\begin_inset Formula $Z_{2}\times Z_{3}$
+\end_inset
+
+ шесть элементов, поэтому 
+\begin_inset Formula $Z_{2}\times Z_{3}$
+\end_inset
+
+ действительно изоморфна 
+\begin_inset Formula $Z_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Проведём аналогичные вычисления для 
+\begin_inset Formula $Z_{2}\times Z_{4}$
+\end_inset
+
+:
+\begin_inset Formula $\left(a,b\right)^{2}=\left(a^{2},b^{2}\right)=\left(e,b^{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)^{3}=\left(a,b^{3}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)^{4}=\left(a^{4},b^{4}\right)=\left(e,e\right)=e$
+\end_inset
+
+, таким образом порядок элемента 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ равен 4.
+ Аналогично, для любого элемента 
+\begin_inset Formula $\left(a^{j},b^{k}\right)^{4}=\left(a^{4j},b^{4k}\right)=\left(\left(a^{2}\right)^{2j},\left(b^{4}\right)^{k}\right)=\left(e,e\right)=e$
+\end_inset
+
+.
+ Таким образом, порядок любого элемента 
+\begin_inset Formula $Z_{2}\times Z_{4}$
+\end_inset
+
+ не превосходит 4.
+ Таким образом, эта группа не может быть изоморфна 
+\begin_inset Formula $Z_{8}$
+\end_inset
+
+, так как в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-order-of-elements"
+
+\end_inset
+
+ было показано, что изоморфизм сохраняет порядок элементов.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $Z_{m}\times Z_{n}\cong Z_{mn}$
+\end_inset
+
+ тогда и только тогда, когда числа 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим степени элементов 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ — образующий 
+\begin_inset Formula $Z_{m}$
+\end_inset
+
+, а 
+\begin_inset Formula $b$
+\end_inset
+
+ — образующий 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+.
+ Равенство 
+\begin_inset Formula $\left(a,b\right)^{r}=e$
+\end_inset
+
+ выполняется при 
+\begin_inset Formula $r$
+\end_inset
+
+, кратных одновременно числам 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+, наименьшим из таких 
+\begin_inset Formula $r$
+\end_inset
+
+ является наименьшее общее кратное 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Таким образом, если у 
+\begin_inset Formula $n$
+\end_inset
+
+ и 
+\begin_inset Formula $m$
+\end_inset
+
+ есть общие множители, кроме единицы, то 
+\begin_inset Formula $Z_{m}\times Z_{n}$
+\end_inset
+
+ не может быть изоморфно 
+\begin_inset Formula $Z_{mn}$
+\end_inset
+
+, так как в 
+\begin_inset Formula $Z_{m}\times Z_{n}$
+\end_inset
+
+ не будет существовать элемента порядка 
+\begin_inset Formula $mn$
+\end_inset
+
+.
+ И наоборот, если 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+ взаимно просты, то взяв в качестве образующего 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, получим 
+\begin_inset Formula $nm$
+\end_inset
+
+ различных элементов вида 
+\begin_inset Formula $\left(a,b\right)^{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le k<nm$
+\end_inset
+
+, так как 
+\begin_inset Formula $nm$
+\end_inset
+
+ будет наименьшим общим кратным чисел 
+\begin_inset Formula $m$
+\end_inset
+
+ и 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что в 
+\begin_inset Formula $Z_{m}\times Z_{n}$
+\end_inset
+
+ не содержит других элементов.
+ По доказанному в упражнении
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-cardinality"
+
+\end_inset
+
+, во множестве 
+\begin_inset Formula $Z_{m}\times Z_{n}$
+\end_inset
+
+ всего 
+\begin_inset Formula $mn$
+\end_inset
+
+ элементов.
+ Таким образом, в 
+\begin_inset Formula $Z_{m}\times Z_{n}$
+\end_inset
+
+ нет других элементов, кроме 
+\begin_inset Formula $\left(a,b\right)^{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le k<nm$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача про изоморфизм 
+\begin_inset Formula $Z_{m}\times Z_{n}=Z_{lcm\left(m,n\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
