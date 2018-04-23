@@ -5300,6 +5300,12 @@ status open
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:isomorphism-is-transitive"
+
+\end_inset
+
 Отсюда следует, что две группы, изоморфные третьей, изоморфны между собой.
 \end_layout
 
@@ -8646,6 +8652,12 @@ reference "def:isomorphism"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:cartesian-product-contains-subgroups-isomorphic-to-multipliers"
+
+\end_inset
+
 Найти подгруппы группы 
 \begin_inset Formula $G\times H$
 \end_inset
@@ -9451,6 +9463,817 @@ status open
 \begin_layout Section
 Смежные классы.
  Теорема Лагранжа
+\end_layout
+
+\begin_layout Standard
+Каждая подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ порождает разбиение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на подмножества.
+ 
+\end_layout
+
+\begin_layout Definition
+Для любого элемента 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ рассмотрим множество элементов вида 
+\begin_inset Formula $x\circ h$
+\end_inset
+
+, где 
+\begin_inset Formula $h$
+\end_inset
+
+ пробегает всевозможные значения из подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Полученное множество, обозначаемое 
+\begin_inset Formula $x\circ H$
+\end_inset
+
+, называется 
+\emph on
+левым смежным классом по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённым элементом
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что каждый элемент группы входит в некоторый левый смежный класс
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то она содержит нейтральный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+, как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:neutral-element-of-subgroup"
+
+\end_inset
+
+.
+ Рассмотрим произвольный элемент 
+\begin_inset Formula $x\in G$
+\end_inset
+
+, по определению нейтрального элемента 
+\begin_inset Formula $x\circ e=x$
+\end_inset
+
+, так как 
+\begin_inset Formula $e\in H$
+\end_inset
+
+, то 
+\begin_inset Formula $x$
+\end_inset
+
+ входит в левый смежный класс по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённый им самим, то есть 
+\begin_inset Formula $x\in x\circ H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть элемент 
+\begin_inset Formula $y$
+\end_inset
+
+ входит в левый смежный класс по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённый элементом 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Доказать, что левые смежные классы по 
+\begin_inset Formula $H$
+\end_inset
+
+, порождённые элементами 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ совпадают.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $y\in x\circ H$
+\end_inset
+
+, то есть существует существует 
+\begin_inset Formula $h_{y}\in H$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $y=x\circ h_{y}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $y\circ h=\left(x\circ h_{y}\right)\circ h$
+\end_inset
+
+.
+ Операция в группе является ассоциативной, поэтому 
+\begin_inset Formula 
+\[
+y\circ h=\left(x\circ h_{y}\right)\circ h=x\circ\left(h_{y}\circ h\right).
+\]
+
+\end_inset
+
+Подгруппа 
+\begin_inset Formula $H$
+\end_inset
+
+ является группой, поэтому из 
+\begin_inset Formula $h_{y}\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ следует, что 
+\begin_inset Formula $h_{1}=h_{y}\circ h$
+\end_inset
+
+ также принадлежит 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Таким образом, любой элемент смежного класса 
+\begin_inset Formula $y\circ H$
+\end_inset
+
+ входит также в смежный класс 
+\begin_inset Formula $x\circ H$
+\end_inset
+
+.
+ Таким образом, из 
+\begin_inset Formula $y\in x\circ H$
+\end_inset
+
+ следует 
+\begin_inset Formula $y\circ H\subseteq x\circ H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разбить на две задачи по этому месту
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Далее, мы можем переписать 
+\begin_inset Formula $y=x\circ h_{y}$
+\end_inset
+
+ как 
+\begin_inset Formula $x=y\circ h_{y}^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа, то 
+\begin_inset Formula $h_{y}^{-1}\in H$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $x\in y\circ H$
+\end_inset
+
+.
+ Повторяя рассуждения из предыдущего абзаца, получим 
+\begin_inset Formula $x\circ H\subseteq y\circ H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Вложения 
+\begin_inset Formula $y\circ H\subseteq x\circ H$
+\end_inset
+
+ и 
+\begin_inset Formula $x\circ H\subseteq y\circ H$
+\end_inset
+
+ вместе означают, что 
+\begin_inset Formula $x\circ H=y\circ H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Таким образом, левые смежные классы, порождённые любыми двумя элементами,
+ либо не пересекаются, либо совпадают, а значит мы получаем разбиение всех
+ элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на непересекающиеся классы.
+ Это разбиение называют 
+\emph on
+левым разложением группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:Lagrange-theorem-order-of-subgroup"
+
+\end_inset
+
+(Теорема Лагранжа).
+ Доказать, что порядок подгруппы является делителем порядка группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Разбить на подзадачи
+\end_layout
+
+\end_inset
+
+Обозначим группу как 
+\begin_inset Formula $G$
+\end_inset
+
+, а подгруппу — как 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Рассмотрим два элемента левого смежного класса 
+\begin_inset Formula $x\circ H$
+\end_inset
+
+, они имеют вид 
+\begin_inset Formula $x\circ h_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x\circ h_{2}$
+\end_inset
+
+.
+ Равенство 
+\begin_inset Formula $x\circ h_{1}=x\circ h_{2}$
+\end_inset
+
+ означает, по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:equation-has-unique-solution"
+
+\end_inset
+
+, что 
+\begin_inset Formula $h_{1}=h_{2}$
+\end_inset
+
+.
+ Таким образом, если 
+\begin_inset Formula $h_{1}\neq h_{2}$
+\end_inset
+
+, то 
+\begin_inset Formula $x\circ h_{1}\neq x\circ h_{2}$
+\end_inset
+
+, то есть в 
+\begin_inset Formula $x\circ H$
+\end_inset
+
+ содержится столько же элементов, сколько в самой подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Те же рассуждения можно провести для любого левого смежного класса.
+ 
+\end_layout
+
+\begin_layout Solution
+Пусть порядок подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ равен 
+\begin_inset Formula $m$
+\end_inset
+
+, а порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+ равен 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Левых смежных классов в конечной группе не может быть больше, чем элементов,
+ так как каждому элементу соответствует левый смежный класс, но для некоторых
+ элементов левые смежные классы могут совпадать.
+ Пусть в 
+\begin_inset Formula $G$
+\end_inset
+
+ содержится 
+\begin_inset Formula $d$
+\end_inset
+
+ левых смежных классов.
+ Так как левые смежные классы не пересекаются и покрывают всё 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $n=m\cdot d$
+\end_inset
+
+.
+ То есть 
+\begin_inset Formula $m$
+\end_inset
+
+ должно быть делителем 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:order-of-element-divides-order-of-group"
+
+\end_inset
+
+Доказать, что порядок любого элемента группы является делителем порядка
+ группы.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произвольную конечную группу 
+\begin_inset Formula $G$
+\end_inset
+
+ порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ и её произвольный элемент 
+\begin_inset Formula $a$
+\end_inset
+
+, обозначим его порядок как 
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+почему его порядок конечен?
+\end_layout
+
+\end_inset
+
+.
+ Построим подгруппу 
+\begin_inset Formula $H$
+\end_inset
+
+ как циклическую группу порядка 
+\begin_inset Formula $m$
+\end_inset
+
+ с образующим 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:Lagrange-theorem-order-of-subgroup"
+
+\end_inset
+
+, порядок этой подгруппы 
+\begin_inset Formula $m$
+\end_inset
+
+ является делителем 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:group-of-prime-order-is-cylcic"
+
+\end_inset
+
+Доказать, что всякая группа простого порядка — циклическая и любой элемент
+ в ней, отличный от нейтрального, является образующим.
+\end_layout
+
+\begin_layout Solution
+По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:order-of-element-divides-order-of-group"
+
+\end_inset
+
+, порядок элемента группы является делителем порядка группы.
+ У простого числа 
+\begin_inset Formula $p$
+\end_inset
+
+ существует только два делителя: 
+\begin_inset Formula $1$
+\end_inset
+
+ и 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Элементом первого порядка может быть только нейтральный элемент, так как
+ должно выполняться равенство 
+\begin_inset Formula $a^{1}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остальные элементы не совпадают с нейтральным, а следовательно их порядок
+ равен 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Таким образом, для любого 
+\begin_inset Formula $a\neq e$
+\end_inset
+
+ элементы 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+ при 
+\begin_inset Formula $0\le k<p$
+\end_inset
+
+ являются различными.
+ Так как в группе 
+\begin_inset Formula $G$
+\end_inset
+
+ всего 
+\begin_inset Formula $p$
+\end_inset
+
+ элементов, то все они исчерпываются степенями элемента 
+\begin_inset Formula $a^{k}$
+\end_inset
+
+, то есть любой элемент группы, отличный от нейтрального, является образующим
+ этой группы.
+\end_layout
+
+\begin_layout Exercise
+Группа 
+\begin_inset Formula $G$
+\end_inset
+
+ содержит 31 элемент.
+ Сколько подгрупп может содержать группа 
+\begin_inset Formula $G$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что все группы простого порядка 
+\begin_inset Formula $p$
+\end_inset
+
+ изоморфны друг другу.
+\end_layout
+
+\begin_layout Solution
+По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:group-of-prime-order-is-cylcic"
+
+\end_inset
+
+, всяка группа простого порядка является циклической, то есть изоморфной
+ группе 
+\begin_inset Formula $Z_{p}$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $G_{1}\cong Z_{p}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}\cong Z_{p}$
+\end_inset
+
+, то, как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:isomorphism-is-transitive"
+
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}\cong G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Построить группу порядка 
+\begin_inset Formula $n$
+\end_inset
+
+, содержащую подгруппу, изоморфную данной группе 
+\begin_inset Formula $G$
+\end_inset
+
+ порядка 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть дана произвольная группа 
+\begin_inset Formula $G$
+\end_inset
+
+ порядка 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Возьмём произвольную группу порядка 
+\begin_inset Formula $\frac{n}{m}$
+\end_inset
+
+, например 
+\begin_inset Formula $Z_{\frac{n}{m}}$
+\end_inset
+
+.
+ Тогда прямое произведение 
+\begin_inset Formula $G\times Z_{\frac{n}{m}}$
+\end_inset
+
+ содержит, как было показано в упражнении
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-cardinality"
+
+\end_inset
+
+, 
+\begin_inset Formula $m\cdot\frac{n}{m}=n$
+\end_inset
+
+ элементов.
+\end_layout
+
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-contains-subgroups-isomorphic-to-multipliers"
+
+\end_inset
+
+, прямое произведение множеств содержит подгруппу, изоморфную 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, группа 
+\begin_inset Formula $G\times Z_{\frac{n}{m}}$
+\end_inset
+
+ удовлетворяет всем условиям упражнения.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ делится на 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Может ли в группе порядка 
+\begin_inset Formula $n$
+\end_inset
+
+ не быть подгруппы порядка 
+\begin_inset Formula $m$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать про правые смежные классы и правое разложение группы по её подгруппе.
+ В коммутативной группе левое и правое разложения совпадают
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Алгоритм построения разложения конечной группы на смежные классы по заданному
+ подмножеству
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 89, 90, 91
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Найти все (с точностью до изоморфизма) группы порядков 4, 6, 8.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
