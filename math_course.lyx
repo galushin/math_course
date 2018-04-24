@@ -10308,6 +10308,318 @@ status open
 Кольца и поля
 \end_layout
 
+\begin_layout Section
+Кольца
+\end_layout
+
+\begin_layout Standard
+Пусть на некотором множестве 
+\begin_inset Formula $M$
+\end_inset
+
+ заданы две бинарные операции (сложение и умножение), которые обладают следующим
+и свойствами:
+\end_layout
+
+\begin_layout Enumerate
+Множество 
+\begin_inset Formula $M$
+\end_inset
+
+ с операцией сложения является коммутативной группой.
+ Нейтральный элемент относительно сложения обозначается как 
+\begin_inset Formula $0$
+\end_inset
+
+ (может не совпадать с числом нуль).
+ Обратный элемент к элементу 
+\begin_inset Formula $a$
+\end_inset
+
+ относительно сложения обозначается как 
+\begin_inset Formula $-a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Множество 
+\begin_inset Formula $M$
+\end_inset
+
+ с операцией умножения является полугруппой.
+\end_layout
+
+\begin_layout Enumerate
+Операция умножения является дистрибутивной относительно сложения: 
+\begin_inset Formula $a\cdot\left(b+c\right)=a\cdot b+a\cdot c$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(b+c\right)\cdot a=b\cdot a+c\cdot a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:ring-multiply-by-zero"
+
+\end_inset
+
+Доказать, что в любом кольце 
+\begin_inset Formula $a\cdot0=0\cdot a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим выражение 
+\begin_inset Formula $a\cdot a$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $0$
+\end_inset
+
+ является нейтральным элементом относительно сложения, то для любого 
+\begin_inset Formula $a$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $a=a+0$
+\end_inset
+
+.
+ Подставим это выражение вместо одного из множителей выражения 
+\begin_inset Formula $a\cdot a$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+a\cdot a=a\cdot\left(a+0\right)=a\cdot a+a\cdot0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:equation-has-unique-solution"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+a\cdot0=-\left(a\cdot a\right)+\left(a\cdot a\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Равенство 
+\begin_inset Formula $0\cdot a$
+\end_inset
+
+ доказывается аналогично, если выполнить замену 
+\begin_inset Formula $a=a+0$
+\end_inset
+
+ для другого множителя.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что в любом поле выполняются равенства 
+\begin_inset Formula $\left(-a\right)\cdot b=a\cdot\left(-b\right)=-\left(a\cdot b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(-a\right)\cdot\left(-b\right)=a\cdot b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что 
+\begin_inset Formula $\left(-a\right)\cdot b$
+\end_inset
+
+ является обратным элементом относительно сложения для элемента 
+\begin_inset Formula $a\cdot b$
+\end_inset
+
+.
+ В силу дистрибутивности и по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:ring-multiply-by-zero"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+a\cdot b+\left(-a\right)\cdot b=\left(a+\left(-a\right)\right)\cdot b=0\cdot b=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(-a\right)\cdot b+a\cdot b=\left(a+\left(-a\right)\right)\cdot b=0\cdot b=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как обратный элемент является единственным 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-uniqueness"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\left(-a\right)\cdot b=-\left(a\cdot b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Аналогично, доказывается второе равенство:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a\cdot\left(-b\right)+a\cdot b=a\cdot\left(\left(-b\right)+b\right)=a\cdot0=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+a\cdot b+a\cdot\left(-b\right)=a\cdot\left(b+\left(-b\right)\right)=a\cdot0=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Применяя доказанные равенства поочерёдно, докажем последнее равенство: 
+\begin_inset Formula 
+\[
+\left(-a\right)\cdot\left(-b\right)=-\left(a\cdot\left(-b\right)\right)=-\left(-\left(a\cdot b\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как двойное взятие обратного элемента даёт исходный элемент 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:double-inverse"
+
+\end_inset
+
+, то получаем 
+\begin_inset Formula 
+\[
+\left(-a\right)\cdot\left(-b\right)=a\cdot b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Поля
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дать определение поля
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — элементы произвольного поля и 
+\begin_inset Formula $a\cdot b=0$
+\end_inset
+
+.
+ Доказать, что либо 
+\begin_inset Formula $a=0$
+\end_inset
+
+ и 
+\begin_inset Formula $b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Многочлены
 \end_layout
