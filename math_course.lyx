@@ -10280,8 +10280,335 @@ status open
 Внутренние автоморфизмы
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Мотивирующий пример для понятия внутреннего автоморфизма
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача 93
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:inner-automorphism"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — группа, а 
+\begin_inset Formula $g$
+\end_inset
+
+ — её некоторый элемент.
+ Отображение 
+\begin_inset Formula 
+\[
+\varphi_{g}\left(x\right)=g\circ x\circ g^{-1}
+\]
+
+\end_inset
+
+называется внутренним автоморфизмом группы 
+\begin_inset Formula $G$
+\end_inset
+
+, порождённым элементом 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:inner-automorphism-is-isomorphism-in-itself"
+
+\end_inset
+
+Доказать, что внутренний автоморфизм
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:inner-automorphism"
+
+\end_inset
+
+ группы является изоморфизмом группы на себя.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ определено для всех 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{g}\left(x\right)\in G$
+\end_inset
+
+ как результат применения бинарной операции к элементам 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Отображение 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ является взаимно-однозначным, так как уравнение 
+\begin_inset Formula $y=g\circ x\circ g^{-1}$
+\end_inset
+
+ имеет единственное решение, как было доказано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:equation-has-unique-solution"
+
+\end_inset
+
+: 
+\begin_inset Formula $x=g^{-1}\circ y\circ g$
+\end_inset
+
+, то есть обратное отображение есть 
+\begin_inset Formula $\varphi_{g^{-1}}$
+\end_inset
+
+, которое также определено для всех 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что отображение 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ переводит произведение в произведение.
+ Действительно: 
+\begin_inset Formula 
+\[
+\varphi_{g}\left(a\circ b\right)=g\circ a\circ b\circ g^{-1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{g}\left(a\right)\circ\varphi_{g}\left(b\right)=g\circ a\circ g^{-1}\circ g\circ b\circ g^{-1}=g\circ a\circ b\circ g^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части равенств равны, а значит равны и левые, то есть 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ — изоморфизм, переводящий 
+\begin_inset Formula $G$
+\end_inset
+
+ в себя.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 95-97
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Докажите, что порядки элементов 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+ и 
+\begin_inset Formula $b\circ a$
+\end_inset
+
+ в любой группе равны.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим внутренний автоморфизм 
+\begin_inset Formula $\varphi_{b}$
+\end_inset
+
+, это отображение переводит 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+ в 
+\begin_inset Formula $b\circ a$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\varphi_{b}\left(a\circ b\right)=b\circ a\circ b\circ b^{-1}=b\circ a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inner-automorphism-is-isomorphism-in-itself"
+
+\end_inset
+
+, внутренний автоморфизм является изоморфизмом, преобразующим 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+.
+ А как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-order-of-elements"
+
+\end_inset
+
+, изоморфизм сохраняет порядок элементов.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Абзац, подводящий к понятию нормальной подгруппы
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Нормальные подгруппы
+\end_layout
+
+\begin_layout Definition
+Подгруппа некоторой группы называется 
+\emph on
+нормальной подгруппой
+\emph default
+, если она переходит в себя при всех внутренних автоморфизмах группы.
+\end_layout
+
+\begin_layout Standard
+Иными словами, подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ называется нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+, если для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ элемент 
+\begin_inset Formula $g\circ a\circ g^{-1}\in N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Примеры
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Докажите, что в коммутативной группе всякая подгруппа является нормальной
+ подгруппой.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача 100
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -10565,6 +10892,19 @@ reference "exer:double-inverse"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение разности элементов
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Поля
 \end_layout
@@ -10613,6 +10953,49 @@ status open
 
 \begin_layout Plain Layout
 Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример: умножение по модулю
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Построить таблицы умножения по модулю 2, 3 и 4.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение частного
 \end_layout
 
 \end_inset
