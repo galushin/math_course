@@ -9728,6 +9728,51 @@ status open
 .
 \end_layout
 
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:same-left-class-criterion"
+
+\end_inset
+
+Доказать, что два элемента 
+\begin_inset Formula $x_{1},x_{2}\in G$
+\end_inset
+
+ принадлежат одному и то му же левому смежному классу по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $x_{1}^{-1}\circ x_{2}\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Два элемента принадлежат одному классу тогда и только тогда, когда существует
+ элемент 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $x_{2}=x_{1}\circ h$
+\end_inset
+
+.
+ Умножая это равенство слева на 
+\begin_inset Formula $x_{1}^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $x_{1}^{-1}\circ x_{2}=h\in H$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Definition
 Таким образом, левые смежные классы, порождённые любыми двумя элементами,
  либо не пересекаются, либо совпадают, а значит мы получаем разбиение всех
@@ -9749,6 +9794,16 @@ status open
 .
 \end_layout
 
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Lagrange-order-of-subfroup"
+
+\end_inset
+
+(Лагранжа) Порядок подгруппы является делителем порядка группы.
+\end_layout
+
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
@@ -9756,8 +9811,14 @@ name "exer:Lagrange-theorem-order-of-subgroup"
 
 \end_inset
 
-(Теорема Лагранжа).
- Доказать, что порядок подгруппы является делителем порядка группы.
+Доказать теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-order-of-subfroup"
+
+\end_inset
+
+, что порядок подгруппы является делителем порядка группы.
 \end_layout
 
 \begin_layout Solution
@@ -10586,12 +10647,37 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим коммутативную группу 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ и её произвольную подгруппу 
+\begin_inset Formula $N$
+\end_inset
+
+, а также произвольные элементы 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in N$
+\end_inset
+
+, нам нужно доказать, что 
+\begin_inset Formula $\varphi_{g}\left(a\right)=g\circ a\circ g^{-1}\in N$
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $g$
+\end_inset
+
+ — коммутативна, то мы можем переставить первый и второй множитель в рассматрива
+емом произведении: 
+\begin_inset Formula 
+\[
+g\circ a\circ g^{-1}=a\circ g\circ g^{-1}=a\circ e=a\in N.
+\]
 
 \end_inset
 
@@ -10611,20 +10697,3001 @@ status open
 
 \end_layout
 
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Normal-subgoup-criteria"
+
+\end_inset
+
+Подгруппа 
+\begin_inset Formula $N$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ является нормальной подгруппой тогда и только тогда, когда левое и правое
+ разложения группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+ совпадают.
+\end_layout
+
+\begin_layout Exercise
+Доказать теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Normal-subgoup-criteria"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа, тогда для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $a^{\prime}=g\circ a\circ g^{-1}\in N$
+\end_inset
+
+.
+ Равенство 
+\begin_inset Formula $a^{\prime}=g\circ a\circ g^{-1}$
+\end_inset
+
+ можно переписать как 
+\begin_inset Formula $a^{\prime}\circ g=g\circ a$
+\end_inset
+
+.
+ Это равенство означает, что левый и правые смежные классы по 
+\begin_inset Formula $N$
+\end_inset
+
+, порождённые любым элементом 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, совпадают, а значит совпадают и сами левое и правое разложения.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь эквивалентность в другом направлении.
+ Пусть левое и правое разложение совпадают.
+ То есть для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ левый и правые смежные классы совпадают, то есть 
+\begin_inset Formula $g\circ N=N\circ g$
+\end_inset
+
+.
+ Это равенство, в свою очередь, означает, что для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ существует 
+\begin_inset Formula $a^{\prime}\in N$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $g\circ a=a^{\prime}\circ g$
+\end_inset
+
+, то есть 
+\begin_inset Formula $a^{\prime}=g\circ a\circ g^{-1}=\varphi_{g}\left(a\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $a^{\prime}$
+\end_inset
+
+ принадлежат множеству 
+\begin_inset Formula $N$
+\end_inset
+
+, а 
+\begin_inset Formula $g$
+\end_inset
+
+ — произвольный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $N$
+\end_inset
+
+ является нормальной подгруппой.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $n$
+\end_inset
+
+ — порядок группы 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+ — порядок подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $m=\frac{n}{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $H$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что левое и правое разложение по 
+\begin_inset Formula $H$
+\end_inset
+
+ совпадают, тогда, по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Normal-subgoup-criteria"
+
+\end_inset
+
+, 
+\begin_inset Formula $H$
+\end_inset
+
+ является нормальной.
+ При доказательстве теоремы Лагранжа
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Lagrange-order-of-subfroup"
+
+\end_inset
+
+ мы показали, что количество смежных классов равно отношению порядка группы
+ и порядка подгруппы, по которой строится разложение.
+ В нашем случае получаем 
+\begin_inset Formula $\frac{n}{m}=2$
+\end_inset
+
+.
+ Один из смежных классов как по левому, так и по правому разложению совпадает
+ с 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Так как смежных классов всего два, то второй класс и для левого, и для
+ правого разложения включает все элементы, не входящие в 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Таким образом оба разложения состоят из 
+\begin_inset Formula $H$
+\end_inset
+
+ и 
+\begin_inset Formula $G\setminus H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Доказать, что пересечение любого числа нормальных подгрупп некоторой группы
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим 
+\begin_inset Formula $m$
+\end_inset
+
+ нормальных подгрупп 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+,..., 
+\begin_inset Formula $N_{m}$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и их пересечение 
+\begin_inset Formula $N=N_{1}\cap N_{2}\cap...\cap N_{m}$
+\end_inset
+
+.
+ Нужно доказать, что для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и для любого 
+\begin_inset Formula $a\in N$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $g\circ a\circ g^{-1}\in N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению пересечения множеств, если 
+\begin_inset Formula $a\in N$
+\end_inset
+
+, то 
+\begin_inset Formula $a\in N_{k}$
+\end_inset
+
+ для любого 
+\begin_inset Formula $k=1..m$
+\end_inset
+
+.
+ Так как все 
+\begin_inset Formula $N_{k}$
+\end_inset
+
+ являются нормальными подгруппами группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $g\circ a\circ g^{-1}\in N_{k}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $g\circ a\circ g^{-1}$
+\end_inset
+
+ принадлежит каждому из 
+\begin_inset Formula $N_{k}$
+\end_inset
+
+, а значит принадлежит и их пересечению, что и требуется.
+\end_layout
+
+\begin_layout Exercise
+Множество элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+, перестановочных со всеми элементами группы, называется 
+\emph on
+центром 
+\emph default
+группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что центр — подгруппа и, более того, нормальная подгруппа группы
+ 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Обозначим центр группы как 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Докажем сначала, что центр замкнут относительно групповой операции.
+ Пусть 
+\begin_inset Formula $x_{1},x_{2}\in C$
+\end_inset
+
+ тогда для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ выполняются равенства 
+\begin_inset Formula $x_{1}\circ g=g\circ x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}\circ g=g\circ x_{2}$
+\end_inset
+
+.
+ Докажем, что 
+\begin_inset Formula $x_{1}\circ x_{2}$
+\end_inset
+
+ является перестановочным со всеми элементами группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Действительно, воспользовавшись ассоциативностью, а затем — дважды перестановоч
+ностью (
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ соответственно), получим: 
+\begin_inset Formula 
+\[
+\left(x_{1}\circ x_{2}\right)\circ g=x_{1}\circ x_{2}\circ g=x_{2}\circ g\circ x_{1}=g\circ x_{1}\circ x_{2}=g\circ\left(x_{1}\circ x_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Далее, по определению нейтрального элемента 
+\begin_inset Formula $e$
+\end_inset
+
+ для любых 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ выполняется равенство 
+\begin_inset Formula $e\circ g=g\circ e=g$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e$
+\end_inset
+
+ является перестановочным со всеми 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $e\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь, что обратный к элементу центра элемент также принадлежит
+ центру.
+ Пусть 
+\begin_inset Formula $x\in C$
+\end_inset
+
+, умножая равенство 
+\begin_inset Formula $x\circ g=g\circ x$
+\end_inset
+
+, справедливое, по определению центра, для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, слева и справа на 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $g\circ x^{-1}=x^{-1}\circ g$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x^{-1}\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Мы доказали, что центр группы является группа.
+ Центр группы также, очевидно, является подмножеством этой группы, поэтому
+ центр — подгруппа.
+ Докажем теперь, что эта подгруппа является нормальной.
+ Для этого рассмотрим произвольный внутренний автоморфизм 
+\begin_inset Formula $\varphi_{g}$
+\end_inset
+
+ и 
+\begin_inset Formula $x\in C$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\varphi_{g}\left(x\right)=g\circ x\circ g^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x$
+\end_inset
+
+ является перестановочным с любым 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, то 
+\begin_inset Formula $g\circ x\circ g^{-1}=x\circ g\circ g^{-1}=x\circ e=x$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $g\circ x\circ g^{-1}\in C$
+\end_inset
+
+, то есть 
+\begin_inset Formula $C$
+\end_inset
+
+ переходит в себя при любом внутреннем автоморфизме, а значит является нормально
+й подгруппой.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы в группах 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+, соответственно.
+ Доказать, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в группе 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что для любого 
+\begin_inset Formula $g\in G_{1}\times G_{2}$
+\end_inset
+
+ и любого 
+\begin_inset Formula $a\in N_{1}\times N_{2}$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $g\circ a\circ g^{-1}\in N_{1}\times N_{2}$
+\end_inset
+
+.
+ Элементы прямого произведения — это упорядоченные пары, поэтому 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1}\in G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in G_{2}$
+\end_inset
+
+, а 
+\begin_inset Formula $a=\left(a_{1},a_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a_{1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{2}\in N_{2}$
+\end_inset
+
+.
+ По определению бинарной операции для прямого произведения 
+\begin_inset Formula $g\circ a=\left(g_{1}\circ a_{1},g_{2}\circ a_{2}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\circ a\circ g^{-1}=\left(g_{1}\circ a_{1}\circ g_{1}^{-1},g_{2}\circ a_{2}\circ g_{2}^{-1}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы, то 
+\begin_inset Formula $g_{1}\circ a_{1}\circ g_{1}^{-1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\circ a_{2}\circ g_{2}^{-1}\in N_{2}$
+\end_inset
+
+, а значит 
+\begin_inset Formula $g\circ a\circ g^{-1}\in N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример 11: нормальная подгруппа нормальной подгруппы может не быть нормальной
+ подгруппой группы
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Факторгруппы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Мотивирующий пример
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть имеется разложение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+, и пусть элементы 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ лежат в одном смежном классе и элементы 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ также лежат в одном смежном классе (возможно, в другом).
+ Доказать, что элементы 
+\begin_inset Formula $x_{1}\circ y_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}\circ y_{2}$
+\end_inset
+
+ лежат в одном смежном классе.
+\end_layout
+
+\begin_layout Solution
+Если два элемента принадлежат одному смежному классу, то один может быть
+ получен из другого умножением на некоторый элемент подгруппы, по которой
+ производится разложение: 
+\begin_inset Formula 
+\[
+x_{2}=x_{1}\circ h_{x},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+y_{2}=y_{1}\circ h_{y},
+\]
+
+\end_inset
+
+где 
+\begin_inset Formula $h_{x},h_{y}\in H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{2}\circ y_{2}=x_{1}\circ h_{x}\circ y_{1}\circ h_{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Нужно преобразовать это выражение к виду 
+\begin_inset Formula $x_{1}\circ y_{1}\circ h$
+\end_inset
+
+, где 
+\begin_inset Formula $h\in N$
+\end_inset
+
+.
+ Воспользуемся тем, что 
+\begin_inset Formula $y_{1}^{-1}\circ y_{1}=e$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+x_{2}\circ y_{2}=x_{1}\circ y_{1}\circ y_{1}^{-1}\circ h_{x}\circ y_{1}\circ h_{y}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа, а 
+\begin_inset Formula $y_{1}^{-1}\circ h_{x}\circ y_{1}=\varphi_{y_{1}^{-1}}\left(h_{x}\right)$
+\end_inset
+
+ — результат применения внутреннего автоморфизма к её элементу, то 
+\begin_inset Formula $y_{1}^{-1}\circ h_{x}\circ y_{1}=h_{x}^{\prime}\in N$
+\end_inset
+
+, поэтому:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{2}\circ y_{2}=\left(x_{1}\circ y_{1}\right)\circ\left(h_{x}^{\prime}\circ h_{y}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — группа, то 
+\begin_inset Formula $h_{x}^{\prime}\circ h_{y}\in N$
+\end_inset
+
+.
+ Это произведение и даёт искомый элемент 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Пусть имеется разложение на смежные классы по некоторой подгруппе.
+ Произведение классов 
+\begin_inset Formula $T_{1}\circ T_{2}$
+\end_inset
+
+ определяется следующим образом: возьмём из каждого из этих классов по одному
+ произвольному элементу 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ (их называют представителями), 
+\emph on
+произведением классов
+\emph default
+ будем считать класс, которому принадлежит 
+\begin_inset Formula $t_{1}\circ t_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:class-product-associativity"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+,
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ — некоторые смежные классы из разложения нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\left(T_{1}\circ T_{2}\right)\circ T_{3}=T_{1}\circ\left(T_{2}\circ T_{3}\right)$
+\end_inset
+
+, то есть умножение для смежных классов ассоциативно.
+\end_layout
+
+\begin_layout Solution
+Возьмём в каждом из классов по представителю: 
+\begin_inset Formula $t_{1}\in T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}\in T_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{3}\in T_{3}$
+\end_inset
+
+.
+ Так как умножение в группе ассоциативно, то 
+\begin_inset Formula $\left(t_{1}\circ t_{2}\right)\circ t_{3}=t_{1}\circ\left(t_{2}\circ t_{3}\right)$
+\end_inset
+
+.
+ Таким образом, классы 
+\begin_inset Formula $\left(T_{1}\circ T_{2}\right)\circ T_{3}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{1}\circ\left(T_{2}\circ T_{3}\right)$
+\end_inset
+
+ имеют общего представителя, а значит совпадают
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Добавить ссылку
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:class-product-neutral-element"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $T$
+\end_inset
+
+ — произвольный смежный класс разложения по нормальная подгруппе 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $E\circ T=T\circ E=T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Возьмём произвольного представителя класса 
+\begin_inset Formula $T$
+\end_inset
+
+: 
+\begin_inset Formula $t\in T$
+\end_inset
+
+.
+ В качестве представителя класса 
+\begin_inset Formula $E$
+\end_inset
+
+ можно взять 
+\begin_inset Formula $e$
+\end_inset
+
+, так как 
+\begin_inset Formula $E$
+\end_inset
+
+ — подгруппа.
+ По определению нейтрального элемента 
+\begin_inset Formula $e\circ t=t\circ e=t$
+\end_inset
+
+, поэтому классы 
+\begin_inset Formula $E\circ T$
+\end_inset
+
+, 
+\begin_inset Formula $T\circ E$
+\end_inset
+
+ и 
+\begin_inset Formula $T$
+\end_inset
+
+ имеют общего представителя — 
+\begin_inset Formula $t$
+\end_inset
+
+, а значит совпадают.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:class-product-inverse-element"
+
+\end_inset
+
+Доказать, что для любого смежного класса 
+\begin_inset Formula $T$
+\end_inset
+
+ разложения по нормальной подгруппе 
+\begin_inset Formula $E$
+\end_inset
+
+ найдётся класс 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $T\circ T^{-1}=T^{-1}T=E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Возьмём некоторого представителя класса 
+\begin_inset Formula $T$
+\end_inset
+
+: 
+\begin_inset Formula $e\in T$
+\end_inset
+
+.
+ Докажем, что в качестве 
+\begin_inset Formula $T^{-1}$
+\end_inset
+
+ можно взять смежный класс, порождённый элементом 
+\begin_inset Formula $t^{-1}$
+\end_inset
+
+ (который всегда существует в группе).
+ Действительно, 
+\begin_inset Formula $t\circ t^{-1}=t^{-1}\circ t=e$
+\end_inset
+
+, поэтому классы 
+\begin_inset Formula $T\circ T^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $T^{-1}\circ T$
+\end_inset
+
+ содержат элемент 
+\begin_inset Formula $e\in E$
+\end_inset
+
+, а значит совпадают с 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Из упражнений 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:class-product-associativity"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:class-product-neutral-element"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:class-product-inverse-element"
+
+\end_inset
+
+ следует, что множество смежных классов с описанной выше бинарной операцией
+ образует группу.
+ Эта группа называется 
+\emph on
+факторгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+ 
+\emph default
+и обозначается 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $G/\left\{ e\right\} \cong G$
+\end_inset
+
+ и 
+\begin_inset Formula $G/G\cong\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как в группу 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ содержится только один элемент, то смежные классы 
+\begin_inset Formula $G/\left\{ e\right\} $
+\end_inset
+
+ также содержат по одному элементу.
+ Таким образом, между элементами 
+\begin_inset Formula $G$
+\end_inset
+
+ и классами 
+\begin_inset Formula $G/\left\{ e\right\} $
+\end_inset
+
+ существует взаимно-однозначное соответствие: каждому элементу соответствует
+ класс, состоящий только из одного этого элемента.
+ Так как умножение смежных классов определяется через умножение их представителе
+й, то это взаимно-однозначное соответствие переводит произведение в произведение
+, а значит является изоморфизмом.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь фактор-группу 
+\begin_inset Formula $G/G$
+\end_inset
+
+.
+ Разложение 
+\begin_inset Formula $G$
+\end_inset
+
+ по 
+\begin_inset Formula $G$
+\end_inset
+
+ содержит только один класс — саму группу 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом 
+\begin_inset Formula $G/G$
+\end_inset
+
+ состоит из одного элемента, а так как группа обязательно содержит нейтральный
+ элемент, то единственная (с точностью до изоморфизма) возможная группа
+ первого порядка состоит только из нейтрального элемента, то есть 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Доказать, что порядок факторгруппы 
+\begin_inset Formula $G/N$
+\end_inset
+
+ равен отношению порядка группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и порядка подгруппы 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $G/N$
+\end_inset
+
+ — это группа, элементами которой являются все смежные классы, то её порядок
+ равен количеству смежных классов, а при доказательстве теоремы Лагранжа
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:Lagrange-theorem-order-of-subgroup"
+
+\end_inset
+
+ было показано, что порядок группы равен количество смежных классов, умноженному
+ на порядок подгруппы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 110-113
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+В прямом произведении групп 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+ рассмотрим подгруппу 
+\begin_inset Formula $G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+.
+ Доказать, что это нормальная подгруппа и что факторгруппа по ней изоморфна
+ подгруппе 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $g\in G_{1}\times G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $a\in G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+, докажем, что 
+\begin_inset Formula $g\circ a\circ g^{-1}\in G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+.
+ По определению прямого произведения 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $a=\left(a_{1},e_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1},a_{1}\in G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in G_{2}$
+\end_inset
+
+, а по определению бинарной операции для прямого произведения, получим:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+g\circ a\circ g^{-1}=\left(g_{1},g_{2}\right)\circ\left(a_{1},e_{2}\right)\circ\left(g_{1}^{-1},g_{2}^{-1}\right)=\\
+=\left(g_{1}\circ a_{1},g_{2}\circ e_{2}\right)\circ\left(g_{1}^{-1},g_{2}^{-1}\right)=\\
+=\left(g_{1}\circ a_{1},g_{2}\right)\circ\left(g_{1}^{-1},g_{2}^{-1}\right)=\\
+=\left(g_{1}\circ a_{1}\circ g_{1}^{-1},g_{2}\circ g_{2}^{-1}\right)=\left(g_{1}\circ a_{1}\circ g_{1}^{-1},e_{2}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как для любых 
+\begin_inset Formula $g_{1},a_{1}\in G_{1}$
+\end_inset
+
+ элемент, задаваемый выражение 
+\begin_inset Formula $g_{1}\circ a_{1}\circ g_{1}^{-1}$
+\end_inset
+
+, входит в 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, значит 
+\begin_inset Formula $\left(g_{1}\circ a_{1}\circ g_{1}^{-1},e_{2}\right)\in G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+.
+ Итак, 
+\begin_inset Formula $g\circ a\circ g^{-1}\in G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+, то есть 
+\begin_inset Formula $G_{1}\times\left\{ e_{2}\right\} $
+\end_inset
+
+ является нормальной подгруппой.
 \end_layout
 
 \begin_layout Section
 Коммутант
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Мотивирующее введение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Равенство 
+\begin_inset Formula $a\circ b\circ a^{-1}\circ b^{-1}=e$
+\end_inset
+
+ выполняется тогда и только тогда, когда 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются перестановочными.
+\end_layout
+
+\begin_layout Solution
+Пусть элементы 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются перестановочными, то есть 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+.
+ Умножив это равенство справа сначала на 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, а затем на 
+\begin_inset Formula $b^{-1}$
+\end_inset
+
+, получим 
+\begin_inset Formula $a\circ b\circ a^{-1}\circ b^{-1}=e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь выполняется равенство 
+\begin_inset Formula $a\circ b\circ a^{-1}\circ b^{-1}=e$
+\end_inset
+
+, умножая это равенство справа сначала на 
+\begin_inset Formula $b$
+\end_inset
+
+, а затем на 
+\begin_inset Formula $a$
+\end_inset
+
+, получим: 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+, то есть элементы 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ являются перестановочными.
+\end_layout
+
+\begin_layout Definition
+Элемент 
+\begin_inset Formula $a\circ b\circ a^{-1}\circ b^{-1}$
+\end_inset
+
+ называют 
+\emph on
+коммутатором 
+\emph default
+элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Коммутантом 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ называется множество всевозможных произведений конечного числа коммутаторов
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Объяснить, почему множество коммутаторов ещё не является группой.
+ Возможно, нужно объяснить более общю конструкцию: построение минимальной
+ группы, содержащей заданное подмножество.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:commutant-is-subgroup"
+
+\end_inset
+
+Доказать, что коммутант является подгруппой.
+\end_layout
+
+\begin_layout Solution
+По свойствам группы элемент, определяемый коммутатором 
+\begin_inset Formula $\left[a,b\right]=a\circ b\circ a^{-1}\circ b^{-1}$
+\end_inset
+
+ элементов группы 
+\begin_inset Formula $G$
+\end_inset
+
+, принадлежит группе 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Аналогично, любое конечное произведение коммутаторов принадлежит 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Таким образом, коммутант является подмножеством 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Теперь докажем, что коммутант является группой.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим произведение двух элементов, принадлежащих коммутанту, каждый
+ из них является произведением конечного числа коммутаторов.
+ Так как бинарная операция в группе ассоциативна, то результат снова будет
+ произведением конечного числа коммутаторов, то есть будет принадлежать
+ коммутанту.
+ Отсюда же следует, что бинарная операция на коммутанте является ассоциативной.
+ Таким образом, коммутант — полугруппа.
+\end_layout
+
+\begin_layout Solution
+Далее, 
+\begin_inset Formula $\left[a,a\right]=a\circ a\circ a^{-1}\circ a^{-1}=a\circ a^{-1}=e$
+\end_inset
+
+, поэтому нейтральный элемент принадлежит коммутанту, то есть коммутант
+ является моноидом.
+\end_layout
+
+\begin_layout Solution
+Остаётся доказать, что если коммутант содержит обратные элементы ко всем
+ своим элементам.
+ Любой элемент коммутанта имеет вид 
+\begin_inset Formula $g=\left[a_{1},b_{1}\right]\circ...\circ\left[a_{m},b_{m}\right]$
+\end_inset
+
+.
+ Сначала найдём обратный элемент к коммутатору:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left[a_{k},b_{k}\right]^{-1}=\left(a_{k}\circ b_{k}\circ a_{k}^{-1}\circ b_{k}^{-1}\right)^{-1}=b_{k}\circ a_{k}\circ b_{k}^{-1}\circ a_{k}^{-1}=\left[b_{k},a_{k}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Тогда для 
+\begin_inset Formula $g\in K\left(G\right)$
+\end_inset
+
+ получаем 
+\begin_inset Formula 
+\[
+g^{-1}=\left[b_{m},a_{m}\right]\circ...\circ\left[b_{1},a_{1}\right],
+\]
+
+\end_inset
+
+то есть 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ тоже является произведением конечного числа коммутаторов, а значит принадлежит
+ коммутанту.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что коммутант 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ является нормальной подгруппой группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-is-subgroup"
+
+\end_inset
+
+ показано, что коммутант — это подгруппа.
+ Для того, чтобы доказать, что 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — нормальная подгруппа, нужно показать, что для любых 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ и 
+\begin_inset Formula $h\in K\left(G\right)$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $\varphi_{g}\left(h\right)=g\circ h\circ g^{-1}\in K\left(G\right)$
+\end_inset
+
+.
+ Докажем это индукцией по количеству коммутаторов в произведении.
+ База индукции — случай произведения из одного коммутатора, то есть 
+\begin_inset Formula $h=\left[a,b\right]$
+\end_inset
+
+.
+ По определению коммутатора:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+g\circ\left[a,b\right]\circ g^{-1}=g\circ a\circ b\circ a^{-1}\circ b^{-1}\circ g^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Обозначим 
+\begin_inset Formula $a^{\prime}=g\circ a\circ g^{-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{\prime}=g\circ b\circ g^{-1}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g\circ a=a^{\prime}\circ g$
+\end_inset
+
+, 
+\begin_inset Formula $b=g^{-1}\circ b^{\prime}\circ g$
+\end_inset
+
+, 
+\begin_inset Formula $a=g^{-1}\circ a^{\prime}\circ g$
+\end_inset
+
+, 
+\begin_inset Formula $a^{-1}=g^{-1}\circ\left(a^{\prime}\right)^{-1}\circ g$
+\end_inset
+
+, 
+\begin_inset Formula $b^{-1}=g^{-1}\circ\left(b^{\prime}\right)^{-1}\circ g$
+\end_inset
+
+ и 
+\begin_inset Formula $b^{-1}\circ g^{-1}=g^{-1}\circ\left(b^{\prime}\right)^{-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\begin{multline*}
+g\circ\left[a,b\right]\circ g^{-1}=\\
+=a^{\prime}\circ g\circ g^{-1}\circ b^{\prime}\circ g\circ g^{-1}\circ\left(a^{\prime}\right)^{-1}\circ g\circ g^{-1}\circ\left(b^{\prime}\right)^{-1}=\\
+=a^{\prime}\circ b^{\prime}\circ\left(a^{\prime}\right)^{-1}\circ\left(b^{\prime}\right)^{-1}=\left[a^{\prime},b^{\prime}\right]\in K\left(G\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+База индуккции доказана.
+ Пусть теперь включение 
+\begin_inset Formula $g\circ h\circ g^{-1}\in K\left(G\right)$
+\end_inset
+
+ выполняется для всех произведений не более чем 
+\begin_inset Formula $m$
+\end_inset
+
+ коммутаторов.
+ Докажем, что это же включение выполняется для произведения 
+\begin_inset Formula $m+1$
+\end_inset
+
+ коммутаторов.
+ Пусть 
+\begin_inset Formula $h=\left[a_{1},b_{1}\right]\circ h_{0}$
+\end_inset
+
+, где 
+\begin_inset Formula $h_{0}$
+\end_inset
+
+ — произведение 
+\begin_inset Formula $m$
+\end_inset
+
+ коммутаторов.
+ Тогда
+\begin_inset Formula 
+\[
+g\circ h\circ g^{-1}=g\circ\left[a_{1},b_{1}\right]\circ h_{0}\circ g^{-1}=\left(g\circ\left[a_{1},b_{1}\right]\circ g^{-1}\right)\circ\left(g\circ h_{0}\circ g^{-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По предположению индукции 
+\begin_inset Formula $g\circ\left[a_{1},b_{1}\right]\circ g^{-1}\in K\left(G\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\circ h_{0}\circ g^{-1}\in K\left(G\right)$
+\end_inset
+
+, а так как 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — группа, то произведение этих элементов тоже принадлежит 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g\circ h\circ g^{-1}\in K\left(G\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что коммутант совпадает с подгруппой 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ тогда и только тогда, когда группа коммутативна.
+\end_layout
+
+\begin_layout Solution
+Если группа коммутативна, то для любых двух элементов 
+\begin_inset Formula $a\circ b=b\circ a$
+\end_inset
+
+, а значит любой коммутатор 
+\begin_inset Formula $\left[a,b\right]=a\circ b\circ a^{-1}\circ b^{-1}=e$
+\end_inset
+
+.
+ Если любой коммутатор равен нейтральному элементу, то и любое произведение
+ конечного числа коммутаторов равно нейтральному элементу, а значит коммутант
+ совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть, наоборот, коммутант совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+.
+ Это, в частности, означает, что любой коммутатор 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ равен нейтральному элементу, а значит любые два элемента группы коммутируют,
+ то есть группа является коммутативной.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Упражненения 118-128
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что факторгруппа произвольной группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по её коммутанту коммутативна.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим факторгруппу 
+\begin_inset Formula $G/K\left(G\right)$
+\end_inset
+
+ и два её произвольных элемента, то есть два смежных класса 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ левого разложения по 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+.
+ Требуется доказать, что смежные классы 
+\begin_inset Formula $T_{1}\circ T_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $T_{2}\circ T_{1}$
+\end_inset
+
+ совпадают.
+ Выберем в каждом из рассматриваемых классов по представителю: 
+\begin_inset Formula $t_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}\in T_{2}$
+\end_inset
+
+.
+ Нужно доказать, что элементы 
+\begin_inset Formula $t_{1}\circ t_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}\circ t_{1}$
+\end_inset
+
+ принадлежат одному и тому же смежному классу.
+ В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:same-left-class-criterion"
+
+\end_inset
+
+ было выведено условие принадлежности двух элементов одному смежному классу:
+ 
+\begin_inset Formula $\left(t_{1}\circ t_{2}\right)^{-1}\circ\left(t_{2}\circ t_{1}\right)\in K\left(G\right)$
+\end_inset
+
+.
+ Докажем, что это включение действительно имеет место.
+ Расскрыв скобки в выражении в левой части включения, получим
+\begin_inset Formula 
+\[
+\left(t_{1}\circ t_{2}\right)^{-1}\circ\left(t_{2}\circ t_{1}\right)=t_{2}^{-1}\circ t_{1}^{-1}\circ t_{2}\circ t_{1}=\left[t_{2}^{-1},t_{1}^{-1}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как любой коммутатор принадлежит коммутанту, то 
+\begin_inset Formula $t_{1}\circ t_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}\circ t_{1}$
+\end_inset
+
+ действительно принадлежат одному смежному классу по 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+, а следовательно факторгруппа группы по её коммутанту является коммутативной.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ — коммутант группы 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+ является нормально подгруппой в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ссылка на пример, когда нормальная подгруппа подгруппы может не являться
+ нормальной подгруппой группы
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любого 
+\begin_inset Formula $a\in K\left(N\right)$
+\end_inset
+
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $g\circ a\circ g^{-1}\in K\left(N\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a\in K\left(N\right)$
+\end_inset
+
+, то этот элемент представляет собой конечное произведение коммутаторов
+ элементов из 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Доказывать будет индукцией по количеству сомножителей в произведении.
+\end_layout
+
+\begin_layout Solution
+Пусть сначала 
+\begin_inset Formula $a=\left[x,y\right]$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y\in N$
+\end_inset
+
+, тогда 
+\begin_inset Formula $g\circ a\circ g^{-1}=g\circ x\circ y\circ x^{-1}\circ y^{-1}\circ g^{-1}$
+\end_inset
+
+.
+ Воспользуемся равенство 
+\begin_inset Formula $g^{-1}\circ g=e$
+\end_inset
+
+, чтобы 
+\begin_inset Quotes fld
+\end_inset
+
+окружить
+\begin_inset Quotes frd
+\end_inset
+
+ все вхождения элементов 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\series bold
+
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\series default
+и обратных к ним элементами 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+g\circ a\circ g^{-1}=g\circ x\circ g^{-1}\circ g\circ y\circ g^{-1}\circ g\circ x^{-1}\circ g^{-1}\circ g\circ y^{-1}\circ g^{-1}=.\\
+=g\circ x\circ g^{-1}\circ g\circ y\circ g^{-1}\circ g\circ x^{-1}\circ g^{-1}\circ g\circ y^{-1}\circ g^{-1}=\\
+=\left(g\circ x\circ g^{-1}\right)\circ\left(g\circ y\circ g^{-1}\right)\circ\left(g\circ x\circ g^{-1}\right)^{-1}\circ\left(g\circ y\circ g^{-1}\right)^{-1}=\\
+\left[g\circ x\circ g^{-1},g\circ y\circ g^{-1}\right].
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $g\circ x\circ g^{-1}\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $g\circ y\circ g^{-1}\in N$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $g\circ a\circ g^{-1}$
+\end_inset
+
+ есть коммутатор элементов из 
+\begin_inset Formula $N$
+\end_inset
+
+, а значит он принадлежит 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+.
+ База индукции доказана.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь утверждение доказано для любого 
+\begin_inset Formula $a\in K\left(N\right)$
+\end_inset
+
+, представляющего собой произведение не более чем 
+\begin_inset Formula $m$
+\end_inset
+
+ коммутаторов.
+ Рассмотрим теперь произведение 
+\begin_inset Formula $m+1$
+\end_inset
+
+ коммутатора.
+ Тогда 
+\begin_inset Formula $a=\left[x,y\right]\circ a_{1}$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y\in N$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{1}\in K\left(N\right)$
+\end_inset
+
+ и представляет собой произведение 
+\begin_inset Formula $m$
+\end_inset
+
+ коммутаторов.
+ Снова воспользуемся равенстом 
+\begin_inset Formula $g^{-1}\circ g=e$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+g\circ a\circ g^{-1}=g\circ\left[x,y\right]\circ g^{-1}\circ g\circ a_{1}\circ g^{-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+В этом выражении 
+\begin_inset Formula $\left[\text{x,y}\right]$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ принадлежат 
+\begin_inset Formula $K\left(N\right)$
+\end_inset
+
+, причём каждый из них представляет собой произведение не более чем 
+\begin_inset Formula $m$
+\end_inset
+
+ коммутаторов, поэтому к ним можно применить предположение индукции, то
+ есть 
+\begin_inset Formula $g\circ\left[x,y\right]\circ g^{-1}\in K\left(N\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\circ a_{1}\circ g^{-1}\in K\left(N\right)$
+\end_inset
+
+.
+ В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-is-subgroup"
+
+\end_inset
+
+ было показано, что коммутант являтся группой, поэтому 
+\begin_inset Formula $g\circ a\circ g^{-1}$
+\end_inset
+
+ также является элементом коммутанта.
+\end_layout
+
 \begin_layout Section
 Гомоморфизм
 \end_layout
 
+\begin_layout Definition
+Гомоморфизмом группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в группу 
+\begin_inset Formula $F$
+\end_inset
+
+ называется отображение 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $\varphi\left(a\circ b\right)=\varphi\left(a\right)\circ\varphi\left(b\right)$
+\end_inset
+
+ для любых элементов 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Произведение 
+\begin_inset Formula $a\circ b$
+\end_inset
+
+ берётся в группу 
+\begin_inset Formula $G$
+\end_inset
+
+, а произведение 
+\begin_inset Formula $\varphi\left(a\right)\circ\varphi\left(b\right)$
+\end_inset
+
+ — в группе 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Гомоморфизм отличается от изоморфизма тем, что при гомоморфизме не требуется
+ взаимной однозначности.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример 12
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что если группа 
+\begin_inset Formula $G$
+\end_inset
+
+ коммутативна, то и 
+\begin_inset Formula $F$
+\end_inset
+
+ коммутативна.
+ Верно ли обратное утверждение?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что при гомоморфизме группы 
+\begin_inset Formula $G$
+\end_inset
+
+ в группу 
+\begin_inset Formula $F$
+\end_inset
+
+ единицы группы 
+\begin_inset Formula $G$
+\end_inset
+
+ переходит в единицу группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, доказать, что 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi_{1}:G\to F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}:F\to H$
+\end_inset
+
+ — гомоморфизмы, доказать, что 
+\begin_inset Formula $\varphi_{2}\varphi_{1}:G\to H$
+\end_inset
+
+ — гомоморфизм.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Рассмотрим следующее отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на фактор-группу 
+\begin_inset Formula $G/N$
+\end_inset
+
+: сопоставим каждому элементу 
+\begin_inset Formula $g$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ тот смежный класс 
+\begin_inset Formula $T$
+\end_inset
+
+, который содержит элемент 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi:G\to G/N$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Описанное выше отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ называется 
+\emph on
+естественным гомоморфизмом 
+\emph default
+группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Переформулировать
+\end_layout
+
+\end_inset
+
+Мы показали, что с каждой нормальной подгруппой связан некоторый гомоморфизм.
+ Покажем, что и, обратно, каждый гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+ можно рассматривать как естественный гомоморфизм 
+\begin_inset Formula $G$
+\end_inset
+
+ на фактор-группу 
+\begin_inset Formula $G/N$
+\end_inset
+
+ по некоторой нормальной подгруппе 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, тогда множество элементов 
+\begin_inset Formula $g$
+\end_inset
+
+ таких, что 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
+\end_inset
+
+, называются 
+\emph on
+ядром гомоморфизма 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\emph default
+и обозначается 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:same-class-via-homomorphi"
+
+\end_inset
+
+Доказать, что 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в одном смежном классе тогда и только тогда, когда 
+\begin_inset Formula $\varphi\left(g_{1}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+, тогда отображение 
+\begin_inset Formula $\psi:G/\mathrm{Ker}\varphi\to F$
+\end_inset
+
+, сопоставляющее каждому смежному классу значение 
+\begin_inset Formula $\varphi\left(g\right)$
+\end_inset
+
+ на каком-нибудь его элементе 
+\begin_inset Formula $g$
+\end_inset
+
+ (упражнение 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:same-class-via-homomorphi"
+
+\end_inset
+
+ показывает, что выбор элемента на результат не влияет), является изоморфизмом.
+\end_layout
+
+\begin_layout Standard
+Доказательство этой теоремы содержится в решении следующих задач.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ есть отображение на 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — взаимно однозначное отображение.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что 
+\begin_inset Formula $\psi$
+\end_inset
+
+ — изоморфизм.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример 13
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 143-145
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ — нормальные подгруппы соответственно в группах 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+ — нормальная подгруппа в 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)\cong\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Могут ли две неизоморфные группы иметь изоморфные нормальные подгруппы и
+ изоморфные фактор-группы по ним?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Может ли группа иметь две изоморфные нормальные подгруппы, факторгруппы
+ по которым неизоморфны?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Может ли группа иметь неизоморфные нормальные подгруппы, факторгруппы по
+ которым изоморфны?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Разрешимые группы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пояснение про терминологию
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как коммутант группы сам является группой, то можно вычислить повторный
+ коммутант.
+ В полученной группе снова рассмотреть коммутант и так далее.
+ Будем обозначать такие кратные коммутанты как 
+\begin_inset Formula $K_{r}\left(G\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+K_{r}\left(G\right)=\begin{cases}
+K\left(G\right) & r=1,\\
+K\left(K_{r-1}\left(G\right)\right) & r>1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Группа 
+\begin_inset Formula $G$
+\end_inset
+
+ называется разрешимой, если при некотором целом положительном 
+\begin_inset Formula $n$
+\end_inset
+
+ получаем 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что любая коммутативная группа разрешима.
+\end_layout
+
+\begin_layout Exercise
+Выяснить, разрешимы ли следующие группы: циклическая группа 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+, группа симметрий треугольника, группа симметрий квадрата, группа кватернионов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Это намёк на то, что данный материал нужно выделить в отдельный раздел и
+ переместить ниже.
+ Глава 
+\begin_inset Quotes fld
+\end_inset
+
+Группы
+\begin_inset Quotes frd
+\end_inset
+
+ содержит элементарные сведения о группах вплоть до теоремы Лагранжа, а
+ глава 
+\begin_inset Quotes fld
+\end_inset
+
+Разрешимые группы
+\begin_inset Quotes frd
+\end_inset
+
+ — Внутренние автоморфизмы, Нормальные подгруппы, факторгруппы, коммутант,
+ разрешимые группы.
+\end_layout
+
+\end_inset
+
+, группа вращений тетраэдра, группа симметрий тетраэдра, группа вращений
+ куба.
+\end_layout
+
+\begin_layout Exercise
+Сколько элементов в группе вращений додекаэдра?
+\end_layout
+
+\begin_layout Exercise
+Все вращения додекаэдра можно разделить на 4 класса: 1) тождественное преобразов
+ание; 2) вращения вокруг осей, проходящих через центры противоположных граней;
+ 3) вращение вокруг осей, проходящих через противоположные вершины; 4) вращения
+ вокруг осей, проходящих через середины противоположных рёбер.
+ Сколько элементов содержится в каждом из перечесленных классов (в 2-4 тождестве
+нное преобразование не включаем)?
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — произвольная нормальная подгруппа в группе вращений додекаэдра, и пусть
+ в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится хотя бы один элемент из некоторого класса 1)-4).
+ Доказать, что тогда в 
+\begin_inset Formula $N$
+\end_inset
+
+ содержится весь соответствующий класс.
+ Другими словами, каждый из классов 1)-4) либо полностью не входит, либо
+ полностью входить в 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что в группе вращений додекаэдра не существует других нормальных
+ подгрупп, кроме 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и всей группы.
+\end_layout
+
+\begin_layout Exercise
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ некоммутативна и не имеет нормальных подгрупп, отличных от 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что всякая подгруппа разрешимой группы разрешима.
+ 
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+ и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказть, что и группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Exercise
+Привести пример, когда группа 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешима, а группа 
+\begin_inset Formula $G$
+\end_inset
+
+ неразрешима.
+\end_layout
+
+\begin_layout Exercise
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима и 
+\begin_inset Formula $N$
+\end_inset
+
+ нормальная подгруппа в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Доказать, что факторгруппа 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что если группы 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешимы, то и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
 \end_layout
 
 \begin_layout Section
