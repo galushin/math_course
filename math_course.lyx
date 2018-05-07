@@ -14082,16 +14082,1451 @@ status open
 Комплексные числа как поле
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вводные слова
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим всевозможные упорядоченные пары действительных чисел, то есть
+ пары вида 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ — произвольные действительные числа.
+ Будем считать, что 
+\begin_inset Formula $\left(a,b\right)=\left(c,d\right)$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $a=c$
+\end_inset
+
+ и 
+\begin_inset Formula $b=d$
+\end_inset
+
+.
+ На множестве всех таких пар определим две бинарные операции — сложение
+ и умножение — следующим образом: 
+\begin_inset Formula 
+\[
+\left(a,b\right)+\left(c,d\right)=\left(a+c,b+d\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(a,b\right)\cdot\left(c,d\right)=\left(ac-bd,ad+bc\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Множество всевозможных упорядоченных пар действительных чисел с операциями
+ сложения и умножения, определёнными как описано выше, называется 
+\emph on
+множеством комплексных чисел 
+\emph default
+и обозначается 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+
+\emph on
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Это задача 202
+\end_layout
+
+\end_inset
+
+Доказать, что комплексные числа образуют по сложению коммутативную группу.
+ Какое комплексное число является нейтральным элементом этой группы относительно
+ сложения (нулём)?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbb{C=R}\times\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться на упражнение про то, что прямое произведение есть группа.
+ Можно выше добавить задачу про то, что прямое произведение коммутативных
+ групп есть коммутативная группа.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что операция умножения комплексных чисел коммутативна и ассоциативна.
+ Какое комплексное число является нейтральным элементом относительно умножения
+ (единицей)?
+\end_layout
+
+\begin_layout Solution
+Начнём с коммутативности.
+ Запишем определение умножения для 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+ в разном порядке: 
+\begin_inset Formula 
+\[
+\left(a_{1},b_{1}\right)\cdot\left(a_{2},b_{2}\right)=\left(a_{1}a_{2}-b_{1}b_{2},a_{1}b_{2}+a_{2}b_{1}\right).
+\]
+
+\end_inset
+
+При перестановке индексов 1 и 2 значение выражения не меняется в силу коммутатив
+ности сложения и умножения для вещественных чисел.
+\end_layout
+
+\begin_layout Solution
+Докажем теперь ассоциативность, преобразовав один способ расстановки скобок
+ в произведении трёх комплексных чисел в другой:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\left(\left(a,b\right)\cdot\left(c,d\right)\right)\cdot\left(e,f\right)=\left(ac-bd,ad+bc\right)\cdot\left(e,f\right)=\\
+=\left(\left(ac-bd\right)e-\left(ad+bc\right)f,\left(ac-bd\right)f+\left(ad+bc\right)e\right)=\\
+=\left(a\left(ce-df\right)-b\left(de+cf\right),a\left(cf+de\right)+b\left(ce-df\right)\right)=\\
+=\left(a,b\right)\cdot\left(ce-df,de+cf\right)=.\\
+=\left(a,b\right)\cdot\left(\left(c,d\right)\cdot\left(e,f\right)\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $z$
+\end_inset
+
+ — произвольное комплексное число и 
+\begin_inset Formula $z\neq\left(0,0\right)$
+\end_inset
+
+.
+ Найдите комплексное число 
+\begin_inset Formula $z^{-1}$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $z\cdot z^{-1}=z^{-1}\cdot z=\left(1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $z=\left(a,b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z^{-1}=\left(x,y\right)$
+\end_inset
+
+, тогда по определению умножения комплексных чисел: 
+\begin_inset Formula $z\cdot z^{-1}=\left(ax-by,ay+bx\right)$
+\end_inset
+
+, поэтому по определению равенства для комплексных чисел должны выполняться
+ равенства 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+ax-by=1\\
+ay+bx=0
+\end{array}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Выразим из второго уравнения 
+\begin_inset Formula $y$
+\end_inset
+
+ через 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+y=-\frac{bx}{a}
+\]
+
+\end_inset
+
+и подставим это выражение в первое уравнение:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+ax+\frac{b^{2}x}{a}=1,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+x\cdot\frac{a^{2}+b^{2}}{a}=1,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+x=\frac{a}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Теперь, когда мы определили 
+\begin_inset Formula $x$
+\end_inset
+
+, можно найти 
+\begin_inset Formula $y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+y=-\frac{bx}{a}=-\frac{b}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Окончательно получаем:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+z^{-1}=\left(\frac{a}{a^{2}+b^{2}},\frac{-b}{a^{2}+b^{2}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вещественные числа как частный случай комплексных.
+ Мнимая единица
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать, что для вещественных чисел, определение обратного элемента относительн
+о умножения переходит в 
+\begin_inset Formula $\frac{1}{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что для операций сложения и умножения комплексных чисел выполняется
+ закон дистрибутивности (распределительный закон): для любых комплексных
+ чисел 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $z_{1}\left(z_{2}+z_{3}\right)=z_{1}z_{2}+z_{1}z_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $z_{j}=\left(x_{j},y_{j}\right)$
+\end_inset
+
+, тогда:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+z_{1}\left(z_{2}+z_{3}\right)=\left(x_{1},y_{1}\right)\cdot\left(x_{2}+x_{3},y_{2}+y_{3}\right)=\\
+=\left(x_{1}\left(x_{2}+x_{3}\right)-y_{1}\left(y_{2}+y_{3}\right),x_{1}\left(y_{2}+y_{3}\right)+y_{1}\left(x_{2}+x_{3}\right)\right)=\\
+\left(x_{1}x_{2}+x_{1}x_{3}-y_{1}y_{2}-y_{1}y_{3},x_{1}y_{2}+x_{1}y_{3}+y_{1}x_{2}+y_{1}x_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+С другой стороны:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+z_{1}z_{2}+z_{1}z_{3}=\\
+=\left(x_{1}x_{2}-y_{1}y_{2},x_{1}y_{2}+y_{1}x_{2}\right)+\left(x_{1}x_{3}-y_{1}y_{3},x_{1}y_{3}+y_{1}x_{3}\right)=\\
+=\left(x_{1}x_{2}-y_{1}y_{2}+x_{1}x_{3}-y_{1}y_{3},x_{1}y_{2}+y_{1}x_{2}+x_{1}y_{3}+y_{1}x_{3}\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Правые части данных равенств равны, а значит равны и левые.
+\end_layout
+
+\begin_layout Standard
+Доказанные в упражнениях 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+добавить ссылку
+\end_layout
+
+\end_inset
+
+ утверждения показывают, что комплексные числа образуют поле.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вещественная и мнимая части, алгебраическое представление комплексных чисел.
+ Мнимая единица
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ — комплексное число.
+ Доказать, что 
+\begin_inset Formula $\left(a,b\right)=a+b\cdot i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению суммы и произведения комплексных чисел: 
+\begin_inset Formula $a+bi=\left(a,0\right)+\left(b,0\right)\cdot\left(0,1\right)$
+\end_inset
+
+=
+\begin_inset Formula $\left(a,0\right)+\left(0,b\right)=\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Найти формулу для разности, то есть решить уравнение 
+\begin_inset Formula 
+\[
+\left(a+bi\right)+\left(x+yi\right)=c+di
+\]
+
+\end_inset
+
+ относительно 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению суммы комплексных чисел 
+\begin_inset Formula $\left(a+bi\right)+\left(x+yi\right)=\left(a+x,b+y\right)$
+\end_inset
+
+.
+ Равенство комплексных чисел мы определили как равенство вещественной и
+ мнимой частей, поэтому 
+\begin_inset Formula $a+x=c$
+\end_inset
+
+ и 
+\begin_inset Formula $b+y=d$
+\end_inset
+
+, откуда 
+\begin_inset Formula $x=c-a$
+\end_inset
+
+ и 
+\begin_inset Formula $y=d-b$
+\end_inset
+
+, то есть
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\left(a,b\right)-\left(c,d\right)=\left(a-c,b-d\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Найти формулу для частного, то есть решить уравнение 
+\begin_inset Formula 
+\[
+\left(a+bi\right)\left(x+yi\right)=c+di
+\]
+
+\end_inset
+
+ относительно 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $y$
+\end_inset
+
+ при 
+\begin_inset Formula $a+bi\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение.
+ Возможно написать про общее определение обратной операции в (коммутативной)
+ группе
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $z_{1}\cdot z=z_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Вычислить 
+\begin_inset Formula $i^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $i^{2}=i\cdot i=\left(0;1\right)\cdot\left(0;1\right)=\left(-1,0\right)=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, в поле комплексных чисел существуют квадратные корни из отрицател
+ьных чисел.
+\end_layout
+
+\begin_layout Exercise
+Вычислить 
+\begin_inset Formula $i^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $i^{4}$
+\end_inset
+
+ и 
+\begin_inset Formula $i^{n}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное целое число.
+\end_layout
+
+\begin_layout Solution
+По определению степени: 
+\begin_inset Formula 
+\[
+i^{3}=i^{2}\cdot i=-1\cdot i=-i,
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+i^{4}=\left(i^{2}\right)^{2}=\left(-1\right)^{2}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, степени 
+\begin_inset Formula $i$
+\end_inset
+
+ образуют циклическую группу по умножению порядка 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Сослаться на задачу про степени циклического элемента конечного порядка
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+i^{n}=i^{n\mod4}=\begin{cases}
+1 & n\mod4=0,\\
+i & n\mod4=1,\\
+-1 & n\mod4=2,\\
+-i & n\mod4=3.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Комплексное число 
+\begin_inset Formula $a-bi$
+\end_inset
+
+ называется 
+\emph on
+комплексно сопряжённым 
+\emph default
+комплексному числу 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ и обозначается 
+\begin_inset Formula $\overline{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Вычислить 
+\begin_inset Formula $z+\overline{z}$
+\end_inset
+
+, 
+\begin_inset Formula $z-\overline{z}$
+\end_inset
+
+ и 
+\begin_inset Formula $z\cdot\overline{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Воспользуемся определением комплексно сопряжённого числа и операций над
+ комплексными числами:
+\begin_inset Formula 
+\[
+z+\overline{z}=a+bi+a-bi=2a,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+z-\overline{z}=a+bi-\left(a-bi\right)=2bi,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+z\cdot\overline{z}=\left(a+bi\right)\cdot\left(a-bi\right)=a^{2}+b^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — произвольные комплексные числа.
+ Доказать, что 
+\begin_inset Formula $\overline{z_{1}+z_{2}}=\overline{z_{1}}+\overline{z_{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{z_{1}-z_{2}}=\overline{z_{1}}-\overline{z_{2}}$
+\end_inset
+
+ , 
+\begin_inset Formula $\overline{z_{1}\cdot z_{2}}=\overline{z_{1}}\cdot\overline{z_{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{\left(\frac{z_{1}}{z_{2}}\right)}=\frac{\overline{z_{1}}}{\overline{z_{2}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $z$
+\end_inset
+
+ — комплексное число, 
+\begin_inset Formula $a_{0},a_{1},...,a_{n}$
+\end_inset
+
+ — вещественные числа и 
+\begin_inset Formula $P\left(z\right)=a_{0}z^{n}+a_{1}z^{n-1}+...+a_{n-1}z+a_{n}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\overline{P\left(z\right)}=P\left(\overline{z}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Переход к комплексным числам является очередным естественным шагом в последовате
+льности: натуральные числа — целые числа — рациональные числа — действительные
+ числа — комплексные числа.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание о том, что комплексные числа — это настоящие числа, про применения
+ комплексных чисел в электротехнике.
+ Можно написать про то, что комплексная фаза проявляется в некоторых физических
+ явлениях.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть добавить задачи про 
+\begin_inset Formula $z^{-1}=\frac{\overline{z}}{\left|z\right|^{2}}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{z_{1}}{z_{2}}=\frac{z_{1}\overline{z_{2}}}{\left|z_{1}\right|^{2}}$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Единственность поля комплексных чисел
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Изоморфным отображением (или просто изоморфизмом)
+\emph default
+ одного поля на другое называется взаимно однозначное отображение 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, которое является изоморфизмом одновременно и относительное сложения, и
+ относительно умножения, то есть для любых двух элементов поля 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ имеют место следующие равенства:
+\begin_inset Formula $\varphi\left(a+b\right)=\varphi\left(a\right)+\varphi\left(b\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(a\cdot b\right)=\varphi\left(a\right)\cdot\varphi\left(b\right)$
+\end_inset
+
+.
+ Поля, между которыми можно установить изоморфизм, называются 
+\emph on
+изоморфными
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Если отвлечься от конкретного представления элементов поля и изучать только
+ операции, то у изоморфных полей свойства оказываются одинаковыми.
+ Поэтому, так же как в случае групп, изоморфные поля можно не различать.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вводные слова
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $M$
+\end_inset
+
+ — некоторое поле, содержащее в себе поле действительных чисел и некоторые
+ элемент 
+\begin_inset Formula $i_{0}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $i_{0}^{2}=-1$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $M$
+\end_inset
+
+ содержит некоторое поле 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+, изоморфное полю комплексных чисел.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Некоторое поле является 
+\emph on
+минимальным полем с данными свойствами, 
+\emph default
+если оно обладает этими свойствами и не содержит в себе других полей с теми
+ же свойствами.
 \end_layout
 
 \begin_layout Section
 Геометрические представления комплексных чисел
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Первое геометрическое представление комплексных чисел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача 217
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть комплексные числа изображаются точками плоскости.
+ Каков геометрических смысл преобразования 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, если для любого комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+: а) 
+\begin_inset Formula $\varphi\left(z\right)=-z$
+\end_inset
+
+, б) 
+\begin_inset Formula $\varphi\left(z\right)=2\cdot z$
+\end_inset
+
+, в) 
+\begin_inset Formula $\varphi\left(z\right)=\bar{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что два вектора равны тогда и только тогда, когда равны их соответству
+ющие координаты.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Второе геометрическое представление комплексных чисел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть комплексным числам 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+ соответствуют свободные векторы 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $v_{3}$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $z_{1}+z_{2}=z_{3}$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $v_{1}+v_{2}=v_{3}$
+\end_inset
+
+, где сумма вычисляется по правилу параллелограмма.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать связь между двумя представлениями комплексных чисел: 
+\begin_inset Formula $z_{A}+z_{B}=z_{\overrightarrow{AB}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\emph on
+Модулем
+\emph default
+ комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\left|z\right|$
+\end_inset
+
+) называется длина соответствующего ему свободного вектора.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про связь с модулем вещественного числа
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\left|z\right|^{2}=a^{2}+b^{2}=z\cdot\bar{z}$
+\end_inset
+
+, где 
+\begin_inset Formula $\bar{z}$
+\end_inset
+
+ — число, сопряжённое с 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать неравенства 
+\begin_inset Formula $\left|z_{1}+z_{2}\right|\le\left|z_{1}\right|+\left|z_{2}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $\left|z_{1}-z_{2}\right|\ge\left|\left|z_{1}\right|-\left|z_{2}\right|\right|$
+\end_inset
+
+, где 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ — произвольные комплексные числа.
+ В каких случаях имеет место равенство?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение.
+ Доказать, можно непосредственно, а можно с помощью рассмотрения функции
+ 
+\begin_inset Formula $f\left(t\right)=\left|z_{1}+z_{2}t\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Рассмотрим следующую функцию вещественного аргумента 
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+g\left(t\right)=\left|z_{1}+z_{2}t\right|^{2}=\left(z_{1}+z_{2}t\right)\left(\overline{z_{1}}+\overline{z_{2}}t\right)=\left|z_{1}\right|^{2}+\left(z_{1}\overline{z_{2}}+z_{2}\overline{z_{1}}\right)t+\left|z_{2}\right|^{2}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Докажите с помощью геометрического представления комплексных чисел, что
+ в произвольном параллелограмме сумма квадратов длин диагоналей равна сумме
+ квадратов длин всех сторон.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Тригонометрическая форма комплексных чисел
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение величины и знака угла, неоднозначность определения угла.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть точка 
+\begin_inset Formula $O$
+\end_inset
+
+ — начало координат, и пусть вектор 
+\begin_inset Formula $OA$
+\end_inset
+
+ с координатами 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ соответствует комплексному числу 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+.
+ Аргументом комплексного числа 
+\begin_inset Formula $z$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+) называется угол между положительным направлением оси 
+\begin_inset Formula $OX$
+\end_inset
+
+ и лучом 
+\begin_inset Formula $OA$
+\end_inset
+
+ (если 
+\begin_inset Formula $z=0$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathrm{Arg}z$
+\end_inset
+
+ не определён).
+\end_layout
+
+\begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Тригонометрическое представление комплексных чисел
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задача 225
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $z_{1}=r_{1}\left(\cos\varphi_{1}+i\sin\varphi_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $z_{2}=r_{2}\left(\cos\varphi_{2}+i\sin\varphi_{2}\right)$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $z_{1}\cdot z_{2}=r_{1}r_{2}\left(\cos\left(\varphi_{1}+\varphi_{2}\right)+i\sin\left(\varphi_{1}+\varphi_{2}\right)\right)$
+\end_inset
+
+, а при 
+\begin_inset Formula $z_{2}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula 
+\[
+\frac{z_{1}}{z_{2}}=\frac{r_{1}}{r_{2}}\left(\cos\left(\varphi_{1}-\varphi_{2}\right)+i\sin\left(\varphi_{1}-\varphi_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать формулу Муавра
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula 
+\[
+\left[r\left(\cos\varphi+i\sin\varphi\right)\right]^{n}=r^{n}\left(\cos n\varphi+i\sin n\varphi\right)
+\]
+
+\end_inset
+
+ для любого положительного целого числа 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Вычислить 
+\begin_inset Formula 
+\[
+\frac{\left(1-\sqrt{3}\cdot i\right)^{100}}{2^{100}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $z=r\left(\cos\varphi+i\sin\varphi\right)$
+\end_inset
+
+ — фиксированное комплексное числа и 
+\begin_inset Formula $n$
+\end_inset
+
+ — целое положительное число.
+ Найти все комплексные числа 
+\begin_inset Formula $w$
+\end_inset
+
+, удовлетворяющие равенству 
+\begin_inset Formula $w^{n}=z$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
@@ -14100,6 +15535,488 @@ status open
 
 \begin_layout Section
 Непрерывность
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Всё таки излагать непрерывность сразу и для вещественных и для комплексных
+ чисел? А уже производную вводить только для вещественных
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Пусть 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ — функция действительного аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Говорят, что функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, если для любого действительного числа 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ существует такое вещественное число 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ (вообще говоря, оно может зависеть от 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+), что для для всех чисел 
+\begin_inset Formula $x$
+\end_inset
+
+, удовлетворяющих 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+, будет выполняться неравенство 
+\begin_inset Formula $\left|f\left(x\right)-f\left(x_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ — фиксированное вещественное число.
+ Доказать, что функция 
+\begin_inset Formula $f\left(x\right)=a$
+\end_inset
+
+ непрерывна при всех значениях аргумента 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\left|f\left(x\right)-f\left(x_{0}\right)\right|=\left|a-a\right|=0$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\left|f\left(x\right)-f\left(x_{0}\right)\right|<\varepsilon$
+\end_inset
+
+, где 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ — произвольное положительное вещественное число при любых 
+\begin_inset Formula $x$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, так что 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ можно выбрать произвольно.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что функция 
+\begin_inset Formula $f\left(x\right)=x$
+\end_inset
+
+ непрерывна при всех значениях аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\left|f\left(x\right)-f\left(x_{0}\right)\right|=\left|x-x_{0}\right|$
+\end_inset
+
+, таким образом, мы можем выбрать 
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что функция 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+ непрерывна при всех значениях аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $\left|f\left(x\right)-f\left(x_{0}\right)\right|=\left|x^{2}-x_{0}^{2}\right|$
+\end_inset
+
+.
+ Неравенство 
+\begin_inset Formula $\left|\left(x-x_{0}\right)\left(x+x_{0}\right)\right|<\varepsilon$
+\end_inset
+
+ при 
+\begin_inset Formula $x+x_{0}\neq0$
+\end_inset
+
+ можно переписать следующим образом: 
+\begin_inset Formula 
+\[
+\left|x-x_{0}\right|<\frac{\varepsilon}{\left|x+x_{0}\right|}=\delta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Если же 
+\begin_inset Formula $x+x_{0}=0$
+\end_inset
+
+, то 
+\begin_inset Formula $x^{2}-x_{0}^{2}=0$
+\end_inset
+
+ и 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ можно выбрать произвольно.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение суммы, разности, произведения и частного двух функций
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ Доказать, что в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ непрерывны функции 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)+g\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)-g\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(x\right)=f\left(x\right)\cdot g\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть также 
+\begin_inset Formula $n$
+\end_inset
+
+ — произвольное натуральное число, тогда 
+\begin_inset Formula $\left[f\left(x\right)\right]^{n}$
+\end_inset
+
+ также непрерывна в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ непрерывны в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x_{0}\right)\neq0$
+\end_inset
+
+.
+ Доказать, что в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ непрерывны функции 
+\begin_inset Formula $\frac{1}{g\left(x\right)}$
+\end_inset
+
+ и 
+\begin_inset Formula $\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение суперпозиции функции
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть даны функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{1}=g\left(x_{0}\right)$
+\end_inset
+
+, а функция 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+.
+ Доказать, что функция 
+\begin_inset Formula $h\left(x\right)=f\left(g\left(x\right)\right)$
+\end_inset
+
+ непрерывна в точке 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что многочлен является непрерывной функцией.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что функции 
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+ и 
+\begin_inset Formula $f\left(x\right)=\cos x$
+\end_inset
+
+ непрерывны при всех значениях аргумента 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Рассмотрим функцию 
+\begin_inset Formula $f\left(x\right)=\sqrt[n]{x}$
+\end_inset
+
+, где 
+\begin_inset Formula $n$
+\end_inset
+
+ — положительное целое число, 
+\begin_inset Formula $x\ge0$
+\end_inset
+
+ и 
+\begin_inset Formula $\sqrt[n]{x}$
+\end_inset
+
+ берётся неотрицательным.
+ Доказать, что эта функция непрерывна при всех 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про строгость рассуждений про непрерывности.
+ В частности, если непрерывная функция принимает на отрезке только целочисленные
+ значения, то она принимает на всём отрезке одно и то же значение.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
