@@ -194,6 +194,32 @@ status open
 status open
 
 \begin_layout Plain Layout
+Общее определение операции
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение алгебраической системы
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Предварительные требования в настоящий момент: понятие о множествах, элементы
  теории чисел
 \end_layout
@@ -208,21 +234,8 @@ status open
 status open
 
 \begin_layout Plain Layout
-Приложение: методы доказательства? Математическая индукция, от противного
+Приложение: методы -доказательства? Математическая индукция, от противного
  и так далее
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Начинаем с задачи 12
 \end_layout
 
 \end_inset
@@ -263,6 +276,23 @@ status open
 
 \begin_layout Plain Layout
 Задача: в группе конечного порядка все элементы имеют конечный порядок
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Элементы теории чисел
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать эту главу: чётность, делимость, простые числа
 \end_layout
 
 \end_inset
@@ -379,6 +409,19 @@ name "def:mapping-image-preimage"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 8-11
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1148,33 +1191,7 @@ status open
 \end_layout
 
 \begin_layout Section
-Алгебраические системы
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Определение операции
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Определение алгебраической системы
-\end_layout
-
-\end_inset
-
-
+Бинарные операции
 \end_layout
 
 \begin_layout Definition
@@ -1198,7 +1215,17 @@ status open
 \begin_inset Formula $M$
 \end_inset
 
- и каждой упорядоченной паре элементов из 
+ и каждой упорядоченной паре
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Дать определение выше
+\end_layout
+
+\end_inset
+
+ элементов из 
 \begin_inset Formula $M$
 \end_inset
 
@@ -1217,168 +1244,68 @@ status open
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Exercise
+На множестве: 1) всех чётных натуральных чисел, 2) всех нечётных натуральных
+ чисел, 3) всех отрицательных чисел рассмотрите операции а) сложения, б)
+ вычитания, в) умножения.
+ В каких случаях получится бинарная операция
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:binary-operation"
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Примеры
+Доказательство вспомогательных фактов в раздел 
+\begin_inset Quotes fld
+\end_inset
+
+Основы теории чисел
+\begin_inset Quotes frd
+\end_inset
+
+?
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Definition
-\begin_inset CommandInset label
-LatexCommand label
-name "def:left-neutral-element"
-
-\end_inset
-
-Элемент 
-\begin_inset Formula $e_{L}$
-\end_inset
-
- называется 
-\emph on
-левым нейтральным элементом 
-\emph default
-бинарной операции 
-\begin_inset Formula $\circ$
-\end_inset
-
-, если для любого 
-\begin_inset Formula $x\in M$
-\end_inset
-
- имеет место равенство 
-\begin_inset Formula $e_{L}\circ x=x$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
-\begin_inset CommandInset label
-LatexCommand label
-name "def:right-neutral-element"
-
-\end_inset
-
-Элемент 
-\begin_inset Formula $e_{R}$
-\end_inset
-
- называется 
-\emph on
-правым нейтральным элементом 
-\emph default
-бинарной операции 
-\begin_inset Formula $\circ$
-\end_inset
-
-, если для любого 
-\begin_inset Formula $x\in M$
-\end_inset
-
- имеет место равенство 
-\begin_inset Formula $x\circ e_{R}=x$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Вообще говоря, у бинарной операции может быть любое количество левых или
- любое количество правых нейтральных элементов.
- Но если у операции есть одновременно левая и правая единицы, то ситуация
- меняется.
-\end_layout
-
-\begin_layout Exercise
-Доказать, что если у бинарной операции 
-\begin_inset Formula $\circ$
-\end_inset
-
- есть левый нейтральный элемент 
-\begin_inset Formula $e_{L}$
-\end_inset
-
- и правый нейтральный элемент 
-\begin_inset Formula $e_{R}$
-\end_inset
-
-, то они равны.
+1) Сумма, разность и произведение двух чётных чисел является чётным числом,
+ но разность двух натуральных чисел может быть отрицательной, поэтому сложение
+ и умножение являются бинарными операциями, а вычитание — нет.
 \end_layout
 
 \begin_layout Solution
-В определении левого нейтрального элемента 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "def:left-neutral-element"
-
-\end_inset
-
- подставим вместо 
-\begin_inset Formula $x$
-\end_inset
-
- элемент 
-\begin_inset Formula $e_{R}$
-\end_inset
-
-, а в определение правого нейтрального элемента 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "def:right-neutral-element"
-
-\end_inset
-
- — 
-\begin_inset Formula $e_{L}$
-\end_inset
-
-:
+2) Сумма и разность двух нечётных чисел — чётное число, а произведение —
+ нечётное.
+ Таким образом, умножение является бинарной операцией, а сложение и вычитание
+ — нет.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Formula 
-\[
-e_{L}\circ e_{R}=e_{R},
-\]
-
-\end_inset
-
-
+3) Сумма двух отрицательных чисел — отрицательное число, произведение —
+ всегда положительное, а разность может быть положительной.
+ Таким образом, сложение отрицательных чисел являются бинарной операцией,
+ а разность и произведение — нет.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Formula 
-\[
-e_{L}\circ e_{R}=e_{L}.
-\]
+\begin_inset Note Note
+status open
 
-\end_inset
-
-
+\begin_layout Plain Layout
+Ещё примеры
 \end_layout
 
-\begin_layout Solution
-Левые части данных равенств совпадают, значит совпадают и правые, то есть
- 
-\begin_inset Formula $e_{R}=e_{L}$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Definition
@@ -1400,8 +1327,7 @@ name "def:neutral-element"
 \begin_inset Formula $\circ$
 \end_inset
 
-, если он является одновременно правым и левым нейтральным элементом этой
- операции, иными словами, если для любого 
+, если для любого 
 \begin_inset Formula $x\in M$
 \end_inset
 
@@ -1543,6 +1469,249 @@ e_{1}=e_{2}.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Мотивировка введения правого и левого нейтрального элемента
+\end_layout
+
+\end_inset
+
+Иногда у операции нет нейтрального элемента, но есть элементы, обладающие
+ частью свойств нейтрального.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:right-neutral-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $e_{R}$
+\end_inset
+
+ называется 
+\emph on
+правым нейтральным элементом 
+\emph default
+бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $x\circ e_{R}=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:left-neutral-element"
+
+\end_inset
+
+Элемент 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+ называется 
+\emph on
+левым нейтральным элементом 
+\emph default
+бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+, если для любого 
+\begin_inset Formula $x\in M$
+\end_inset
+
+ имеет место равенство 
+\begin_inset Formula $e_{L}\circ x=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Таким образом, нейтральный элемент является одновременно левым и правым
+ нейтральным элементом.
+ 
+\end_layout
+
+\begin_layout Exercise
+Рассмотрим операцию вычитания на множестве целых чисел.
+ Какой элемент является для этой операции правой единицей? Доказать, что
+ левой единицы не существует.
+\end_layout
+
+\begin_layout Solution
+Правый нейтральный элемент для вычитания должен удовлетворять уравнению
+ 
+\begin_inset Formula $a-e_{R}=a$
+\end_inset
+
+ для любого 
+\begin_inset Formula $a$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e_{R}=0$
+\end_inset
+
+.
+ Левый нейтральный элемент должен удовлетворять уравнению 
+\begin_inset Formula $e_{L}-a=a$
+\end_inset
+
+, то есть 
+\begin_inset Formula $e_{L}=2a$
+\end_inset
+
+, для любого целого числа 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Это невозможно, так как при разных 
+\begin_inset Formula $a$
+\end_inset
+
+ требуется брать разные 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Примеры, когда есть левый нейтральной элемент, но нет правого
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Вообще говоря, у бинарной операции может быть любое количество левых или
+ любое количество правых нейтральных элементов
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Пример
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Но если у операции есть одновременно левая и правая единицы, то ситуация
+ меняется.
+\end_layout
+
+\begin_layout Exercise
+Доказать, что если у бинарной операции 
+\begin_inset Formula $\circ$
+\end_inset
+
+ есть левый нейтральный элемент 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+ и правый нейтральный элемент 
+\begin_inset Formula $e_{R}$
+\end_inset
+
+, то они равны.
+\end_layout
+
+\begin_layout Solution
+В определении левого нейтрального элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-neutral-element"
+
+\end_inset
+
+ подставим вместо 
+\begin_inset Formula $x$
+\end_inset
+
+ элемент 
+\begin_inset Formula $e_{R}$
+\end_inset
+
+, а в определение правого нейтрального элемента 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:right-neutral-element"
+
+\end_inset
+
+ — 
+\begin_inset Formula $e_{L}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{L}\circ e_{R}=e_{R},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+e_{L}\circ e_{R}=e_{L}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Левые части данных равенств совпадают, значит совпадают и правые, то есть
+ 
+\begin_inset Formula $e_{R}=e_{L}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Definition
 \begin_inset CommandInset label
 LatexCommand label
@@ -1554,6 +1723,10 @@ name "def:magma"
 \emph on
 магмой
 \emph default
+ (или 
+\emph on
+группоид)
+\emph default
 .
 \end_layout
 
@@ -1564,6 +1737,126 @@ name "def:magma"
  известные какие-либо дополнительные свойства бинарной операции.
  В следующих разделах мы будем постепенно увеличивать количество требований,
  предъявляемых к бинарной операции.
+\end_layout
+
+\begin_layout Section
+Геометрические примеры
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Начало построения таблицы умножения поворотов правильного треугольника
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Закончить заполнение таблицы умножения поворотов правильно треугольника.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Составить таблицу умножения для всех симметрий правильного треугольника.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Составить таблицу умножения для вращений квадрата.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Составить таблицу умножения для всех симметрий квадрата.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Составить таблицу умножения для всех симметрий ромба, не являющегося квадратом.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Составить таблицу умножения для всех симметрий прямоугольника, не являющегося
+ квадратом.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1950,6 +2243,23 @@ a & m=1,\\
 a^{m-1}\circ a & m>1.
 \end{cases}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Упражнение про то, что степень можно определить и как 
+\begin_inset Formula $a^{m}=a\circ a^{m-1}$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -13509,6 +13819,19 @@ K\left(K_{r-1}\left(G\right)\right) & r>1.
 Доказать, что любая коммутативная группа разрешима.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Выяснить, разрешимы ли следующие группы: циклическая группа 
 \begin_inset Formula $Z_{n}$
@@ -13548,8 +13871,34 @@ status open
  куба.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Сколько элементов в группе вращений додекаэдра?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -13559,6 +13908,19 @@ status open
  вокруг осей, проходящих через середины противоположных рёбер.
  Сколько элементов содержится в каждом из перечисленных классов (в 2-4 тождестве
 нное преобразование не включаем)?
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -13585,6 +13947,19 @@ status open
 .
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Доказать, что в группе вращений додекаэдра не существует других нормальных
  подгрупп, кроме 
@@ -13592,6 +13967,19 @@ status open
 \end_inset
 
  и всей группы.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -13615,9 +14003,35 @@ status open
  неразрешима.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Доказать, что всякая подгруппа разрешимой группы разрешима.
  
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -13645,6 +14059,19 @@ status open
  разрешима.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Привести пример, когда группа 
 \begin_inset Formula $F$
@@ -13655,6 +14082,19 @@ status open
 \end_inset
 
  неразрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
@@ -13678,6 +14118,19 @@ status open
  разрешима.
 \end_layout
 
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 Доказать, что если группы 
 \begin_inset Formula $N$
@@ -13692,6 +14145,19 @@ status open
 \end_inset
 
  разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -15267,6 +15733,10 @@ status open
 \end_inset
 
 
+\begin_inset Formula $z\cdot\overline{z}=\left(a+bi\right)\cdot\left(a-bi\right)=a^{2}-\left(i\right)^{2}b^{2}=a^{2}+b^{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Exercise
@@ -15296,29 +15766,14 @@ status open
 
 \begin_layout Plain Layout
 Написать решение.
- Доказать, можно непосредственно, а можно с помощью рассмотрения функции
- 
+ Доказать, можно из геометрических соображений, а можно с помощью рассмотрения
+ функции 
 \begin_inset Formula $f\left(t\right)=\left|z_{1}+z_{2}t\right|^{2}$
 \end_inset
 
-
+.
+ Как вообще можно прийти к этой идее?
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Solution
-Рассмотрим следующую функцию вещественного аргумента 
-\begin_inset Formula $t$
-\end_inset
-
-: 
-\begin_inset Formula 
-\[
-g\left(t\right)=\left|z_{1}+z_{2}t\right|^{2}=\left(z_{1}+z_{2}t\right)\left(\overline{z_{1}}+\overline{z_{2}}t\right)=\left|z_{1}\right|^{2}+\left(z_{1}\overline{z_{2}}+z_{2}\overline{z_{1}}\right)t+\left|z_{2}\right|^{2}t
-\]
 
 \end_inset
 
