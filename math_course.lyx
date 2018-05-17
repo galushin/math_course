@@ -1725,7 +1725,7 @@ name "def:magma"
 \emph default
  (или 
 \emph on
-группоид)
+группоидом)
 \emph default
 .
 \end_layout
@@ -1896,6 +1896,9 @@ name "def:associativity"
 \begin_layout Standard
 Свойство ассоциативности является обобщением сочетательного закона сложения
  для целых чисел.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -2234,6 +2237,19 @@ name "def:exponent-in-semigroup"
 \end_inset
 
  раз.
+ Данное выражение будем называть 
+\emph on
+степенью 
+\emph default
+
+\begin_inset Formula $m$
+\end_inset
+
+ элемента 
+\begin_inset Formula $a$
+\end_inset
+
+.
  Другими словами, степень можно рекурсивно определить следующим образом:
  
 \begin_inset Formula 
@@ -2249,16 +2265,27 @@ a^{m-1}\circ a & m>1.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Exercise
+Доказать, что степень можно определить как 
+\begin_inset Formula 
+\[
+a^{m}=\begin{cases}
+a & m=1,\\
+a\circ a^{m-1} & m>1.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Упражнение про то, что степень можно определить и как 
-\begin_inset Formula $a^{m}=a\circ a^{m-1}$
-\end_inset
-
-
+Написать решение
 \end_layout
 
 \end_inset
@@ -3024,7 +3051,7 @@ name "exer:double-inverse"
 \end_layout
 
 \begin_layout Solution
-Аналогично, по определению обратного элемента: 
+По определению обратного элемента: 
 \begin_inset Formula $a^{-1}\circ a=a\circ a^{-1}=e$
 \end_inset
 
@@ -5048,6 +5075,10 @@ name "def:cyclic-group-finite"
 \begin_inset Formula $n$
 \end_inset
 
+ и обозначается 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
 , порождённой элементом 
 \begin_inset Formula $a$
 \end_inset
@@ -5057,20 +5088,6 @@ name "def:cyclic-group-finite"
 \end_inset
 
  называется образующим этой группы.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Обозначение циклической группы порядка 
-\begin_inset Formula $Z_{n}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- Пр 
 \end_layout
 
 \begin_layout Exercise
@@ -8593,6 +8610,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:cartesian-product"
+
+\end_inset
+
 Прямым произведением двух групп 
 \begin_inset Formula $G$
 \end_inset
@@ -9793,6 +9816,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:left-coset"
+
+\end_inset
+
 Для любого элемента 
 \begin_inset Formula $x\in G$
 \end_inset
@@ -9830,6 +9859,12 @@ status open
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:every-element-is-contained-in-some-left-coset"
+
+\end_inset
+
 Доказать, что каждый элемент группы входит в некоторый левый смежный класс
  по подгруппе 
 \begin_inset Formula $H$
@@ -10041,7 +10076,7 @@ status open
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
-name "exer:same-left-class-criterion"
+name "exer:same-left-coset-criterion"
 
 \end_inset
 
@@ -10595,7 +10630,11 @@ status open
 
 \begin_layout Plain Layout
 Написать про правые смежные классы и правое разложение группы по её подгруппе.
- В коммутативной группе левое и правое разложения совпадают
+ В коммутативной группе левое и правое разложения совпадают.
+\end_layout
+
+\begin_layout Plain Layout
+Критерий принадлежности правому смежному классу
 \end_layout
 
 \end_inset
@@ -11501,6 +11540,12 @@ reference "thm:Lagrange-order-of-subfroup"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:cartesian-product-of-normal-subgroups"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N_{1}$
 \end_inset
@@ -11782,6 +11827,12 @@ x_{2}\circ y_{2}=\left(x_{1}\circ y_{1}\right)\circ\left(h_{x}^{\prime}\circ h_{
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:class-product"
+
+\end_inset
+
 Пусть имеется разложение на смежные классы по некоторой подгруппе.
  Произведение классов 
 \begin_inset Formula $T_{1}\circ T_{2}$
@@ -12016,6 +12067,12 @@ name "exer:class-product-inverse-element"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:factor-group"
+
+\end_inset
+
 Из упражнений 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -12803,7 +12860,7 @@ status open
  В упражнении 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "exer:same-left-class-criterion"
+reference "exer:same-left-coset-criterion"
 
 \end_inset
 
@@ -13135,7 +13192,7 @@ reference "exer:commutant-is-subgroup"
 \begin_inset Formula $a\circ b$
 \end_inset
 
- берётся в группу 
+ берётся в группе 
 \begin_inset Formula $G$
 \end_inset
 
@@ -13195,20 +13252,100 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Нужно доказать, что для любых 
+\begin_inset Formula $x,y\in F$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ справедливо равенство 
+\begin_inset Formula $x\circ y=y\circ x$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — отображение на всё 
+\begin_inset Formula $F$
+\end_inset
+
+, то найдутся 
+\begin_inset Formula $g_{x},g_{y}\in G$
+\end_inset
+
+ такие, что 
+\begin_inset Formula $\varphi\left(g_{x}\right)=x$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g_{y}\right)=y$
+\end_inset
+
+.
+ Тогда по определению гомоморфизма 
+\begin_inset Formula 
+\[
+x\circ y=\varphi\left(g_{x}\right)\circ\varphi\left(g_{y}\right)=\varphi\left(g_{x}\circ g_{y}\right).
+\]
+
+\end_inset
+
+Далее, так как 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативная группа, то 
+\begin_inset Formula $g_{x}\circ g_{y}=g_{y}\circ g_{x}$
+\end_inset
+
+, поэтому, снова, воспользовавшись определением гомоморфизма, получим: 
+\begin_inset Formula 
+\[
+x\circ y=\varphi\left(g_{x}\circ g_{y}\right)=\varphi\left(g_{y}\circ g_{x}\right)=\varphi\left(g_{y}\right)\circ\varphi\left(g_{x}\right)=y\circ x.
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+Обратное не верно.
+ Например, пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — произвольная группа, 
+\begin_inset Formula $F=\left\{ e\right\} $
+\end_inset
+
+, а 
+\begin_inset Formula $\varphi\left(x\right)=e$
+\end_inset
+
+, тогда 
+\begin_inset Formula $F$
+\end_inset
+
+ — коммутативная, а 
+\begin_inset Formula $G$
+\end_inset
+
+ — может быть некоммутативной.
+\end_layout
+
 \begin_layout Exercise
-Доказать, что при гомоморфизме группы 
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:homomorphism-preserves-neutral-element"
+
+\end_inset
+
+Доказать, что при гомоморфизме 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ группы 
 \begin_inset Formula $G$
 \end_inset
 
@@ -13216,11 +13353,11 @@ status open
 \begin_inset Formula $F$
 \end_inset
 
- единицы группы 
+ нейтральный элемент группы 
 \begin_inset Formula $G$
 \end_inset
 
- переходит в единицу группы 
+ переходит в нейтральный элемент группы 
 \begin_inset Formula $F$
 \end_inset
 
@@ -13228,24 +13365,92 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Пусть 
+\begin_inset Formula $e_{G}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — нейтральный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $x=\varphi\left(e_{G}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ — нейтральный элемент, то 
+\begin_inset Formula 
+\[
+e_{G}=e_{G}\circ e_{G}.
+\]
+
+\end_inset
+
+Тогда, по определению гомоморфизма, имеет место равенство: 
+\begin_inset Formula 
+\[
+x=\varphi\left(e_{G}\right)=\varphi\left(e_{G}\circ e_{G}\right)=\varphi\left(e_{G}\right)\circ\varphi\left(e_{G}\right)=x\circ x.
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+Так как 
+\begin_inset Formula $F$
+\end_inset
+
+ — группа, то в ней существует обратный к 
+\begin_inset Formula $x$
+\end_inset
+
+ элемент 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+.
+ Умножив левую и правую части последнего равенства на 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+, получим: 
+\begin_inset Formula 
+\[
+e_{F}=x,
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
 
- — гомоморфизм, доказать, что 
+ — гомоморфизм, доказать, что для любого элемента 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ выполняется равенство 
 \begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
 \end_inset
 
@@ -13253,16 +13458,63 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+По определению обратного элемента 
+\begin_inset Formula $a^{-1}\circ a=a\circ a^{-1}=e_{G}$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+.
+ Тогда по определению гомоморфизма 
+\begin_inset Formula 
+\[
+\varphi\left(a^{-1}\right)\circ\varphi\left(a\right)=\varphi\left(a\right)\circ\varphi\left(a^{-1}\right)=\varphi\left(e_{G}\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-neutral-element"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(a^{-1}\right)\circ\varphi\left(a\right)=\varphi\left(a\right)\circ\varphi\left(a^{-1}\right)=e_{F}.
+\]
+
+\end_inset
+
+ Таким образом, 
+\begin_inset Formula $\varphi\left(a^{-1`}\right)$
+\end_inset
+
+ удовлетворяет требованиям к обратному элементу для 
+\begin_inset Formula $\varphi\left(a\right)$
+\end_inset
+
+, а так как обратный элемент является единственным 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-element-uniqueness"
+
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Exercise
@@ -13282,12 +13534,13 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Воспользуемся определением композиции отображений и определением гомоморфизма:
+\begin_inset Formula 
+\begin{multline*}
+\left(\varphi_{2}\varphi_{1}\right)\left(a\circ b\right)=\varphi_{2}\left(\varphi_{1}\left(a\circ b\right)\right)=\\
+=\varphi_{2}\left(\varphi_{1}\left(a\right)\circ\varphi_{1}\left(b\right)\right)=\varphi_{2}\left(\varphi_{1}\left(a\right)\right)\circ\varphi_{2}\left(\varphi_{1}\left(b\right)\right)=\\
+=\left(\varphi_{2}\varphi_{1}\right)\left(a\right)\circ\left(\varphi_{2}\varphi_{1}\right)\left(b\right).
+\end{multline*}
 
 \end_inset
 
@@ -13349,12 +13602,118 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как по теореме 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Normal-subgoup-criteria"
 
-\begin_layout Plain Layout
-Написать решение
+\end_inset
+
+ левое и правое разложения по нормальной подгруппе совпадают, поэтому будем
+ рассматривать только левое разложение.
 \end_layout
+
+\begin_layout Solution
+По определению 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:left-coset"
+
+\end_inset
+
+, каждый левый смежный класс порождается некоторым элементом группы.
+ Причём, как показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:every-element-is-contained-in-some-left-coset"
+
+\end_inset
+
+, каждый элемент входит в класс, порождаемый им самим.
+ Таким образом, для каждого класса существует элемент, который ему принадлежит.
+ Таким образом, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ является отображением на все 
+\begin_inset Formula $G/N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ — произвольные элементы группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Нужно доказать, что 
+\begin_inset Formula $\varphi\left(a_{1}\circ a_{2}\right)=\varphi\left(a_{1}\right)\circ\varphi\left(a_{2}\right)$
+\end_inset
+
+.
+ Каждый элемент принадлежит некоторому смежному классу 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:every-element-is-contained-in-some-left-coset"
+
+\end_inset
+
+, пусть 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ лежит в смежном классе 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ лежит в смежном классе 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, то есть
+\begin_inset Formula $\varphi\left(a_{1}\right)=T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(a_{2}\right)=T_{2}$
+\end_inset
+
+.
+ По определению произведения смежных классов 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:class-product"
+
+\end_inset
+
+, 
+\begin_inset Formula $T_{1}\circ T_{2}$
+\end_inset
+
+ — это класс, которому принадлежит 
+\begin_inset Formula $a_{1}\circ a_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula 
+\[
+\varphi\left(a_{1}\circ a_{2}\right)=T_{1}\circ T_{2}=\varphi\left(a_{1}\right)\circ\varphi\left(a_{2}\right).
+\]
 
 \end_inset
 
@@ -13362,6 +13721,19 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Прояснить в дальнейшем, где 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ является естественным гомоморфизмом, а где — нет.
+\end_layout
+
+\end_inset
+
 Описанное выше отображение 
 \begin_inset Formula $\varphi$
 \end_inset
@@ -13421,7 +13793,7 @@ status open
 \end_inset
 
  — гомоморфизм, тогда множество элементов 
-\begin_inset Formula $g$
+\begin_inset Formula $g\in G$
 \end_inset
 
  таких, что 
@@ -13444,6 +13816,12 @@ status open
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:kernel-is-subgroup"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $\mathrm{Ker}\varphi$
 \end_inset
@@ -13456,19 +13834,119 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+По определению, 
+\begin_inset Formula $\mathrm{Ker}\varphi\subseteq G$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+.
+ Пусть 
+\begin_inset Formula $a,b\in\mathrm{Ker}\varphi$
+\end_inset
+
+, докажем, что 
+\begin_inset Formula $a\circ b\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
+ По определению гомоморфизма, 
+\begin_inset Formula 
+\[
+\varphi\left(a\circ b\right)=\varphi\left(a\right)\circ\varphi\left(b\right)=e_{F}\circ e_{F}=e_{F},
+\]
 
 \end_inset
 
+значит 
+\begin_inset Formula $a\circ b\in\mathrm{\mathrm{Ker}}\varphi$
+\end_inset
 
+.
+ 
+\end_layout
+
+\begin_layout Solution
+Операция 
+\begin_inset Formula $\circ$
+\end_inset
+
+ является ассоциативной на 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+, так как 
+\begin_inset Formula $\mathrm{Ker}\varphi\subseteq G$
+\end_inset
+
+, а на всём 
+\begin_inset Formula $G$
+\end_inset
+
+ данная операция ассоциативна, то есть ядро гомоморфизма является полугруппой.
+\end_layout
+
+\begin_layout Solution
+В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-neutral-element"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $e_{G}\in\mathrm{\mathrm{Ker}\varphi}$
+\end_inset
+
+, то есть ядро гомоморфизма является моноидом.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $a\in\mathrm{Ker}\varphi$
+\end_inset
+
+, тогда, как было показано в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=\left[\varphi\left(a\right)\right]^{-1}=\left[e_{F}\right]^{-1}.$
+\end_inset
+
+ Нейтральный элемент является обратным к самому себе 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:inverse-of-neutral-element"
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $\varphi\left(a^{-1}\right)=e_{F}$
+\end_inset
+
+, а значит 
+\begin_inset Formula $a^{-1}\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
+ Таким образом, ядро гомоморфизма вместе с каждым элементом содержит обратный
+ для него элемент.
+ Суммируя всё доказанное выше, получаем, что ядро гомоморфизма — подгруппа.
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:kernel-is-normal-subgroup"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $\mathrm{Ker}\varphi$
 \end_inset
@@ -13481,26 +13959,91 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+То, что 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — подгруппа, доказано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:kernel-is-subgroup"
 
 \end_inset
 
+.
+ Остаётся доказать, что для любого 
+\begin_inset Formula $a\in\mathrm{Ker}\varphi$
+\end_inset
 
+ и любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $g\circ a\circ g^{-1}\in\mathrm{Ker}\varphi$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(g\circ a\circ g^{-1}\right)=e_{F}$
+\end_inset
+
+.
+ По определению гомоморфизма, 
+\begin_inset Formula $\varphi\left(g\circ a\circ g^{-1}\right)=\varphi\left(g\right)\circ\varphi\left(a\right)\circ\varphi\left(g^{-1}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $a\in\mathrm{Ker}\varphi$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(a\right)=e_{F}$
+\end_inset
+
+, а по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(g\circ a\circ g^{-1}\right)=\varphi\left(g\right)\circ e_{F}\circ\left[\varphi\left(g\right)\right]^{-1}=\varphi\left(g\right)\circ\left[\varphi\left(g\right)\right]^{-1}=e_{F},
+\]
+
+\end_inset
+
+ то есть 
+\begin_inset Formula $g\circ a\circ g^{-1}\in\mathrm{Ker}\varphi$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Exercise
 \begin_inset CommandInset label
 LatexCommand label
-name "exer:same-class-via-homomorphi"
+name "exer:same-coset-via-homomorphi"
 
 \end_inset
 
-Доказать, что 
+Рассмотрим разложение группы 
+\begin_inset Formula $G$
+\end_inset
+
+ по ядру гомоморфизма 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Доказать, что 
 \begin_inset Formula $g_{1}$
 \end_inset
 
@@ -13508,7 +14051,11 @@ name "exer:same-class-via-homomorphi"
 \begin_inset Formula $g_{2}$
 \end_inset
 
- лежат в одном смежном классе тогда и только тогда, когда 
+ лежат в одном смежном классе по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+ тогда и только тогда, когда 
 \begin_inset Formula $\varphi\left(g_{1}\right)=\varphi\left(g_{2}\right)$
 \end_inset
 
@@ -13516,19 +14063,148 @@ name "exer:same-class-via-homomorphi"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Прежде всего, заметим, что так как 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:kernel-is-normal-subgroup"
+
+\end_inset
+
+, то левые и правые смежные классы по этой подгруппе совпадают 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Normal-subgoup-criteria"
+
+\end_inset
+
+, поэтому в дальнейшем можно ограничиться рассмотрением левых смежных классов.
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:same-left-coset-criterion"
+
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в одном левом смежном классе по подгруппе 
+\begin_inset Formula $H$
+\end_inset
+
+ тогда и только тогда, когда 
+\begin_inset Formula $g_{1}^{-1}\circ g_{2}\in H$
+\end_inset
+
+.
+ В нашем случае 
+\begin_inset Formula $H=\mathrm{Ker}\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ лежат в одном смежном классе, тогда 
+\begin_inset Formula $g_{1}^{-1}\circ g_{2}\in\mathrm{Ker}\varphi$
+\end_inset
+
+, и, по определению ядра гомоморфизма 
+\begin_inset Formula $\varphi\left(g_{1}^{-1}\circ g_{2}\right)=e_{F}$
+\end_inset
+
+.
+ С другой стороны, по определению гомоморфизма и доказанному в упражнении
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g_{1}^{-1}\circ g_{2}\right)=\varphi\left(g_{1}^{-1}\right)\circ\varphi\left(g_{2}\right)=\left[\varphi\left(g_{1}\right)\right]^{-1}\circ\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\left[\varphi\left(g_{1}\right)\right]^{-1}\circ\varphi\left(g_{2}\right)=e_{F}$
+\end_inset
+
+, после умножения умножения слева на 
+\begin_inset Formula $\varphi\left(g_{1}\right)$
+\end_inset
+
+ получим: 
+\begin_inset Formula $\varphi\left(g_{1}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Пусть теперь 
+\begin_inset Formula $\varphi\left(g_{1}\right)=\varphi\left(g_{2}\right)$
+\end_inset
+
+, тогда, по определению гомоморфизма и доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g_{1}^{-1}\circ g_{2}\right)=\varphi\left(g_{1}^{-1}\right)\circ\varphi\left(g_{2}\right)=\left[\varphi\left(g_{1}\right)\right]^{-1}\circ\varphi\left(g_{2}\right)=e_{F}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g_{1}^{-1}\circ g_{2}\in\mathrm{Ker}\varphi$
+\end_inset
+
+, а значит 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ принадлежат одному смежному классу по 
+\begin_inset Formula $\mathrm{Ker}\varphi$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:any-homomorphism-is-natural-homomorphism-by-kernel"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -13556,7 +14232,7 @@ status open
  (упражнение 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "exer:same-class-via-homomorphi"
+reference "exer:same-coset-via-homomorphi"
 
 \end_inset
 
@@ -13568,6 +14244,12 @@ reference "exer:same-class-via-homomorphi"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:coset-homomorphism-is-surjective"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $\psi$
 \end_inset
@@ -13580,19 +14262,70 @@ reference "exer:same-class-via-homomorphi"
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Так как, по условию теоремы, 
+\begin_inset Formula $\varphi$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ — отображение на всю 
+\begin_inset Formula $F$
+\end_inset
 
+, то для любого 
+\begin_inset Formula $f\in F$
+\end_inset
+
+ существует такой 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+.
+ Каждый 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ принадлежит какому-либо смежному классу 
+\begin_inset Formula $T\in G/\mathrm{Ker}\varphi$
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:every-element-is-contained-in-some-left-coset"
+
+\end_inset
+
+.
+ Для этого класса, по условию теоремы 
+\begin_inset Formula $\psi\left(T\right)=\varphi\left(g\right)=f$
+\end_inset
+
+.
+ Таким образом, для любого 
+\begin_inset Formula $f\in F$
+\end_inset
+
+ существует такой смежный класс 
+\begin_inset Formula $T\in G/\mathrm{Ker}\varphi$
+\end_inset
+
+, что 
+\begin_inset Formula $\psi\left(T\right)=f$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:coset-homomorphism-is-bijective"
+
+\end_inset
+
 Доказать, что 
 \begin_inset Formula $\psi$
 \end_inset
@@ -13601,16 +14334,73 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:coset-homomorphism-is-surjective"
 
 \end_inset
 
+ мы доказали, что 
+\begin_inset Formula $\psi$
+\end_inset
 
+ — отображение на 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Остаётся доказать, что если 
+\begin_inset Formula $\psi\left(T_{1}\right)=\psi\left(T_{2}\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $T_{1}=T_{2}$
+\end_inset
+
+.
+ Предположим, что 
+\begin_inset Formula $\psi\left(T_{1}\right)=\psi\left(T_{2}\right)$
+\end_inset
+
+, в этом случае, по определению 
+\begin_inset Formula $\psi$
+\end_inset
+
+, для любых 
+\begin_inset Formula $t_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}\in T_{2}$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\varphi\left(t_{1}\right)=\varphi\left(t_{2}\right)$
+\end_inset
+
+.
+ Но тогда, по доказанному в 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:same-coset-via-homomorphi"
+
+\end_inset
+
+, 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ лежат в одном смежном классе, а значит 
+\begin_inset Formula $T_{1}=T_{2}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Exercise
@@ -13622,16 +14412,65 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Мы показали 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:coset-homomorphism-is-bijective"
 
 \end_inset
 
+, что 
+\begin_inset Formula $\psi$
+\end_inset
 
+ — взаимно-однозначное отображение, остаётся доказать, что оно переводит
+ произведение в произведение, то есть 
+\begin_inset Formula $\psi\left(T_{1}\circ T_{2}\right)=\psi\left(T_{1}\right)\circ\psi\left(T_{2}\right)$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $t_{1}\in T_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $t_{2}\in T_{2}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $t_{1}\circ t_{2}\in T_{1}\circ T_{2}$
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:class-product"
+
+\end_inset
+
+.
+ По определению 
+\begin_inset Formula $\psi$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\left(T_{1}\circ T_{2}\right)=\varphi\left(t_{1}\circ t_{2}\right)$
+\end_inset
+
+, а так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм, то 
+\begin_inset Formula $\psi\left(T_{1}\circ T_{2}\right)=\varphi\left(t_{1}\circ t_{2}\right)=\varphi\left(t_{1}\right)\circ\varphi\left(t_{2}\right)=\psi\left(T_{1}\right)\circ\psi\left(T_{2}\right)$
+\end_inset
+
+.
+ Таким образом, 
+\begin_inset Formula $\psi$
+\end_inset
+
+ полностью удовлетворяет определению изоморфизма.
 \end_layout
 
 \begin_layout Standard
@@ -13694,16 +14533,316 @@ status open
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Рассмотрим следующее отображение 
+\begin_inset Formula $\varphi:\left(G_{1}\times G_{2}\right)\to\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
 
-\begin_layout Plain Layout
-Написать решение
+: рассмотрим некоторый элемент 
+\begin_inset Formula $g\in G_{1}\times G_{2}$
+\end_inset
+
+, по определению прямого произведения он имеет вид 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $g_{1}\in G_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in G_{2}$
+\end_inset
+
+, и положим 
+\begin_inset Formula $\varphi\left(g\right)=\left(\varphi_{1}\left(g_{1}\right),\varphi_{2}\left(g_{2}\right)\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ — естественный гомоморфизм 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ на 
+\begin_inset Formula $G_{1}/N_{1}$
+\end_inset
+
+, а 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ — естественный гомоморфизм 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ на 
+\begin_inset Formula $G_{2}/N_{2}$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-of-groups-is-groups"
+
+\end_inset
+
+, 
+\begin_inset Formula $G=G_{1}\times G_{2}$
+\end_inset
+
+ — группа.
+ При обосновании понятия фактор-группы 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:factor-group"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $G_{1}/N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{2}/N_{2}$
+\end_inset
+
+ — группы.
+ В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-of-groups-is-groups"
+
+\end_inset
+
+, прямое произведение групп является группой, поэтому 
+\begin_inset Formula $F=\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ — группа.
+ Проверим, является ли выбранное нами 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ гомоморфизмом.
+ Рассмотрим два произвольных элемента 
+\begin_inset Formula $G_{1}\times G_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $h=\left(h_{1},h_{2}\right)$
+\end_inset
+
+.
+ По определению 
+\begin_inset Formula $\varphi$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\[
+\varphi\left(g\circ h\right)=\left(\varphi_{1}\left(g_{1}\circ h_{1}\right),\varphi_{2}\left(g_{2}\circ h_{2}\right)\right).
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ — гомоморфизмы, то 
+\begin_inset Formula 
+\[
+\varphi\left(g\circ h\right)=\left(\varphi_{1}\left(g_{1}\right)\circ\varphi_{1}\left(h_{1}\right),\varphi_{2}\left(g_{2}\right)\circ\varphi_{2}\left(h_{2}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+По определению прямого произведения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:cartesian-product"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula 
+\begin{multline*}
+\varphi\left(g\circ h\right)=\left(\varphi_{1}\left(g_{1}\right)\circ\varphi_{1}\left(h_{1}\right),\varphi_{2}\left(g_{2}\right)\circ\varphi_{2}\left(h_{2}\right)\right)=\\
+=\left(\varphi_{1}\left(g_{1}\right),\varphi_{2}\left(g_{2}\right)\right)\circ\left(\varphi_{1}\left(h_{1}\right),\varphi_{2}\left(h_{2}\right)\right)=\\
+=\varphi\left(g\right)\circ\varphi\left(h\right).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Таким образом, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ действительно является изоморфизмом.
+ Найдём его ядро, то есть множество таких 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi\left(g\right)$
+\end_inset
+
+ является нейтральным элементом группы 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+.
+ В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:class-product-neutral-element"
+
+\end_inset
+
+ было показано, что нейтральным элементом фактор-группы 
+\begin_inset Formula $G/E$
+\end_inset
+
+ является сама группа 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-of-groups-is-groups"
+
+\end_inset
+
+ было показано, что нейтральным элементом прямого произведения является
+ пара, состоящая из нейтральных элементов сомножителей.
+ Таким образом, нейтральным элементом 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ является 
+\begin_inset Formula $N_{1}\times N_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Таким образом, нужно найти такие 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi\left(g\right)=N_{1}\times N_{2}$
+\end_inset
+
+ или, иными словами, 
+\begin_inset Formula $\varphi_{1}\left(g_{1}\right)=N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}\left(g_{2}\right)=N_{2}$
+\end_inset
+
+.
+ Так как естественный гомоморфизм ставит в соответствие элементу класс,
+ которому этот элемент принадлежит, то 
+\begin_inset Formula $g_{1}\in N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}\in N_{2}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $g\in N_{1}\times N_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathrm{Ker}\varphi=N_{1}\times N_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Применяя теперь теорему 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:any-homomorphism-is-natural-homomorphism-by-kernel"
+
+\end_inset
+
+, получим, что между 
+\begin_inset Formula $\left(G_{1}\times G_{2}\right)/\left(N_{1}\times N_{2}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\left(G_{1}/N_{1}\right)\times\left(G_{2}/N_{2}\right)$
+\end_inset
+
+ существует изоморфизм 
+\begin_inset Formula $\psi$
+\end_inset
+
+, определяемый по правилу: для произвольного класса 
+\begin_inset Formula $T$
+\end_inset
+
+ возьмём произвольного представителя 
+\begin_inset Formula $g=\left(g_{1},g_{2}\right)$
+\end_inset
+
+, возьмём классы по 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, которым принадлежат 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ соответственно, и составим из них пару.
 \end_layout
 
 \begin_layout Exercise
@@ -13758,6 +14897,1068 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Переформулировать, структурировать
+\end_layout
+
+\end_inset
+
+Рассмотрим теперь, что происходит при гомоморфизме с подгруппами, нормальными
+ подгруппами и коммутантами.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Определение образа и полного прообраза
+\end_layout
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, и пусть в 
+\begin_inset Formula $G$
+\end_inset
+
+ выбрано некоторое подмножество 
+\begin_inset Formula $M$
+\end_inset
+
+, тогда 
+\emph on
+образом множества 
+\begin_inset Formula $M$
+\end_inset
+
+
+\emph default
+ при гомоморфизме 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ (обозначается 
+\begin_inset Formula $\varphi\left(M\right)$
+\end_inset
+
+) будет называться множество всех элементов из 
+\begin_inset Formula $F$
+\end_inset
+
+, имеющих хотя бы один прообраз в 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $P$
+\end_inset
+
+ подмножество в 
+\begin_inset Formula $F$
+\end_inset
+
+, тогда 
+\emph on
+полным прообразом 
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\emph default
+(обозначается 
+\begin_inset Formula $\varphi^{-1}\left(P\right)$
+\end_inset
+
+) будет называться множество всех элементов из 
+\begin_inset Formula $G$
+\end_inset
+
+, образы которых попадают в 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Заметим, что обозначение 
+\begin_inset Formula $\varphi^{-1}$
+\end_inset
+
+ отдельно от 
+\begin_inset Formula $P$
+\end_inset
+
+ не имеет смысла: для гомоморфизма, вообще говоря, не существует обратного
+ преобразования.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Может быть преобразовать в задачу
+\end_layout
+
+\end_inset
+
+Заметим также, что если 
+\begin_inset Formula $\varphi\left(M\right)=P$
+\end_inset
+
+, то 
+\begin_inset Formula $M\subseteq\varphi^{-1}\left(P\right)$
+\end_inset
+
+, но не обязательно 
+\begin_inset Formula $M=\varphi^{-1}\left(P\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Рисунок 11 и ссылка на него
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Доказать, что образ подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+ группы 
+\begin_inset Formula $G$
+\end_inset
+
+ при гомоморфизме 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ является подгруппой в группе 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+То, что 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+ является подмножеством 
+\begin_inset Formula $F$
+\end_inset
+
+ следует из того, что по условию упражнения 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ отображает элементы 
+\begin_inset Formula $G$
+\end_inset
+
+ (а значит и 
+\begin_inset Formula $H$
+\end_inset
+
+) в 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Теперь нужно доказать, что 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+ — группа.
+\end_layout
+
+\begin_layout Solution
+Сначала докажем, что 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+ замкнуто относительно операции группы.
+ Пусть 
+\begin_inset Formula $x_{1},x_{2}\in\varphi\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $x_{1}\circ x_{2}\in\varphi\left(H\right)$
+\end_inset
+
+.
+ По определению образа множества при гомоморфизме, существуют такие 
+\begin_inset Formula $g_{1},g_{2}\in H$
+\end_inset
+
+, что 
+\begin_inset Formula $x_{1}=\varphi\left(g_{1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x_{2}=\varphi\left(g_{2}\right)$
+\end_inset
+
+.
+ Тогда, по определению гомоморфизма 
+\begin_inset Formula $x_{1}\circ x_{2}=\varphi\left(g_{1}\right)\circ\varphi\left(g_{2}\right)=\varphi\left(g_{1}\circ g_{2}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа, то 
+\begin_inset Formula $g_{1}\circ g_{2}\in H$
+\end_inset
+
+, а значит существует такой 
+\begin_inset Formula $g\in H$
+\end_inset
+
+, что 
+\begin_inset Formula $x_{1}\circ x_{2}=\varphi\left(g\right)$
+\end_inset
+
+, то есть 
+\begin_inset Formula $x_{1}\circ x_{2}\in\varphi\left(H\right)$
+\end_inset
+
+.
+ Операция группы 
+\begin_inset Formula $F$
+\end_inset
+
+ является ассоциативной на 
+\begin_inset Formula $\varphi\left(H\right)\subseteq F$
+\end_inset
+
+, так как ассоциативность выполняется для любых элементов группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $G$
+\end_inset
+
+, то в ней содержится нейтральный элемент 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ и вместе с каждым элементом 
+\begin_inset Formula $g$
+\end_inset
+
+ в 
+\begin_inset Formula $H$
+\end_inset
+
+ содержится также обратный к нему элемент 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+.
+ По доказанному в упражнениях 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-neutral-element"
+
+\end_inset
+
+ и 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi\left(H\right)$
+\end_inset
+
+ содержит нейтральный элемент 
+\begin_inset Formula $F$
+\end_inset
+
+ и для любого 
+\begin_inset Formula $x\in\varphi\left(H\right)$
+\end_inset
+
+ также 
+\begin_inset Formula $x^{-1}\in\varphi\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:preimage-of-subgroup-is-subgroup"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа в группе 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ — подгруппа в 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+По определению прообраза, элементы 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ являются также элементами 
+\begin_inset Formula $G$
+\end_inset
+
+, таким образом, 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ является подмножеством 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Остаётся доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ является группой.
+\end_layout
+
+\begin_layout Solution
+Докажем сначала замкнутость относительно групповой операции.
+ Пусть 
+\begin_inset Formula $g_{1},g_{2}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, нужно доказать, что 
+\begin_inset Formula $g_{1}\circ g_{2}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ По определению гомоморфизма 
+\begin_inset Formula $\varphi\left(g_{1}\circ g_{2}\right)=\varphi\left(g_{1}\right)\circ\varphi\left(g_{2}\right)$
+\end_inset
+
+, по определению полного прообраза 
+\begin_inset Formula $\varphi\left(g_{1}\right),\varphi\left(g_{2}\right)\in H$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа, то 
+\begin_inset Formula $\varphi\left(g_{1}\circ g_{2}\right)=\varphi\left(g_{1}\right)\circ\varphi\left(g_{2}\right)\in H$
+\end_inset
+
+.
+ Снова применяя определение полного прообраза, приходим к выводу, что 
+\begin_inset Formula $g_{1}\circ g_{2}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Ассоциативность операции на 
+\begin_inset Formula $H$
+\end_inset
+
+ следует из того, что это свойство выполняется для любых элементов 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Докажем, что 
+\begin_inset Formula $\varphi^{-1}\left(H\right)$
+\end_inset
+
+ содержит нейтральный элемент группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-neutral-element"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+ и 
+\begin_inset Formula $e_{F}\in H$
+\end_inset
+
+ (так как 
+\begin_inset Formula $H$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $F$
+\end_inset
+
+), то 
+\begin_inset Formula $e_{G}\in\varphi^{-1}\left(e_{F}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Наконец, нужно доказать, что если 
+\begin_inset Formula $g\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+, то 
+\begin_inset Formula $g^{-1}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi\left(g\right)\in H$
+\end_inset
+
+ и 
+\begin_inset Formula $H$
+\end_inset
+
+ — группа, то 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}\in H$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $g^{-1}\in\varphi^{-1}\left(H\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм.
+ Доказать, что 
+\begin_inset Formula $\varphi^{-1}\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:preimage-of-subgroup-is-subgroup"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi^{-1}\left(N\right)$
+\end_inset
+
+ — подгруппа, значит остаётся доказать, что для любых 
+\begin_inset Formula $a\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ имеет место включение 
+\begin_inset Formula $g\circ a\circ g^{-1}\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+.
+ По определению гомоморфизма, 
+\begin_inset Formula $\varphi\left(g\circ a\circ g^{-1}\right)=\varphi\left(g\right)\circ\varphi\left(a\right)\circ\varphi\left(g^{-1}\right)$
+\end_inset
+
+.
+ Обозначим 
+\begin_inset Formula $x=\varphi\left(g\right)$
+\end_inset
+
+, как было доказано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(g^{-1}\right)=\left[\varphi\left(g\right)\right]^{-1}=x^{-1}$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ и 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа 
+\begin_inset Formula $F$
+\end_inset
+
+, то 
+\begin_inset Formula $x\circ\varphi\left(a\right)\circ x^{-1}\in N$
+\end_inset
+
+.
+ Итак, 
+\begin_inset Formula $\varphi\left(g\circ a\circ g^{-1}\right)\in N$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $g\circ a\circ g^{-1}\in\varphi^{-1}\left(N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:homomorphism-of-commutant-is-subset-of-commutant"
+
+\end_inset
+
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм, 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ — коммутант групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)\subseteq K_{2}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{1}\subseteq\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Возьмём произвольный элемент коммутанта 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+, который может быть записан как произведение коммутаторов, то есть элементов
+ вида 
+\begin_inset Formula $a_{k}\circ b_{k}\circ a_{k}^{-1}\circ b_{k}^{-1}$
+\end_inset
+
+, и рассмотрим, в какой элемент его переводит гомоморфизм 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ По определению гомоморфизма 
+\begin_inset Formula $\varphi\left(a_{k}\circ b_{k}\circ a_{k}^{-1}\circ b_{k}^{-1}\right)=\varphi\left(a_{k}\right)\circ\varphi\left(b_{k}\right)\circ\varphi\left(a_{k}^{-1}\right)\circ\varphi\left(b_{k}^{-1}\right)$
+\end_inset
+
+.
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-inverse-element"
+
+\end_inset
+
+, гомоморфизм переводит обратный элемент в обратный, поэтому 
+\begin_inset Formula 
+\[
+\varphi\left(a_{k}\circ b_{k}\circ a_{k}^{-1}\circ b_{k}^{-1}\right)=\varphi\left(a_{k}\right)\circ\varphi\left(b_{k}\right)\circ\left[\varphi\left(a_{k}\right)\right]^{-1}\circ\left[\varphi\left(b_{k}\right)\right]^{-1}.
+\]
+
+\end_inset
+
+Так как 
+\begin_inset Formula $\varphi\left(a_{k}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b_{k}\right)$
+\end_inset
+
+ являются элементами 
+\begin_inset Formula $F$
+\end_inset
+
+, то правая часть последнего равенства является коммутатором некоторых элементов
+ группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Так как гомоморфизм переводит произведение в произведение, тоже справедливо
+ и для любых элементов коммутанта 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+, которые являются произведениями конечного числа коммутаторов.
+ Таким образом, если 
+\begin_inset Formula $g\in K_{1}$
+\end_inset
+
+, то 
+\begin_inset Formula $\varphi\left(g\right)\in K_{2}$
+\end_inset
+
+, таким образом, любой элемент 
+\begin_inset Formula $\varphi\left(K_{1}\right)$
+\end_inset
+
+ является элементом 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+, а значит, как и требовалось доказать, 
+\begin_inset Formula $K_{1}\subseteq\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+, отсюда же следует также 
+\begin_inset Formula $\varphi\left(K_{1}\right)\subseteq K_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(N\right)$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Нужно доказать, что для любого 
+\begin_inset Formula $a\in\varphi\left(N\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ выполняется включение 
+\begin_inset Formula $x\circ a\circ x^{-1}\in\varphi\left(N\right)$
+\end_inset
+
+.
+ По определению образа множества, существует такой 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi\left(g\right)=a$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм на всю группу 
+\begin_inset Formula $F$
+\end_inset
+
+, то для любого 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ существует 
+\begin_inset Formula $y\in G$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(y\right)=x$
+\end_inset
+
+.
+ Учитывая это, получаем равенство 
+\begin_inset Formula $x\circ a\circ x^{-1}=\varphi\left(y\right)\circ\varphi\left(g\right)\circ\left[\varphi\left(y\right)\right]^{-1}$
+\end_inset
+
+.
+ Как было доказано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:isomorphism-preserves-inverse-element"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left[\varphi\left(y\right)\right]^{-1}=\varphi\left(y^{-1}\right)$
+\end_inset
+
+, поэтому, по определению гомоморфизма 
+\begin_inset Formula $x\circ a\circ x^{-1}=\varphi\left(y\circ g\circ y^{-1}\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $N$
+\end_inset
+
+ — нормальная подгруппа группы 
+\begin_inset Formula $G$
+\end_inset
+
+, то 
+\begin_inset Formula $y\circ g\circ y^{-1}\in N$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $\varphi\left(y\circ g\circ y^{-1}\right)\in\varphi\left(N\right)$
+\end_inset
+
+, а значит 
+\begin_inset Formula $x\circ a\circ x^{-1}\in\varphi\left(N\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+Пусть 
+\begin_inset Formula $K_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ — коммутанты групп 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Доказать, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)=K_{2}$
+\end_inset
+
+.
+ Верно ли, что 
+\begin_inset Formula $K_{1}=\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Solution
+В упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-of-commutant-is-subset-of-commutant"
+
+\end_inset
+
+ было показано, что 
+\begin_inset Formula $\varphi\left(K_{1}\right)\subseteq K_{2}$
+\end_inset
+
+.
+ Таким образом, для доказательства равенства 
+\begin_inset Formula $\varphi\left(K_{1}\right)=K_{2}$
+\end_inset
+
+ остаётся доказать, что 
+\begin_inset Formula $K_{2}\subseteq\varphi\left(K_{1}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Solution
+Рассмотрим некоторый коммутатор элементов группы 
+\begin_inset Formula $F$
+\end_inset
+
+, то есть выражение вида 
+\begin_inset Formula $f=x\circ y\circ x^{-1}\circ y^{-1}$
+\end_inset
+
+, где 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ — отображение на всю группу 
+\begin_inset Formula $F$
+\end_inset
+
+, то существуют такие 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+, что 
+\begin_inset Formula $\varphi\left(a\right)=x$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi\left(b\right)=y$
+\end_inset
+
+.
+ Как было доказано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-inverse-element"
+
+\end_inset
+
+, гомоморфизм переводит обратный элемент в обратный, поэтому 
+\begin_inset Formula $x^{-1}=\varphi\left(a^{-1}\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $y^{-1}=\varphi\left(b^{-1}\right)$
+\end_inset
+
+, таким образом, коммутатор 
+\begin_inset Formula $f$
+\end_inset
+
+ можно записать в виде 
+\begin_inset Formula $f=\varphi\left(a\right)\circ\varphi\left(b\right)\circ\varphi\left(a^{-1}\right)\circ\varphi\left(b^{-1}\right)$
+\end_inset
+
+ или, учитывая определение гомоморфизма: 
+\begin_inset Formula $f=\varphi\left(a\circ b\circ a^{-1}\circ b^{-1}\right)$
+\end_inset
+
+.
+ Таким образом, коммутатор элементов из 
+\begin_inset Formula $F$
+\end_inset
+
+ является образом коммутатора элементов из 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Элементами коммутанта являются произвольные конечные произведения коммутаторов.
+ Так как гомоморфизм, по определению, переводит произведение в произведение,
+ то для любого 
+\begin_inset Formula $f\in K_{2}$
+\end_inset
+
+ существует 
+\begin_inset Formula $g\in K_{1}$
+\end_inset
+
+ такой, что 
+\begin_inset Formula $\varphi\left(g\right)=f$
+\end_inset
+
+.
+ То есть, как и требовалось, выполняется вложение 
+\begin_inset Formula $K_{2}\subseteq\varphi\left(K_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Равенство 
+\begin_inset Formula $K_{1}=\varphi^{-1}\left(K_{2}\right)$
+\end_inset
+
+ в общем случае не выполняется.
+ Рассмотрим произвольную коммутативную группу 
+\begin_inset Formula $G$
+\end_inset
+
+ и группу 
+\begin_inset Formula $F=\left\{ e_{F}\right\} $
+\end_inset
+
+, а также гомоморфизм 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $K_{1}=\left\{ e_{G}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $K_{2}=\left\{ e_{F}\right\} $
+\end_inset
+
+, но 
+\begin_inset Formula $\varphi^{-1}\left(K_{2}\right)=G$
+\end_inset
+
+, так как для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ выполняется 
+\begin_inset Formula $\varphi\left(g\right)\in K_{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -14160,8 +16361,272 @@ status open
 
 \end_layout
 
+\begin_layout Exercise
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Задачи 167-171
+\end_layout
+
+\end_inset
+
+Пусть группы 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешимы.
+ Доказать, что группа 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ — разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:solvable-group-has-chain-1"
+
+\end_inset
+
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказать, что тогда существует цепочка групп 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ такая, что: 1) 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+; 2) каждая группа 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+ является нормальной подгруппой в группе 
+\begin_inset Formula $G_{i-1}$
+\end_inset
+
+ и все фактор-группы 
+\begin_inset Formula $G_{i-1}/G_{i}$
+\end_inset
+
+ коммутативны; 3) группа 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ коммутативна.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ существует цепочка групп со свойствами, указанными в условии упражнения
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:solvable-group-has-chain-1"
+
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Замечание про то, что последние две задачи дают эквивалентное определение
+ разрешимой группы.
+ И переход к ещё одному определение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:solvable-group-has-chain-2"
+
+\end_inset
+
+Пусть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ Доказать, что тогда существует цепочка групп 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+, ..., 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ такая, что 1) 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+; 2) каждая группа 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $0\le i\le n-1$
+\end_inset
+
+ содержит некоторую коммутативную нормальную подгруппу 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ такую, что 
+\begin_inset Formula $G_{i}/N_{i}\cong G_{i+1}$
+\end_inset
+
+; 3) группа 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ коммутативна.
+ 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Пусть для группы 
+\begin_inset Formula $G$
+\end_inset
+
+ существует цепочка групп со свойствами, указанными в условии упражнения
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:solvable-group-has-chain-2"
+
+\end_inset
+
+.
+ Доказать, что группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать решение
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Подстановки
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Написать раздел
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
