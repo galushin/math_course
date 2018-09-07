@@ -12575,6 +12575,12 @@ g^{-1}=\left[b_{m},a_{m}\right]\circ...\circ\left[b_{1},a_{1}\right],
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:commutant-is-normal-subgroup"
+
+\end_inset
+
 Доказать, что коммутант 
 \begin_inset Formula $K\left(G\right)$
 \end_inset
@@ -12751,6 +12757,12 @@ g\circ h\circ g^{-1}=g\circ\left[a_{1},b_{1}\right]\circ h_{0}\circ g^{-1}=\left
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:Commutativity-eq-commutant-is-unity-subgroup"
+
+\end_inset
+
 Доказать, что коммутант совпадает с подгруппой 
 \begin_inset Formula $\left\{ e\right\} $
 \end_inset
@@ -12805,6 +12817,12 @@ status open
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:factor-group-by-commutant-is-commutative"
+
+\end_inset
+
 Доказать, что факторгруппа произвольной группы 
 \begin_inset Formula $G$
 \end_inset
@@ -12899,6 +12917,12 @@ reference "exer:same-left-coset-criterion"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:commutant-of-normal-subgroup-is-normal-subgroup"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N$
 \end_inset
@@ -13548,6 +13572,12 @@ reference "exer:inverse-element-uniqueness"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:natural-homomorphism-is-epimorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $N$
 \end_inset
@@ -13721,6 +13751,13 @@ reference "def:class-product"
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:natural-homomorphism"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
@@ -13788,6 +13825,12 @@ status open
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:kernel-of-homomorphism"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -15759,6 +15802,12 @@ reference "exer:isomorphism-preserves-inverse-element"
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:homomorphism-on-preserves-commutant"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $K_{1}$
 \end_inset
@@ -16005,7 +16054,11 @@ K\left(K_{r-1}\left(G\right)\right) & r>1.
 \begin_inset Formula $G$
 \end_inset
 
- называется разрешимой, если при некотором целом положительном 
+ называется 
+\emph on
+разрешимой
+\emph default
+, если при некотором целом положительном 
 \begin_inset Formula $n$
 \end_inset
 
@@ -16014,23 +16067,65 @@ K\left(K_{r-1}\left(G\right)\right) & r>1.
 \end_inset
 
 .
+ Если 
+\begin_inset Formula $K_{n}\left(G\right)\neq\left\{ e\right\} $
+\end_inset
+
+ при любом 
+\begin_inset Formula $n$
+\end_inset
+
+, то группа 
+\begin_inset Formula $G$
+\end_inset
+
+ называется 
+\emph on
+неразрешимой
+\emph default
+.
+ 
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:commutative-group-is-solvable"
+
+\end_inset
+
 Доказать, что любая коммутативная группа разрешима.
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-is-subgroup"
 
 \end_inset
 
+, коммунант коммутативной группы совпадает с 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
 
+, поэтому если 
+\begin_inset Formula $G$
+\end_inset
+
+ — коммутативна, то 
+\begin_inset Formula $K_{1}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, получаем, что 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима (в определении нужно положить 
+\begin_inset Formula $n=1$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Exercise
@@ -16069,7 +16164,15 @@ status open
 \end_inset
 
 , группа вращений тетраэдра, группа симметрий тетраэдра, группа вращений
- куба.
+ куба 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 156"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Solution
@@ -16086,7 +16189,15 @@ status open
 \end_layout
 
 \begin_layout Exercise
-Сколько элементов в группе вращений додекаэдра?
+Сколько элементов в группе вращений додекаэдра? 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 157"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -16108,7 +16219,15 @@ status open
  3) вращение вокруг осей, проходящих через противоположные вершины; 4) вращения
  вокруг осей, проходящих через середины противоположных рёбер.
  Сколько элементов содержится в каждом из перечисленных классов (в 2-4 тождестве
-нное преобразование не включаем)?
+нное преобразование не включаем)? 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 158"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -16146,6 +16265,15 @@ status open
 \end_inset
 
 .
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 159"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -16168,6 +16296,15 @@ status open
 \end_inset
 
  и всей группы.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 160"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
@@ -16202,40 +16339,171 @@ status open
 \end_inset
 
  неразрешима.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 161"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-is-normal-subgroup"
+
+\end_inset
+
+, коммутант является нормальной подгруппой.
+ Если бы коммутант совпадал с подгруппой 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+, то, как показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:Commutativity-eq-commutant-is-unity-subgroup"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $G$
+\end_inset
+
+ была бы коммутативной, что противоречит условию упражнения.
+ Таким образом, 
+\begin_inset Formula $K\left(G\right)=G$
+\end_inset
+
+, а значит 
+\begin_inset Formula $K_{n}\left(G\right)=G\neq\left\{ e\right\} $
+\end_inset
+
+ для любого 
+\begin_inset Formula $n$
+\end_inset
+
+, то есть группа 
+\begin_inset Formula $G$
+\end_inset
+
+ является неразрешимой.
+\end_layout
+
 \begin_layout Exercise
-Доказать, что всякая подгруппа разрешимой группы разрешима.
+Доказать, что всякая подгруппа разрешимой группы разрешима 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 162"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Solution
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая группа и 
+\begin_inset Formula $H$
+\end_inset
+
+ — её подгруппа, тогда 
+\begin_inset Formula $K\left(H\right)$
+\end_inset
+
+ — подгруппа 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+.
+ Действительно, рассмотрим произвольный элемент 
+\begin_inset Formula $K\left(H\right)$
+\end_inset
+
+, то есть произвольное произведение коммутаторов элементов подгруппы 
+\begin_inset Formula $H$
+\end_inset
+
+, эти элементы также принадлежат 
+\begin_inset Formula $G$
+\end_inset
+
+, так как 
+\begin_inset Formula $H\subseteq G$
+\end_inset
+
+, поэтому данное произведение будет также произведением коммутаторов 
+\begin_inset Formula $G$
+\end_inset
+
+, то есть будет входить в 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+Вынести в отдельную задачу?
 \end_layout
 
 \end_inset
 
+.
+ По индукции, для любого 
+\begin_inset Formula $m$
+\end_inset
 
+ также будет выполняться включение 
+\begin_inset Formula $K_{m}\left(H\right)\subseteq K_{m}\left(G\right)$
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима, то при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ будет выполняться 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, но 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ — минимальная группа, поэтому 
+\begin_inset Formula $K_{m}\left(H\right)=\left\{ e\right\} $
+\end_inset
+
+, то есть 
+\begin_inset Formula $H$
+\end_inset
+
+ — также разрешимая группа.
 \end_layout
 
 \begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:image-of-solvable-group-by-epimorphism-is-solvable"
+
+\end_inset
+
 Пусть 
 \begin_inset Formula $\varphi:G\to F$
 \end_inset
@@ -16257,24 +16525,102 @@ status open
 \begin_inset Formula $F$
 \end_inset
 
- разрешима.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ разрешима 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 163"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-on-preserves-commutant"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi\left(K\left(G\right)\right)=K\left(F\right)$
+\end_inset
+
+.
+ Таким образом, если рассматривать 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ как отображение группы 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+, то оно будет гомоморфизмом группы 
+\begin_inset Formula $K\left(G\right)$
+\end_inset
+
+ на группу 
+\begin_inset Formula $K\left(F\right)$
+\end_inset
+
+.
+ Таким образом, по индукции можно доказать, что 
+\begin_inset Formula $\varphi\left(K_{n}\left(G\right)\right)=K_{n}\left(F\right)$
+\end_inset
+
+.
+ Так как 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешимая группа, то при некотором 
+\begin_inset Formula $n$
+\end_inset
+
+ имеет место 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e_{G}\right\} $
+\end_inset
+
+.
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-preserves-neutral-element"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\left(e_{G}\right)=e_{F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K_{n}\left(F\right)=\varphi\left(K_{n}\left(G\right)\right)=\left\{ \varphi\left(e_{G}\right)\right\} =\left\{ e_{F}\right\} $
+\end_inset
+
+, то есть 
+\begin_inset Formula $F$
+\end_inset
+
+ также является разрешимой группой.
 \end_layout
 
 \begin_layout Exercise
-Привести пример, когда группа 
+Пусть 
+\begin_inset Formula $\varphi:G\to F$
+\end_inset
+
+ — гомоморфизм группы 
+\begin_inset Formula $G$
+\end_inset
+
+ на группу 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Привести пример, когда группа 
 \begin_inset Formula $F$
 \end_inset
 
@@ -16282,20 +16628,44 @@ status open
 \begin_inset Formula $G$
 \end_inset
 
- неразрешима.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ неразрешима 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 164"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Solution
+Пусть 
+\begin_inset Formula $G$
+\end_inset
+
+ — произвольная неразрешимая группа, а группа 
+\begin_inset Formula $F$
+\end_inset
+
+ содержит единственный элемент (нейтральный): 
+\begin_inset Formula $F=\left\{ e_{F}\right\} $
+\end_inset
+
+, то есть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ определён для любого 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ следующим образом 
+\begin_inset Formula $\varphi\left(g\right)=e_{F}$
+\end_inset
+
+.
+ Группа, состоящая из нейтрального элемента разрешима.
 \end_layout
 
 \begin_layout Exercise
@@ -16316,58 +16686,69 @@ status open
 \begin_inset Formula $G/N$
 \end_inset
 
- разрешима.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ разрешима 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 165"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
-
+.
 \end_layout
 
-\begin_layout Exercise
-Доказать, что если группы 
+\begin_layout Solution
+Для доказательства достаточно рассмотреть естественный гомоморфизм
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-homomorphism"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi:G\to G/N$
+\end_inset
+
+, то есть отображение, ставящее в соответствие любому элементу 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ тот смежный класс по нормальной подгруппе 
 \begin_inset Formula $N$
 \end_inset
 
- и 
+, которому принадлежит данный элемент.
+ Этот гомоморфизм удовлетворяет условиям упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:image-of-solvable-group-by-epimorphism-is-solvable"
+
+\end_inset
+
+, поэтому 
 \begin_inset Formula $G/N$
 \end_inset
 
- разрешимы, то и группа 
-\begin_inset Formula $G$
-\end_inset
-
- разрешима.
+ является разрешимой группой.
 \end_layout
 
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 Задачи 167-171
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:cartesian-product-of-solvable-groups-is-solvable"
 
 \end_inset
 
@@ -16385,19 +16766,168 @@ status open
 \end_inset
 
  — разрешима.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 167"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+\begin_inset Formula $K\left(G\times F\right)=K\left(G\right)\times K\left(F\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать
+\end_layout
+
+\end_inset
+
+.
+ По индукции можно доказать, что 
+\begin_inset Formula $K_{n}\left(G\times F\right)=K_{n}\left(G\right)\times K_{n}\left(F\right)$
+\end_inset
+
+.
+ Пусть теперь 
+\begin_inset Formula $n$
+\end_inset
+
+ — наименьшее целое число такое, что 
+\begin_inset Formula $K_{n}\left(G\right)=\left\{ e_{G}\right\} $
+\end_inset
+
+ и 
+\begin_inset Formula $K_{n}\left(F\right)=\left\{ e_{F}\right\} $
+\end_inset
+
+ (это число существует, так как группу 
+\begin_inset Formula $G$
+\end_inset
+
+ и 
+\begin_inset Formula $F$
+\end_inset
+
+ разрешимы, а коммутант группы первого порядка совпадает с ней самой).
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-of-groups-is-groups"
+
+\end_inset
+
+ 
+\begin_inset Formula $e_{G}\times e_{F}=e_{G\times F}$
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K_{n}\left(G\times F\right)=\left\{ e_{G}\right\} \times\left\{ e_{F}\right\} =\left\{ e_{G}\times e_{F}\right\} =\left\{ e_{G\times F}\right\} $
+\end_inset
+
+, то есть группа 
+\begin_inset Formula $G\times F$
+\end_inset
+
+ является разрешимой.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:subgroup-and-factor-group-are-solvable-follows-group-is-solvable"
+
+\end_inset
+
+Доказать, что если группы 
+\begin_inset Formula $N$
+\end_inset
+
+ и 
+\begin_inset Formula $G/N$
+\end_inset
+
+ разрешимы, то и группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 166"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution
+Каждый элемент 
+\begin_inset Formula $g\in G$
+\end_inset
+
+ можно представить в виде 
+\begin_inset Formula $g=t\circ h$
+\end_inset
+
+, где 
+\begin_inset Formula $t$
+\end_inset
+
+ — представитель смежного класса, которому принадлежит 
+\begin_inset Formula $g$
+\end_inset
+
+, а 
+\begin_inset Formula $h\in N$
+\end_inset
+
+.
+ Поэтому 
+\begin_inset Formula $G\cong N\times\left(G/N\right)$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вынести в отдельную задачу 
+\begin_inset Formula $G\cong N\times\left(G/N\right)$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:cartesian-product-of-solvable-groups-is-solvable"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $N\times\left(G/N\right)$
+\end_inset
+
+ является разрешимой, значит разрешима и 
+\begin_inset Formula $G$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Exercise
@@ -16449,19 +16979,73 @@ name "exer:solvable-group-has-chain-1"
 \end_inset
 
  коммутативна.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 168"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Положим при 
+\begin_inset Formula $i>0$
+\end_inset
+
+ 
+\begin_inset Formula $G_{i}=K\left(G_{i-1}\right)$
+\end_inset
+
+.
+ Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-is-normal-subgroup"
+
+\end_inset
+
+, коммутант является нормальной подгруппой, а в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:factor-group-by-commutant-is-commutative"
+
+\end_inset
+
+ было доказано, что факторгруппа произвольной группы по её коммутанту коммутатив
+на, поэтому 
+\begin_inset Formula $G_{i-1}/G_{i}=G_{i-1}/K\left(G_{i-1}\right)$
+\end_inset
+
+ будет коммутативной.
+ Таким образом, условие 2) оказывается выполненным.
+\end_layout
+
+\begin_layout Solution
+Учитывая обозначение для кратных коммутантов, мы можем написать 
+\begin_inset Formula $G_{i}=K_{i}\left(G\right)$
+\end_inset
+
+.
+ Так как группа 
+\begin_inset Formula $G$
+\end_inset
+
+ разрешима, то существует натуральное 
+\begin_inset Formula $n$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $G_{n}=K_{n}\left(G\right)=\left\{ e\right\} $
+\end_inset
+
+, а группа 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ является коммутативной, так что условие 3) также выполняется.
 \end_layout
 
 \begin_layout Exercise
@@ -16483,15 +17067,61 @@ reference "exer:solvable-group-has-chain-1"
 \end_inset
 
  разрешима.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 169"
+key "abel-theorem-in-exercises"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Solution
-\begin_inset Note Note
-status open
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutative-group-is-solvable"
 
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+\end_inset
+
+, любая коммутативная группа является разрешимой.
+ Поэтому 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $G_{i-1}/G_{i}$
+\end_inset
+
+ являются разрешимыми.
+ Пользуясь результатом упражнения 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:subgroup-and-factor-group-are-solvable-follows-group-is-solvable"
+
+\end_inset
+
+, по индукции можно доказать, что и все остальные 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ являются разрешимыми.
+ Так как 
+\begin_inset Formula $G=G_{0}$
+\end_inset
+
+, то 
+\begin_inset Formula $G$
+\end_inset
+
+ — разрешима.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 170"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
@@ -16505,7 +17135,7 @@ status open
 \begin_layout Plain Layout
 Замечание про то, что последние две задачи дают эквивалентное определение
  разрешимой группы.
- И переход к ещё одному определение
+ И переход к ещё одному определению
 \end_layout
 
 \end_inset
@@ -16566,11 +17196,236 @@ name "exer:solvable-group-has-chain-2"
 \end_layout
 
 \begin_layout Solution
+Так как группа 
+\begin_inset Formula $G_{0}=G$
+\end_inset
+
+ разрешима, то существует натуральное 
+\begin_inset Formula $m$
+\end_inset
+
+ такое, что 
+\begin_inset Formula $K_{m}\left(G_{0}\right)=\left\{ e\right\} $
+\end_inset
+
+, тогда, по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:Commutativity-eq-commutant-is-unity-subgroup"
+
+\end_inset
+
+, группа 
+\begin_inset Formula $K_{m-1}\left(G_{0}\right)$
+\end_inset
+
+ является коммутативной.
+ Коммутант группы является её нормальной подгруппой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-is-normal-subgroup"
+
+\end_inset
+
+, а коммутант нормальной подгруппы является нормальной подгруппой 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutant-of-normal-subgroup-is-normal-subgroup"
+
+\end_inset
+
+, поэтому любой кратный коммутант являются нормальной подгруппой.
+\end_layout
+
+\begin_layout Solution
+Положим 
+\begin_inset Formula $N_{i}=K_{m-i-1}\left(G_{i}\right)$
+\end_inset
+
+, тогда 
+\begin_inset Formula $G_{i+1}=G_{i}/K_{m-i-1}\left(G_{i}\right)$
+\end_inset
+
+.
+ Докажем, что все 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ при 
+\begin_inset Formula $1\le i\le m-2$
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Написать решение
+уточнить границы
+\end_layout
+
+\end_inset
+
+ и 
+\begin_inset Formula $G_{m-1}$
+\end_inset
+
+ являются коммутативными.
+ Группа 
+\begin_inset Formula $N_{0}=K_{m-1}\left(G_{0}\right)$
+\end_inset
+
+ является коммутативной по доказанному выше.
+\end_layout
+
+\begin_layout Solution
+Рассмотрим теперь 
+\begin_inset Formula $N_{1}=K_{n-2}\left(G_{1}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $G_{1}=G_{0}/K_{n-1}\left(G_{0}\right)$
+\end_inset
+
+.
+ Рассмотрим естественный гомоморфизм 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:natural-homomorphism"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{0}:G_{0}\to G_{0}/K_{n-1}\left(G_{0}\right)$
+\end_inset
+
+.
+ По доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:homomorphism-on-preserves-commutant"
+
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{0}\left(K\left(G_{0}\right)\right)=K\left(G_{1}\right)$
+\end_inset
+
+.
+ Таким образом, если рассматривать 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+ как отображение множества 
+\begin_inset Formula $K\left(G_{0}\right)$
+\end_inset
+
+, то это будет отображение на 
+\begin_inset Formula $K\left(G_{1}\right)$
+\end_inset
+
+.
+ Снова воспользовавшись тем же результатом, получаем 
+\begin_inset Formula $\varphi_{0}\left(K_{2}\left(G_{0}\right)\right)=K_{2}\left(G_{1}\right)$
+\end_inset
+
+.
+ Продолжая этот процесс, приходим к выводу, что 
+\begin_inset Formula $\varphi_{0}\left(K_{m-1}\left(G_{0}\right)\right)=K_{m-1}\left(G_{1}\right)$
+\end_inset
+
+.
+ Ядром 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:kernel-of-homomorphism"
+
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+ является 
+\begin_inset Formula $K_{m-1}\left(G_{0}\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Доказать?
+\end_layout
+
+\end_inset
+
+, поэтому 
+\begin_inset Formula $K_{m-1}\left(G_{1}\right)=\left\{ e_{G_{1}}\right\} $
+\end_inset
+
+, а так как группа, коммутант которой состоит только из нейтрального элемента,
+ является коммутативной 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:Commutativity-eq-commutant-is-unity-subgroup"
+
+\end_inset
+
+, то группа 
+\begin_inset Formula $N_{1}=K_{m-2}\left(G_{1}\right)$
+\end_inset
+
+ является коммутативной.
+\end_layout
+
+\begin_layout Solution
+Аналогично докажем, что коммутативными являются группы 
+\begin_inset Formula $N_{2}=K_{m-3}\left(G_{2}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $N_{3}=K_{m-4}\left(G_{3}\right)$
+\end_inset
+
+, ..., 
+\begin_inset Formula $N_{m-2}=K_{1}\left(G_{m-2}\right)$
+\end_inset
+
+.
+ Группа 
+\begin_inset Formula $G_{m-1}=G_{m-2}/K\left(G_{m-2}\right)$
+\end_inset
+
+ будет коммутативной по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:factor-group-by-commutant-is-commutative"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Solution
+Полагая 
+\begin_inset Formula $n=m-1$
+\end_inset
+
+, получим цепочку 
+\begin_inset Formula $G_{1},...,G_{n}$
+\end_inset
+
+, удовлетворяющую поставленному условию.
+\end_layout
+
+\begin_layout Solution
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Вообще, задача кажется слишком объёмной.
+ Может быть целесообразно разбить её на несколько более простых? Заодно
+ преобразовать в полноценное доказательство по методу математической индукции
 \end_layout
 
 \end_inset
@@ -16597,19 +17452,73 @@ reference "exer:solvable-group-has-chain-2"
 \end_inset
 
  разрешима.
-\end_layout
-
-\begin_layout Solution
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Написать решение
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "задача 171"
+key "abel-theorem-in-exercises"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Solution
+Как было показано в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:commutative-group-is-solvable"
+
+\end_inset
+
+, любая коммутативная группа является разрешимой.
+ Поэтому 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ являются разрешимыми.
+ Так как 
+\begin_inset Formula $G_{n-1}/N_{n-1}$
+\end_inset
+
+ изоморфна 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+, то 
+\begin_inset Formula $G_{n-1}/N_{n-1}$
+\end_inset
+
+ разрешима.
+ Так как 
+\begin_inset Formula $G_{n-1}/N_{n-1}$
+\end_inset
+
+ и 
+\begin_inset Formula $N_{n-1}$
+\end_inset
+
+ разрешимы, то по доказанному в упражнении 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:subgroup-and-factor-group-are-solvable-follows-group-is-solvable"
+
+\end_inset
+
+, 
+\begin_inset Formula $G_{n-1}$
+\end_inset
+
+ также разрешима.
+ Продолжая этот процесс, получим, что 
+\begin_inset Formula $G=G_{0}$
+\end_inset
+
+ разрешима.
 \end_layout
 
 \begin_layout Section
@@ -19006,16 +19915,9 @@ key "abel-theorem-in-exercises"
 
 Алексеев.
  — М.
- : Главная редакция физико-математической литературы издательства 
-\begin_inset Quotes fld
-\end_inset
-
-Наука
-\begin_inset Quotes frd
-\end_inset
-
-, 1976.
- — 208 с.
+ : МЦНМО, 2001.
+ — 192 с.
+ 115 илл.
 \end_layout
 
 \begin_layout Standard
